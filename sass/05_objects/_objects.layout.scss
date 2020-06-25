@@ -21,6 +21,31 @@
   // }
 }
 
+.header-grid-item {
+  position: relative;
+  grid-column: content-start / content-end;
+  background-color:$color-black;
+}
+
+.header-grid-item:before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100vw;
+  right: -100vw;
+  background:inherit;
+}
+
+
+.projects-grid-item {
+  grid-column: content-start / content-end;
+}
+
+.projects-title {
+  margin-top: 5rem;
+}
 // Grid Fix
 // To get background-color in 100% width but <element> content in center layout
 //
