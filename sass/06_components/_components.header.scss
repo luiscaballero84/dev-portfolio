@@ -2,7 +2,6 @@
   position: relative;
   grid-column: content-start / content-end;
   background-color:$color-black;
-  height: 500px;
 }
 
 .header-grid-item:before{
@@ -16,16 +15,12 @@
   background:inherit;
 }
 
+.header {
+  height: 50rem;
+  padding-top: 10rem;
+}
+
 .header-title {
   color: $color-white;
-}
-
-.header-title br {
-  margin-bottom: 10rem;
-}
-
-.header-title span {
-  padding-bottom: 30rem;
-  color: red;
 }
 
