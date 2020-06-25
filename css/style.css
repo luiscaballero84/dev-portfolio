@@ -11,7 +11,8 @@ html {
   box-sizing: border-box; }
 
 body {
-  background-color: yellow; }
+  background-color: yellow;
+  overflow-x: hidden; }
 
 h1 {
   font-size: 2.6rem;
@@ -114,8 +115,7 @@ ol {
 .header-grid-item {
   position: relative;
   grid-column: content-start / content-end;
-  background-color: #171717;
-  height: 500px; }
+  background-color: #171717; }
 
 .header-grid-item:before {
   content: "";
@@ -127,18 +127,32 @@ ol {
   right: -100vw;
   background: inherit; }
 
+.header {
+  height: 50rem;
+  padding-top: 10rem; }
+
 .header-title {
   color: #ffffff; }
 
-.header-title br {
-  margin-bottom: 10rem; }
-
-.header-title span {
-  padding-bottom: 30rem;
-  color: red; }
+.btn-primary {
+  display: inline-block;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  padding-right: 2rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  color: #171717;
+  background-color: #ffbdcb;
+  border-radius: 5px;
+  cursor: pointer; }
+  .btn-primary:hover {
+    background-color: #ff99af; }
 
 .u-text-center {
   text-align: center; }
 
 .u-mb-1 {
   margin-bottom: 1rem; }
+
+.u-mb-2 {
+  margin-bottom: 2rem; }
