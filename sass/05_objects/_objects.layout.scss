@@ -21,13 +21,15 @@
   // }
 }
 
-.header-grid-item {
+.header-grid-item, 
+.skills-grid-item {
   position: relative;
   grid-column: content-start / content-end;
   background-color:$color-black;
 }
 
-.header-grid-item:before{
+.header-grid-item:before, 
+.skills-grid-item:before{
   content: "";
   z-index: -1;
   position: absolute;
@@ -38,14 +40,18 @@
   background:inherit;
 }
 
+.section-title {margin-top: 5rem; }
 
-.projects-grid-item {
-  grid-column: content-start / content-end;
+.section-title--white { color: $color-white;}
+
+.projects-grid-item { grid-column: content-start / content-end; }
+
+.skills {
+  padding-bottom: 8rem;
 }
 
-.projects-title {
-  margin-top: 5rem;
-}
+
+
 // Grid Fix
 // To get background-color in 100% width but <element> content in center layout
 //

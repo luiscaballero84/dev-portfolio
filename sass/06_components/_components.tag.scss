@@ -1,0 +1,21 @@
+.tag-container {
+  margin-top: 3rem;
+}
+
+.tag {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  display: inline-block;
+  background-color: $color-purple;
+  border-radius: .3rem;
+}
+
+.tag--hmtl {background-color: $color-red;}
+.tag--css {background-color: $color-primary;}
+.tag--js {background-color: $color-yellow;}
+.tag--tool {background-color: $color-white;}
+.tag--design {color: $color-white}
