@@ -44,7 +44,8 @@ h6 {
 p {
   font-size: 1.7rem;
   letter-spacing: .3px;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1.5; }
 
 a:link {
   color: #171717; }
@@ -94,6 +95,24 @@ ol {
   grid-column: content-start / content-end; }
 
 .skills {
+  padding-bottom: 8rem; }
+
+.about-grid-item {
+  position: relative;
+  grid-column: content-start / content-end;
+  background-color: #ffbdcb; }
+
+.about-grid-item:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100vw;
+  right: -100vw;
+  background: inherit; }
+
+.about {
   padding-bottom: 8rem; }
 
 .navbar-grid-item {
@@ -178,7 +197,7 @@ ol {
   margin-top: 1rem; }
 
 .card-subtext {
-  margin-top: 2rem;
+  margin-top: 3rem;
   font-weight: 400; }
 
 .card-icon-set {
@@ -219,6 +238,18 @@ ol {
 
 .tag--design {
   color: #ffffff; }
+
+.about-title {
+  margin-top: 2rem; }
+
+.about-text {
+  margin-top: 2rem; }
+
+.about-text:last-of-type {
+  margin-bottom: 2rem; }
+
+.about-img {
+  margin-top: 5rem; }
 
 .u-text-center {
   text-align: center; }

@@ -25,11 +25,11 @@
 .skills-grid-item {
   position: relative;
   grid-column: content-start / content-end;
-  background-color:$color-black;
+  background-color: $color-black;
 }
 
 .header-grid-item:before, 
-.skills-grid-item:before{
+.skills-grid-item:before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -49,6 +49,25 @@
 .skills {
   padding-bottom: 8rem;
 }
+
+.about-grid-item {
+  position: relative;
+  grid-column: content-start / content-end;
+  background-color:$color-primary;
+}
+
+.about-grid-item:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100vw;
+  right: -100vw;
+  background:inherit;
+}
+
+.about {padding-bottom: 8rem;}
 
 
 
