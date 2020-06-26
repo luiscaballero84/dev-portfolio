@@ -29,7 +29,9 @@
 }
 
 .header-grid-item:before, 
-.skills-grid-item:before {
+.skills-grid-item:before,
+.about-grid-item:before,
+.exp-grid-item:before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -46,28 +48,25 @@
 
 .projects-grid-item { grid-column: content-start / content-end; }
 
-.skills {
+.skills,
+.about,
+.experience {
   padding-bottom: 8rem;
 }
 
 .about-grid-item {
   position: relative;
   grid-column: content-start / content-end;
-  background-color:$color-primary;
+  background-color: $color-primary;
 }
 
-.about-grid-item:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -100vw;
-  right: -100vw;
-  background:inherit;
+.exp-grid-item {
+  position: relative;
+  grid-column: content-start / content-end;
+  background-color: $color-grey-1;
 }
 
-.about {padding-bottom: 8rem;}
+
 
 
 
