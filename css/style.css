@@ -22,8 +22,7 @@ h1 {
 
 h2 {
   font-size: 2.4rem;
-  font-weight: 400;
-  letter-spacing: .5px; }
+  font-weight: 400; }
 
 h3 {
   font-size: 2.4rem; }
@@ -34,18 +33,17 @@ h4 {
 h5 {
   font-size: 1.6rem;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  letter-spacing: .5px; }
+  font-weight: 400; }
 
 h6 {
   font-size: 1.6rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase; }
 
 p {
-  font-size: 1.6rem;
-  letter-spacing: .5px;
+  font-size: 1.7rem;
+  letter-spacing: .3px;
   font-weight: 300; }
 
 a:link {
@@ -69,12 +67,14 @@ ol {
   display: grid;
   grid-template-columns: [full-start] 3rem [content-start] 1fr [content-end] 3rem [full-end]; }
 
-.header-grid-item {
+.header-grid-item,
+.skills-grid-item {
   position: relative;
   grid-column: content-start / content-end;
   background-color: #171717; }
 
-.header-grid-item:before {
+.header-grid-item:before,
+.skills-grid-item:before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -84,11 +84,17 @@ ol {
   right: -100vw;
   background: inherit; }
 
+.section-title {
+  margin-top: 5rem; }
+
+.section-title--white {
+  color: #ffffff; }
+
 .projects-grid-item {
   grid-column: content-start / content-end; }
 
-.projects-title {
-  margin-top: 5rem; }
+.skills {
+  padding-bottom: 8rem; }
 
 .navbar-grid-item {
   position: relative;
@@ -158,6 +164,9 @@ ol {
   margin-top: 2rem;
   margin-bottom: 5rem; }
 
+.card:last-of-type {
+  margin-bottom: 8rem; }
+
 .card-img {
   height: 100%;
   width: 100%; }
@@ -181,6 +190,35 @@ ol {
 
 .card-icon {
   padding-right: .7rem; }
+
+.tag-container {
+  margin-top: 3rem; }
+
+.tag {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  display: inline-block;
+  background-color: #834bf6;
+  border-radius: .3rem; }
+
+.tag--hmtl {
+  background-color: #ff511d; }
+
+.tag--css {
+  background-color: #ffbdcb; }
+
+.tag--js {
+  background-color: #f1e05a; }
+
+.tag--tool {
+  background-color: #ffffff; }
+
+.tag--design {
+  color: #ffffff; }
 
 .u-text-center {
   text-align: center; }
