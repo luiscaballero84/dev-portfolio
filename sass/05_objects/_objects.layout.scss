@@ -10,15 +10,21 @@
   grid-template-columns:
     [full-start] 3rem
     [content-start] 1fr
-    [content-end] 3rem
-    [full-end];
+    [content-end] 3rem [full-end];
 
-  // @include respond(tablet-port) {
-  //   grid-template-columns:
-  //   [full-start] minmax(2rem, 1fr)
-  //   [content-start] 1fr [col-2] 1fr
-  //   [content-end] minmax(2rem, 1fr) [full-end];
-  // }
+  @include respond(tablet) { 
+  grid-template-columns:
+    [full-start] 3rem 
+    [content-start] 1fr [col2] 1fr 
+    [content-end] 3rem [full-end];
+  }
+
+  @include respond(desktop) { 
+    grid-template-columns:
+      [full-start] 1fr
+      [content-start] 55rem [col2] 55rem 
+      [content-end] 1fr [full-end];
+    }
 }
 
 .header-grid-item, 
@@ -47,8 +53,24 @@
 .section-title {margin-top: 5rem; }
 
 .section-title--white { color: $color-white;}
+  
+.projects-grid-item { 
+  display: block;
+  grid-column: content-start / content-end; 
 
-.projects-grid-item { grid-column: content-start / content-end; }
+  @include respond(tablet) {
+    // display: flex;
+   }
+
+  // grid-template-columns: [content-start] 1fr [content-end];
+  // column-gap: 0;
+
+  // @include respond(tablet) {
+  //   grid-template-columns:
+  //   [content-start] 1fr [column2] 1fr [content-end];
+  //   column-gap: 30px;
+  // }
+}
 
 .skills,
 .about,
@@ -86,5 +108,7 @@
 //   right: -100vw;
 //   background:inherit;
 // }
+
+
 
 

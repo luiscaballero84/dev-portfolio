@@ -3,26 +3,16 @@
 // --------------------------------------------------
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == mobile {
-    @media only screen and (max-width: 33.4em) { @content }; // 535px
+
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 48.1em) { @content }; // 770px
   }
 
-  @if $breakpoint == tablet-port {
-    @media only screen and (max-width: 39.3em) { @content }; // 630px
-  }
-
-  @if $breakpoint == tablet-land {
-    @media only screen and (max-width: 47.5em) { @content }; // 760px
-  }
-
-  @if $breakpoint == desktop-small {
-    @media only screen and (max-width: 61.25em) { @content }; // 980px
-  }
-
-  @if $breakpoint == desktop-big {
-    @media only screen and (max-width: 71.25em) { @content }; // 1140px
+    @if $breakpoint == desktop {
+    @media only screen and (min-width: 75em) { @content }; // 1200
   }
 }
 
 // use the mixin inside the class:
 // @include respond($breakpoint-name) { font-weight: 400; }
+

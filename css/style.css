@@ -19,6 +19,12 @@ h1 {
   font-weight: 300;
   letter-spacing: .5px;
   line-height: 1.2; }
+  @media only screen and (min-width: 48.1em) {
+    h1 {
+      font-size: 3.4rem; } }
+  @media only screen and (min-width: 75em) {
+    h1 {
+      font-size: 5.4rem; } }
 
 h2 {
   font-size: 2.4rem;
@@ -67,6 +73,12 @@ ol {
   margin: 0px auto;
   display: grid;
   grid-template-columns: [full-start] 3rem [content-start] 1fr [content-end] 3rem [full-end]; }
+  @media only screen and (min-width: 48.1em) {
+    .grid {
+      grid-template-columns: [full-start] 3rem [content-start] 1fr [col2] 1fr [content-end] 3rem [full-end]; } }
+  @media only screen and (min-width: 75em) {
+    .grid {
+      grid-template-columns: [full-start] 1fr [content-start] 55rem [col2] 55rem [content-end] 1fr [full-end]; } }
 
 .header-grid-item,
 .skills-grid-item,
@@ -96,6 +108,7 @@ ol {
   color: #ffffff; }
 
 .projects-grid-item {
+  display: block;
   grid-column: content-start / content-end; }
 
 .skills,
@@ -180,13 +193,24 @@ ol {
 
 .card {
   margin-top: 2rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 6rem; }
+
+@media only screen and (min-width: 48.1em) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem; } }
+
+.card-grid-item-left {
+  grid-column: 1 / span 1; }
+
+.card-grid-item-right {
+  grid-column: 2 / span 1; }
 
 .card:last-of-type {
   margin-bottom: 8rem; }
 
 .card-img {
-  height: 100%;
   width: 100%; }
 
 .card-title {
@@ -254,11 +278,23 @@ ol {
   margin-top: 4rem;
   margin-bottom: 2rem; }
 
-.exp-text-container {
+.exp-text {
   margin-top: 1.2rem; }
 
-.exp-text-container p:first-of-type {
+.exp-text p:first-of-type {
   font-weight: 400; }
+
+@media only screen and (min-width: 48.1em) {
+  .exp-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem; } }
+
+.exp-content-left {
+  grid-column: 1 / span 1; }
+
+.exp-content-right {
+  grid-column: 2 / span 1; }
 
 .footer-mail {
   margin-top: 4rem;
