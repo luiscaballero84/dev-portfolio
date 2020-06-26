@@ -75,7 +75,9 @@ ol {
   background-color: #171717; }
 
 .header-grid-item:before,
-.skills-grid-item:before {
+.skills-grid-item:before,
+.about-grid-item:before,
+.exp-grid-item:before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -94,7 +96,9 @@ ol {
 .projects-grid-item {
   grid-column: content-start / content-end; }
 
-.skills {
+.skills,
+.about,
+.experience {
   padding-bottom: 8rem; }
 
 .about-grid-item {
@@ -102,18 +106,10 @@ ol {
   grid-column: content-start / content-end;
   background-color: #ffbdcb; }
 
-.about-grid-item:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -100vw;
-  right: -100vw;
-  background: inherit; }
-
-.about {
-  padding-bottom: 8rem; }
+.exp-grid-item {
+  position: relative;
+  grid-column: content-start / content-end;
+  background-color: #e7ecf2; }
 
 .navbar-grid-item {
   position: relative;
@@ -250,6 +246,16 @@ ol {
 
 .about-img {
   margin-top: 5rem; }
+
+.exp-title {
+  margin-top: 4rem;
+  margin-bottom: 2rem; }
+
+.exp-text-container {
+  margin-top: 1.2rem; }
+
+.exp-text-container p:first-of-type {
+  font-weight: 400; }
 
 .u-text-center {
   text-align: center; }
