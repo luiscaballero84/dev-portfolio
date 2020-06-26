@@ -22,7 +22,8 @@
 }
 
 .header-grid-item, 
-.skills-grid-item {
+.skills-grid-item,
+.footer-grid-item {
   position: relative;
   grid-column: content-start / content-end;
   background-color: $color-black;
@@ -31,7 +32,8 @@
 .header-grid-item:before, 
 .skills-grid-item:before,
 .about-grid-item:before,
-.exp-grid-item:before {
+.exp-grid-item:before,
+.footer-grid-item:before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -50,7 +52,8 @@
 
 .skills,
 .about,
-.experience {
+.experience,
+.footer {
   padding-bottom: 8rem;
 }
 
