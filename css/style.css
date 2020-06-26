@@ -69,7 +69,8 @@ ol {
   grid-template-columns: [full-start] 3rem [content-start] 1fr [content-end] 3rem [full-end]; }
 
 .header-grid-item,
-.skills-grid-item {
+.skills-grid-item,
+.footer-grid-item {
   position: relative;
   grid-column: content-start / content-end;
   background-color: #171717; }
@@ -77,7 +78,8 @@ ol {
 .header-grid-item:before,
 .skills-grid-item:before,
 .about-grid-item:before,
-.exp-grid-item:before {
+.exp-grid-item:before,
+.footer-grid-item:before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -98,7 +100,8 @@ ol {
 
 .skills,
 .about,
-.experience {
+.experience,
+.footer {
   padding-bottom: 8rem; }
 
 .about-grid-item {
@@ -257,6 +260,19 @@ ol {
 .exp-text-container p:first-of-type {
   font-weight: 400; }
 
+.footer-mail {
+  margin-top: 4rem;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: .1rem; }
+
+.footer-social {
+  margin-top: 10rem;
+  margin-bottom: 6rem; }
+
+.footer-social h5 {
+  margin-top: .5rem; }
+
 .u-text-center {
   text-align: center; }
 
@@ -265,3 +281,6 @@ ol {
 
 .u-mb-2 {
   margin-bottom: 2rem; }
+
+.u-text-white {
+  color: #ffffff; }
