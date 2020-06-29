@@ -2,10 +2,13 @@
 // #Links basic styling
 // --------------------------------------------------
 
-a:link {color: $color-black;}
+a:link {
+  color: $color-white;
+  text-decoration: none;
+}
 
-a:visited {color: $color-black;}
+a:visited {color: $color-white;}
 
-a:hover {color: $color-black;}
+a:hover {color: $color-white;}
 
-a:active {color: $color-black;}
+a:active {color: $color-white;}
