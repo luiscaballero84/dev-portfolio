@@ -1,15 +1,14 @@
-.about-title {
-  margin-top: 2rem;
+.about {
+  background-color: $color-primary;
 }
 
-.about-text {
-  margin-top: 2rem;
-}
+.about-title { margin-top: 3rem; }
 
-.about-text:last-of-type {
-  margin-bottom: 2rem;
-}
+.about-text { margin-top: 2rem; }
 
-.about-img {
-  margin-top: 5rem;
+.about-text:last-of-type { margin-bottom: 2rem; }
+
+.about-img { 
+  margin-top: 5rem; 
+  @include respond(tablet) { margin-top: 3rem;}
 }
