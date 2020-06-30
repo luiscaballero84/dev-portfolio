@@ -17,74 +17,79 @@
 
 </head>
 <body>
-  <div class="grid">
-    <nav class="navbar navbar-grid-item">
-      
-        <a href="#" class="logo"> &lt; Luis Caballero /> </a>
-        <ul class="navbar-menu">
-          <li><h6><a href="#projects-section" class="line-link">Projects</a></h6></li>
-          <li><h6><a href="#about-section" class="line-link">About</a></h6></li>
-          <li><h6><a href="#" class="line-link">Resume</a></h6></li>
-          <li><h6><a href="#contact-section" class="line-link">contact</a></h6></li>
-        </ul>
-        <div class="navbar-burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      
-    </nav>
-    <!-- Header START -->
-    <header class="header header-grid-item">
+  <nav class="navbar nav-grid">
+    <div class="nav-grid-item">
+      <a href="#" class="logo"> &lt; Luis Caballero /> </a>
+      <ul class="navbar-menu">
+        <li><h6><a href="#projects-section" class="line-link" id="project-btn">Projects</a></h6></li>
+        <li><h6><a href="#about-section" class="line-link" id="about-btn">About</a></h6></li>
+        <li><h6><a href="#" class="line-link">Resume</a></h6></li>
+        <li><h6><a href="#contact-section" class="line-link">contact</a></h6></li>
+      </ul>
+      <div class="navbar-burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </nav>
+  <!-- Header START -->
+  <header class="header header-grid">
+    <div class="header-grid-item">
       <h1 class="header-title u-mb-1">Hi! Hallo! Hola!</h1>
       <h1 class="header-title u-mb-2">I am Luis, a Berlin-based front-end developer and designer.</h2>
       <a class="btn-primary"><h6>Get in touch</h6></a>
-    </header>
+    </div>
+  </header>
 
-    <!-- Projects START -->
-    <div class="projects projects-grid-item projects-grid">
+  <!-- Projects START -->
+  <div class="projects projects-grid">
+    <div class="projects-grid-item">
       <a class="anchor" id="projects-section"></a>
       <h6 class="section-title project-title-grid-item">Selected Projects</h6>
       
       <div class="card-container">
-      <div class="card card-grid-item-left">
-        <img class="card-img" src="https://source.unsplash.com/Y_AWfh0kGT4/500x500" alt="project-img">
-        <h2 class="card-title">Raster Systeme</h2>
-        <p class="card-text">A reproduction of the famous book cover
-          from swiss designer Josef Müller
-          Brockmann using only HTML and CSS. </p>
-        <h5 class="card-subtext"><span class="card-circle hmtl-color"></span>HTML <span class="card-circle css-color"></span>CSS <span class="card-circle css-color"></span>SASS</h5>
-        <div class="card-icon-set">
-          <span class="card-icon material-icons">visibility</span>
-          <h5 >View project</h5>
+        <!-- Card Left-->
+        <div class="card card-grid-item-left">
+          <img class="card-img" src="https://source.unsplash.com/Y_AWfh0kGT4/500x500" alt="project-img">
+          <h2 class="card-title">Raster Systeme</h2>
+          <p class="card-text">A reproduction of the famous book cover
+            from swiss designer Josef Müller
+            Brockmann using only HTML and CSS. </p>
+          <h5 class="card-subtext"><span class="card-circle hmtl-color"></span>HTML <span class="card-circle css-color"></span>CSS <span class="card-circle css-color"></span>SASS</h5>
+          <div class="card-icon-set">
+            <span class="card-icon material-icons">visibility</span>
+            <h5 >View project</h5>
+          </div>
+          <div class="card-icon-set">
+            <span class="card-icon material-icons">folder</span>
+            <h5>Repository</h5>
+          </div>
         </div>
-        <div class="card-icon-set">
-          <span class="card-icon material-icons">folder</span>
-          <h5>Repository</h5>
+        <!-- Card Right-->
+        <div class="card card-grid-item-right">
+          <img class="card-img" src="https://source.unsplash.com/2Bdyxgz3OM0/" alt="project-img">
+          <h2 class="card-title">It´s Nice That Clone</h2>
+          <p class="card-text">I build a clone of the It´s Nice That front
+            page using pure CSS and JavaScript.  </p>
+          <h5 class="card-subtext"><span class="card-circle hmtl-color"></span>HTML <span class="card-circle css-color"></span>CSS <span class="card-circle css-color"></span>SASS <span class="card-circle js-color"></span>JavaScript ES6</h5>
+          <div class="card-icon-set">
+            <span class="card-icon material-icons">visibility</span>
+            <h5>View project</h5>
+          </div>
+          <div class="card-icon-set">
+            <span class="card-icon material-icons">folder</span>
+            <h5>Repository</h5>
+          </div>
         </div>
-      </div>
-
-      <div class="card card-grid-item-right">
-        <img class="card-img" src="https://source.unsplash.com/2Bdyxgz3OM0/" alt="project-img">
-        <h2 class="card-title">It´s Nice That Clone</h2>
-        <p class="card-text">I build a clone of the It´s Nice That front
-          page using pure CSS and JavaScript.  </p>
-        <h5 class="card-subtext"><span class="card-circle hmtl-color"></span>HTML <span class="card-circle css-color"></span>CSS <span class="card-circle css-color"></span>SASS <span class="card-circle js-color"></span>JavaScript ES6</h5>
-        <div class="card-icon-set">
-          <span class="card-icon material-icons">visibility</span>
-          <h5>View project</h5>
-        </div>
-        <div class="card-icon-set">
-          <span class="card-icon material-icons">folder</span>
-          <h5>Repository</h5>
-        </div>
-      </div>
       </div> <!-- card container END-->
+    </div>
 
-    </div> <!-- End of Projects -->
+  </div> <!-- End of Projects -->
 
-    <!-- Skills START -->
-    <div class="skills skills-grid-item">
+  <!-- Skills START -->
+  <div class="skills skills-grid">
+    <div class="skills-grid-item">
       <h6 class="section-title section-title--white">skills</h6>
       <div class="tag-container">
         <h5 class="tag tag--hmtl">HTML</5>
@@ -103,9 +108,11 @@
         <h5 class="tag ">Glyphs</5>
       </div>
     </div>
+  </div>
 
-    <!-- About START -->
-    <div class="about about-grid-item">
+  <!-- About START -->
+  <div class="about about-grid">
+    <div class="about-grid-item">
       <a class="anchor" id="about-section"></a>
       <h6 class="section-title">about</h6>
       <h2 class="about-title">Hi! I am Luis, nice to meet you. </h2>
@@ -129,15 +136,18 @@
         <h5>Download CV</h5>
       </div>
       <img class="card-img about-img" src="https://source.unsplash.com/5aGUyCW_PJw/" alt="profile-pic">
-    </div> <!-- end About-->
+    </div>
+  </div> <!-- end About-->
 
-    <!-- Experience START -->
-    <div class="experience exp-grid-item">
+  <!-- Experience START -->
+  <div class="experience exp-grid">
+    <div class="exp-grid-item">
       <h6 class="section-title">experience</h6>
       <div class="exp-container">
+        <!-- Left Col. -->
         <div class="exp-content-left">
           <h5 class="exp-title">Work Experience</h5>
-          <div class="exp-text exp-text">
+          <div class="exp-text">
             <p>2018 - 2020 Berlin</p>
             <p>Freelancer</p>
             <p>Graphic Design & Illustration</p>
@@ -158,6 +168,7 @@
             <p>Brand Guardian Designer</p>
           </div>
         </div>
+        <!-- Right Col. -->
         <div class="exp-content-right">
           <h5 class="exp-title">Education</h5>
           <div class="exp-text">
@@ -173,21 +184,21 @@
           <div class="exp-text">
             <p>2002 - 2008 Sevilla</p>
             <p>University of Sevilla</p>
-            <p>Bachelors of Arts in Audiovisual
-              Communication</p>
+            <p>Bachelors of Arts in Audiovisual Communication</p>
           </div>
     
           <h5 class="exp-title">Languages</h5>
-          <p> English > Fluent / C1</p>
+          <p>English > Fluent / C1</p>
           <p>German > Fluent / C1</p>
           <p>Spanish > Native</p>
         </div>
       </div>
-    
     </div>
+  </div>
 
-    <!-- Footer START -->
-    <footer class="footer u-text-white footer-grid-item">
+  <!-- Footer START -->
+  <footer class="footer footer-grid u-text-white">
+    <div class="footer-grid-item">
       <a class="anchor" id="contact-section"></a>
       <h6 class="section-title">get in touch</h6>
       <p class="footer-mail">hallo.luiscaballero@gmail.com</p>
@@ -198,8 +209,10 @@
         <li><h5>Instagram</h5></li>
       </ul>
       <p>2020 © Luis Caballero</p>
-    </footer>
-  </div> <!-- Grid END -->
+    </div>
+  </footer>
 
+  <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>  
 </body>
 </html>
