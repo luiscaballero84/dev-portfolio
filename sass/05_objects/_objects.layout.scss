@@ -62,7 +62,7 @@
 .section-title--white { color: $color-white;}
   
 
-
+.projects,
 .skills,
 .about,
 .experience,
@@ -70,36 +70,19 @@
   padding-bottom: 8rem;
 }
 
-// .about-grid-item {
-//   // position: relative;
-//   grid-column: content-start / content-end;
-//   background-color: $color-primary;
-// }
+//////// 2 Cols
+.col-container {
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+}
 
-// .exp-grid-item {
-//   // position: relative;
-//   grid-column: content-start / content-end;
-//   background-color: $color-grey-1;
-// }
+.left-col {
+  grid-column: 1 / span 1;
+}
 
-
-
-
-
-// Grid Fix
-// To get background-color in 100% width but <element> content in center layout
-//
-// .<element>:before{
-//   content: "";
-//   z-index: -1;
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: -100vw;
-//   right: -100vw;
-//   background:inherit;
-// }
-
-
-
-
+.right-col {
+  grid-column: 2 / span 1;
+}

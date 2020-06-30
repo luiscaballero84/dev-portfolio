@@ -128,11 +128,24 @@ ol {
 .section-title--white {
   color: #ffffff; }
 
+.projects,
 .skills,
 .about,
 .experience,
 .footer {
   padding-bottom: 8rem; }
+
+@media only screen and (min-width: 48.1em) {
+  .col-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem; } }
+
+.left-col {
+  grid-column: 1 / span 1; }
+
+.right-col {
+  grid-column: 2 / span 1; }
 
 .navbar {
   z-index: 1000;
@@ -275,21 +288,6 @@ ol {
   margin-top: 2rem;
   margin-bottom: 6rem; }
 
-@media only screen and (min-width: 48.1em) {
-  .card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem; } }
-
-.card-grid-item-left {
-  grid-column: 1 / span 1; }
-
-.card-grid-item-right {
-  grid-column: 2 / span 1; }
-
-.card:last-of-type {
-  margin-bottom: 10rem; }
-
 .card-img {
   width: 100%; }
 
@@ -357,8 +355,11 @@ ol {
 .tag--design {
   color: #ffffff; }
 
+.about {
+  background-color: #ffbdcb; }
+
 .about-title {
-  margin-top: 2rem; }
+  margin-top: 3rem; }
 
 .about-text {
   margin-top: 2rem; }
@@ -368,6 +369,9 @@ ol {
 
 .about-img {
   margin-top: 5rem; }
+  @media only screen and (min-width: 48.1em) {
+    .about-img {
+      margin-top: 3rem; } }
 
 .exp-title {
   margin-top: 4rem;
@@ -378,18 +382,6 @@ ol {
 
 .exp-text p:first-of-type {
   font-weight: 400; }
-
-@media only screen and (min-width: 48.1em) {
-  .exp-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem; } }
-
-.exp-content-left {
-  grid-column: 1 / span 1; }
-
-.exp-content-right {
-  grid-column: 2 / span 1; }
 
 .footer {
   background-color: #020202; }

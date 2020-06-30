@@ -3,37 +3,11 @@
   margin-bottom: 6rem;
 }
 
-.card-container {
-  @include respond(tablet) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
-  }
-}
+.card-img { width: 100%; }
 
-.card-grid-item-left {
-  grid-column: 1 / span 1;
-}
+.card-title { margin-top: 2rem; }
 
-.card-grid-item-right {
-  grid-column: 2 / span 1;
-}
-
-.card:last-of-type {
-  margin-bottom: 10rem; // check all margin bottoms from sections!
-}
-
-.card-img {
-  width: 100%;
-}
-
-.card-title {
-  margin-top: 2rem;
-}
-
-.card-text {
-  margin-top: 1rem;
-}
+.card-text { margin-top: 1rem; }
 
 .card-subtext {
   margin-top: 3rem;
@@ -45,13 +19,9 @@
   align-items: center;
 }
 
-.card-icon-set:first-of-type {
-  margin-top: 1.2rem;
-}
+.card-icon-set:first-of-type { margin-top: 1.2rem; }
 
-.card-icon {
-  padding-right: .7rem;
-}
+.card-icon { padding-right: .7rem; }
 
 .card-circle {
   display: inline-block;
@@ -63,12 +33,6 @@
   margin-right: .4rem;
 } 
 
-.css-color {
-  background-color: $color-primary;
-}
+.css-color { background-color: $color-primary; }
 
-.js-color {
-  background-color: $color-yellow;
-}
-
-
+.js-color { background-color: $color-yellow; }
