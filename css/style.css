@@ -173,7 +173,8 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffbdcb; }
+  background-color: #ffbdcb;
+  transition: left .4s ease-in; }
   @media only screen and (min-width: 48.1em) {
     .navbar-menu {
       position: static;
@@ -235,14 +236,25 @@ ol {
 
 .navbar-burger div {
   height: 0.2rem;
-  width: 2.5rem;
-  margin-top: 0.5rem;
+  width: 3rem;
+  margin-top: 0.7rem;
   background-color: #ffffff;
   border-radius: 1rem;
-  transition: all 0.3s ease; }
+  transition: transform .3s ease,  background-color .5s ease-in; }
 
 .navbar-burger div:last-of-type {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.7rem; }
+
+.burger-animate .line1 {
+  background-color: #020202;
+  transform: rotate(-45deg) translate(-0.7rem, 0.6rem); }
+
+.burger-animate .line2 {
+  opacity: 0; }
+
+.burger-animate .line3 {
+  background-color: #020202;
+  transform: rotate(45deg) translate(-0.6rem, -0.6rem); }
 
 .header {
   height: 50rem;
