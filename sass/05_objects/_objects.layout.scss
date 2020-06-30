@@ -50,6 +50,13 @@
   background:inherit;
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -8rem;
+  visibility: hidden;
+}
+
 .section-title {margin-top: 5rem; }
 
 .section-title--white { color: $color-white;}
