@@ -1,11 +1,9 @@
 .header {
   height: 50rem;
   padding-top: 15rem;
-
+  background-color: $color-black;
   @include respond(tablet) {height: 55rem;}
 }
 
-.header-title {
-  color: $color-white;
-}
+.header-title { color: $color-white; }
 

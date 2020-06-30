@@ -1,36 +1,14 @@
 ///////////////////
-// Navbar Grid 
-
-.navbar-grid-item {
-  position: relative;
-  grid-column: content-start / content-end;
-  background-color: $color-black;
-  // border-bottom: 1px solid #262626;
-  height: 8rem;
-
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.navbar-grid-item:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -100vw;
-  right: -100vw;
-  background:inherit;
-  border-bottom: 1px solid #262626;
-}
-
+// Navbar  
 .navbar {
   z-index: 1000;
-  position: sticky; 
+  position: -webkit-sticky;
+  position: sticky;
+  // position: fixed;
   top: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 8rem;
+  background-color: $color-black;
+  border-bottom: 1px solid #262626;
 }
 
 ///////////////////
@@ -44,10 +22,7 @@
 
 ///////////////////
 // MENU
-// body {
-//   overflow: hidden;
-// }
-// <ul>
+
 .navbar-menu {
   z-index: 1000;
   position: absolute;
@@ -114,8 +89,8 @@
   @include respond(tablet) {
     display: block;
     border-bottom: 3px solid transparent;
-    margin-top: 2.8rem;
-    padding-bottom: 2.8rem;
+    margin-top: 2.85rem;
+    padding-bottom: 2.85rem;
     color: $color-white;
     transition: border-bottom .3s ease;
   }

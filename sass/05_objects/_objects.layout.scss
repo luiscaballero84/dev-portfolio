@@ -2,82 +2,66 @@
 // #Layout
 // --------------------------------------------------
 
-// Just a basic css grid as a starter point
-.grid {
-  margin: 0px auto; //centered grid
+.nav-grid,
+.header-grid,
+.projects-grid, 
+.skills-grid, 
+.about-grid, 
+.exp-grid, 
+.footer-grid {
   display: grid;
-
   grid-template-columns:
     [full-start] 3rem
     [content-start] 1fr
     [content-end] 3rem [full-end];
 
   @include respond(tablet) { 
-  grid-template-columns:
-    [full-start] 3rem 
-    [content-start] 1fr [col2] 1fr 
-    [content-end] 3rem [full-end];
+    grid-template-columns:
+      [full-start] 3rem 
+      [content-start] 1fr [col2] 1fr 
+      [content-end] 3rem [full-end];
   }
-
+  
   @include respond(desktop) { 
     grid-template-columns:
       [full-start] 1fr
       [content-start] 55rem [col2] 55rem 
       [content-end] 1fr [full-end];
-    }
+  }
 }
 
-.header-grid-item, 
-.skills-grid-item,
-.footer-grid-item {
-  position: relative;
+.nav-grid-item {
   grid-column: content-start / content-end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-grid-item,
+.projects-grid-item, 
+.skills-grid-item, 
+.about-grid-item,
+.exp-grid-item, 
+.footer-grid-item {
+  grid-column: content-start / content-end;
+}
+
+.skills {
   background-color: $color-black;
 }
 
-.header-grid-item:before, 
-.skills-grid-item:before,
-.about-grid-item:before,
-.exp-grid-item:before,
-.footer-grid-item:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -100vw;
-  right: -100vw;
-  background:inherit;
-}
 
 .anchor {
   display: block;
   position: relative;
-  top: -8rem;
+  top: -7.5rem;
   visibility: hidden;
 }
 
 .section-title {margin-top: 5rem; }
-
 .section-title--white { color: $color-white;}
   
-.projects-grid-item { 
-  display: block;
-  grid-column: content-start / content-end; 
 
-  @include respond(tablet) {
-    // display: flex;
-   }
-
-  // grid-template-columns: [content-start] 1fr [content-end];
-  // column-gap: 0;
-
-  // @include respond(tablet) {
-  //   grid-template-columns:
-  //   [content-start] 1fr [column2] 1fr [content-end];
-  //   column-gap: 30px;
-  // }
-}
 
 .skills,
 .about,
@@ -86,17 +70,17 @@
   padding-bottom: 8rem;
 }
 
-.about-grid-item {
-  position: relative;
-  grid-column: content-start / content-end;
-  background-color: $color-primary;
-}
+// .about-grid-item {
+//   // position: relative;
+//   grid-column: content-start / content-end;
+//   background-color: $color-primary;
+// }
 
-.exp-grid-item {
-  position: relative;
-  grid-column: content-start / content-end;
-  background-color: $color-grey-1;
-}
+// .exp-grid-item {
+//   // position: relative;
+//   grid-column: content-start / content-end;
+//   background-color: $color-grey-1;
+// }
 
 
 
