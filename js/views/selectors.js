@@ -3,12 +3,7 @@ console.log("selectors is connected");
 export const elements = {
   burgerIcon: document.querySelector('.navbar-burger'),
   navMenu: document.querySelector('.navbar-menu'),
-  projectsBtn: document.getElementById('project-btn'),
-  aboutBtn: document.getElementById('about-btn')
-};
-
-export const anchors = {
-  projects: document.getElementById('projects-section')
+  navLinks: document.querySelectorAll('.navbar-menu li')
 };
 
 console.log(elements.burgerIcon);

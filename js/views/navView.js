@@ -1,7 +1,7 @@
 import {elements} from '../views/selectors.js';
 
-export function displayMenu() {
-  elements.navMenu.classList.toggle("nav-active");
+export function displayMenuToggle() {
+  elements.navMenu.classList.toggle("menu-active");
   document.body.classList.toggle("u-noScroll");
   isRotated();
 }
