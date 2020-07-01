@@ -7,4 +7,3 @@ export const elements = {
 };
 
 console.log(elements.burgerIcon);
-console.log(elements.navMenu);
