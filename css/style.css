@@ -285,7 +285,7 @@ ol {
   padding-right: 2rem;
   padding-bottom: 1.5rem;
   text-align: center;
-  color: #020202;
+  color: #020202 !important;
   background-color: #ffbdcb;
   border-radius: 5px;
   transition: background-color .15s ease-in;
@@ -293,6 +293,14 @@ ol {
   .btn-primary:hover {
     background-color: #ff99af;
     color: #020202; }
+  .btn-primary:active {
+    transform: scale(0.98); }
+  .btn-primary h6 {
+    margin-right: 1rem; }
+
+.btn-container {
+  display: flex;
+  align-items: center; }
 
 .card {
   margin-top: 2rem;
