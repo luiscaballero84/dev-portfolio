@@ -387,7 +387,9 @@ ol {
 
 .exp-title {
   margin-top: 4rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  text-decoration: underline; }
 
 .exp-text {
   margin-top: 1.2rem; }
