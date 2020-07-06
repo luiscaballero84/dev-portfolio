@@ -308,6 +308,8 @@ ol {
 
 .card-img {
   width: 100%; }
+  .card-img:hover {
+    box-shadow: 0 10px 30px rgba(34, 34, 34, 0.25); }
 
 .card-title {
   margin-top: 2rem; }
@@ -323,10 +325,19 @@ ol {
   display: flex;
   align-items: center; }
 
-.card-icon-set:first-of-type {
-  margin-top: 1.2rem; }
+.card-link {
+  color: #020202 !important;
+  margin-bottom: .3rem; }
+
+.card-icon-container {
+  display: flex;
+  align-items: center; }
+
+.card-icon-container:first-of-type {
+  margin-top: 2rem; }
 
 .card-icon {
+  display: inline;
   padding-right: .7rem; }
 
 .card-circle {
@@ -389,6 +400,8 @@ ol {
   margin-top: 5rem;
   border-radius: 2px;
   box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.2); }
+  .about-img:hover {
+    box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.2); }
   @media only screen and (min-width: 48.1em) {
     .about-img {
       margin-top: 3rem; } }
