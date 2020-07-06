@@ -17,6 +17,9 @@ elements.burgerIcon.addEventListener('click', navModel.burgerMenuToggle);
 elements.navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     setTimeout(function() { 
-      navView.displayMenuToggle(); }, 620);
+      if (elements.navMenu.classList.contains("menu-active")) {
+        navView.displayMenuToggle(); 
+      }
+    }, 620);
   })
 });

@@ -6,4 +6,4 @@ export const elements = {
   navLinks: document.querySelectorAll('.navbar-menu li')
 };
 
-console.log(elements.burgerIcon);
+
