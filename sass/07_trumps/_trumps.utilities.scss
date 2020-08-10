@@ -7,13 +7,21 @@
 }
 
 /////////// Margins
-.u-mb-1 {
-  margin-bottom: 1rem;
-}
+.u-mb-1 { margin-bottom: 1rem; }
 
-.u-mb-2 {
-  margin-bottom: 2rem;
-}
+.u-mb-2 { margin-bottom: 2rem; }
+
+.u-mr {margin-right: .5rem }
+
+.u-mr-1 { margin-right: 1rem }
+
+.u-mr-2 { margin-right: 2rem }
+
+
+/////////// Paddings
+.u-pt {padding-top: .5rem }
+
+.u-pb {padding-bottom: .5rem }
 
 
 ////////////// Text color
@@ -25,3 +33,18 @@
 .u-hidden { display: none; }
 
 .u-noScroll { overflow: hidden; }
+
+.u-flex { 
+  display: flex;
+  align-items: center;
+}
+
+.u-flex-inline { 
+  display: inline-flex;
+  align-items: center;
+}
+
+.u-flex-column {
+  display: inline-flex;
+  flex-direction: column;
+}

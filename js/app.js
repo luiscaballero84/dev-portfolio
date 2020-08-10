@@ -4,6 +4,7 @@
 import { elements } from './views/selectors.js';
 import * as navModel from './models/Nav.js';
 import * as navView from './views/navView.js';
+import * as cardView from './views/cardView.js';
 
 
 /////////////////////////
