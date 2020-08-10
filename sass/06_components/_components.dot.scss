@@ -1,0 +1,14 @@
+.dot {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: $color-red;
+  margin-bottom: 1px;
+  margin-right: .4rem;
+} 
+
+.dot--css { background-color: $color-primary; }
+
+.dot--js { background-color: $color-yellow; }
+
+.dot--design { background-color: $color-purple; }

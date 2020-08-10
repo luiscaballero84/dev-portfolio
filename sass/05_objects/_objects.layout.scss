@@ -71,18 +71,10 @@
 }
 
 //////// 2 Cols
-.col-container {
+.col-2-container {
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
   }
-}
-
-.left-col {
-  grid-column: 1 / span 1;
-}
-
-.right-col {
-  grid-column: 2 / span 1;
 }
