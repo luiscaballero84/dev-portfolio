@@ -447,7 +447,8 @@ ol {
 .footer__copyright {
   margin-top: 8rem;
   font-size: 1.2rem;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #525252; }
   @media only screen and (min-width: 26.9em) {
     .footer__copyright {
       font-size: 1.4rem; } }

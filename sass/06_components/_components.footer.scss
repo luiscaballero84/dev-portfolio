@@ -36,6 +36,7 @@
   margin-top: 8rem;
   font-size: 1.2rem;
   font-weight: 400;
+  color: $color-dark-grey;
   @include respond(small-tablet) { font-size: 1.4rem; }
   @include respond(tablet) { margin-top: 0; }
 }
