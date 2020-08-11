@@ -79,7 +79,7 @@ ol {
 .exp-grid,
 .footer-grid {
   display: grid;
-  grid-template-columns: [full-start] 3rem [content-start] 1fr [content-end] 3rem [full-end]; }
+  grid-template-columns: [full-start] 2rem [content-start] 1fr [content-end] 2rem [full-end]; }
   @media only screen and (min-width: 48.1em) {
     .nav-grid,
     .header-grid,
