@@ -131,9 +131,14 @@ ol {
 .projects,
 .skills,
 .about,
-.experience,
-.footer {
+.experience {
   padding-bottom: 8rem; }
+
+.footer {
+  padding-bottom: 3rem; }
+  @media only screen and (min-width: 48.1em) {
+    .footer {
+      padding-bottom: 8rem; } }
 
 @media only screen and (min-width: 48.1em) {
   .col-2-container {
@@ -410,45 +415,44 @@ ol {
 .footer {
   background-color: #020202; }
 
-.footer-mail {
+.footer a {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid transparent; }
+
+@media only screen and (min-width: 48.1em) {
+  .footer a:hover {
+    border-bottom: 2px solid #ffbdcb; } }
+
+.footer__mail {
   margin-top: 4rem;
   font-weight: 400;
   font-size: 2rem;
   letter-spacing: .1rem; }
 
-.footer-mail a {
-  padding-bottom: .5rem;
-  border-bottom: 1px solid transparent; }
-
-.footer-mail a:hover {
-  border-bottom: 2px solid #ffbdcb; }
-
-.footer-social {
-  margin-top: 10rem; }
+.footer__social {
+  margin-top: 7.5rem; }
   @media only screen and (min-width: 48.1em) {
-    .footer-social {
+    .footer__social {
       display: flex;
-      align-items: baseline; } }
+      align-items: baseline;
+      margin-top: 10rem; } }
 
-.footer-social a {
-  padding-bottom: .5rem; }
-
-.footer-social a:hover {
-  border-bottom: 2px solid #ffbdcb; }
-
-.footer-social h5 {
+.footer__social h5 {
   margin-top: .5rem;
   margin-right: 1.5rem; }
 
-.footer-social li:last-of-type {
+.footer__social li:last-of-type {
   margin-left: auto; }
 
-.footer-copyright {
-  margin-top: 10rem;
-  font-size: 1.4rem;
+.footer__copyright {
+  margin-top: 8rem;
+  font-size: 1.2rem;
   font-weight: 400; }
+  @media only screen and (min-width: 26.9em) {
+    .footer__copyright {
+      font-size: 1.4rem; } }
   @media only screen and (min-width: 48.1em) {
-    .footer-copyright {
+    .footer__copyright {
       margin-top: 0; } }
 
 .u-text-center {
