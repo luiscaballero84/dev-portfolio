@@ -65,9 +65,13 @@
 .projects,
 .skills,
 .about,
-.experience,
-.footer {
+.experience {
   padding-bottom: 8rem;
+}
+
+.footer {
+  padding-bottom: 3rem;
+  @include respond(tablet) { padding-bottom: 8rem; }
 }
 
 //////// 2 Cols
