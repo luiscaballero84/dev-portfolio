@@ -11,9 +11,9 @@
 .footer-grid {
   display: grid;
   grid-template-columns:
-    [full-start] 3rem
+    [full-start] 2rem
     [content-start] 1fr
-    [content-end] 3rem [full-end];
+    [content-end] 2rem [full-end];
 
   @include respond(tablet) { 
     grid-template-columns:
