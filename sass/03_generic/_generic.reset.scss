@@ -13,10 +13,10 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'scroll-behavior: smooth' /*, actual fonts */;
+  font-family: 'scroll-behavior: smooth' /* actual fonts */;
 }
 
 body {
-  color:$color-black;
-  font-family: "Roboto", sans-serif;
+  color: $color-black;
+  font-family: $body-font;
 }
