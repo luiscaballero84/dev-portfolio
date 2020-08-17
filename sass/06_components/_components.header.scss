@@ -26,12 +26,16 @@
 
 .header__title { 
   display: inline-block;
-  font-size: 6.5rem;
+  font-size: 5.2rem;
   font-weight: 100;
-  line-height: 1.1;
+  line-height: 1;
   color: $color-white; 
   padding-bottom: 1rem;
   
+  @include respond(tablet) { 
+    font-size: 6.5rem;
+    line-height: 1.1;
+  }
   @include respond(desktop) { 
     position: relative;
     padding-bottom: 0;
