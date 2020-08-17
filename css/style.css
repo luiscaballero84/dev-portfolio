@@ -260,27 +260,6 @@ ol {
   background-color: #020202;
   transform: rotate(45deg) translate(-0.6rem, -0.6rem); }
 
-.header {
-  height: 50rem;
-  padding-top: 15rem;
-  background-color: #020202; }
-  @media only screen and (min-width: 48.1em) {
-    .header {
-      height: 55rem; } }
-
-.header-title {
-  color: #ffffff; }
-
-.header-sub {
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  color: #ffffff;
-  text-transform: uppercase; }
-  @media only screen and (min-width: 75em) {
-    .header-sub {
-      font-size: 2.4rem; } }
-
 .btn-primary {
   display: inline-block;
   padding-left: 2rem;
@@ -304,6 +283,48 @@ ol {
 .btn-container {
   display: flex;
   align-items: center; }
+
+.header {
+  padding-top: 8rem;
+  padding-bottom: 15rem;
+  background-color: #020202; }
+  @media only screen and (min-width: 48.1em) {
+    .header {
+      padding-top: 12rem;
+      padding-bottom: 19rem; } }
+
+.header__subtitle {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 75em) {
+    .header__subtitle {
+      font-size: 2.4rem;
+      font-weight: 500; } }
+
+.header__title {
+  display: inline-block;
+  font-size: 6.5rem;
+  font-weight: 100;
+  line-height: 1.1;
+  color: #ffffff;
+  padding-bottom: 1rem; }
+  @media only screen and (min-width: 75em) {
+    .header__title {
+      position: relative;
+      padding-bottom: 0;
+      font-weight: 300; } }
+
+@media only screen and (min-width: 75em) {
+  .header__btn {
+    margin-left: 1rem;
+    position: absolute;
+    right: 200px;
+    bottom: 27px;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem; } }
 
 .card {
   margin-top: 2rem;
@@ -504,3 +525,6 @@ ol {
 .u-flex-column {
   display: inline-flex;
   flex-direction: column; }
+
+.u-relative {
+  position: relative; }

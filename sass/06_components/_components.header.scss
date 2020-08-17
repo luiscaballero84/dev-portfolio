@@ -1,21 +1,51 @@
 .header {
-  height: 50rem;
-  padding-top: 15rem;
+  //height: 50rem;
+  padding-top: 8rem;
+  padding-bottom: 15rem;
   background-color: $color-black;
-  @include respond(tablet) {height: 55rem;}
+  @include respond(tablet) {
+    // height: 55rem;
+    padding-top: 12rem;
+    padding-bottom: 19rem;
+  }
 }
 
-.header-title { color: $color-white; }
-
-.header-sub { 
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 1.5px;
+.header__subtitle { 
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 2.5px;
   color: $color-white; 
   text-transform: uppercase;
 
   // @include respond(tablet) {font-size: 2rem;}
-  @include respond(desktop) {font-size: 2.4rem;}
+  @include respond(desktop) {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+}
 
+.header__title { 
+  display: inline-block;
+  font-size: 6.5rem;
+  font-weight: 100;
+  line-height: 1.1;
+  color: $color-white; 
+  padding-bottom: 1rem;
+  
+  @include respond(desktop) { 
+    position: relative;
+    padding-bottom: 0;
+    font-weight: 300;}
+}
+
+.header__btn {
+  @include respond(desktop) { 
+    margin-left: 1rem;
+    position: absolute; 
+    right: 200px;
+    bottom: 27px;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
 }
 
