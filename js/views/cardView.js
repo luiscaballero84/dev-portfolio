@@ -134,7 +134,7 @@ function renderProjects() {
 
     return `
     <div class="card">
-      <a href="${project.link.site}" target="_blank">
+      <a href="${project.link.site}" target="_blank" rel=”noopener noreferrer”>
         <img class="card__img" src="img/${project.img}.jpg" alt="${project.name}">
       </a>
       <h2 class="card__title">${project.name}</h2>
@@ -143,11 +143,11 @@ function renderProjects() {
         ${stackMarkup}
       </div>
       <div class="u-flex-column">
-        <a class="link-icon__container" href="${project.link.site}" target="_blank">
+        <a class="link-icon__container" href="${project.link.site}" target="_blank" rel=”noopener noreferrer”>
           <span class="link-icon material-icons">visibility</span>
           <h5>View project</h5>
         </a>
-        <a class="link-icon__container" href="${project.link.repo}" target="_blank">
+        <a class="link-icon__container" href="${project.link.repo}" target="_blank" rel=”noopener noreferrer”>
           <span class="link-icon material-icons">folder</span>
           <h5>Repository</h5>
         </a>
