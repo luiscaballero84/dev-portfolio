@@ -2,9 +2,8 @@
   //height: 50rem;
   padding-top: 8rem;
   padding-bottom: 15rem;
-  background-color: $color-black;
+  background-color: $color-primary;
   @include respond(tablet) {
-    // height: 55rem;
     padding-top: 12rem;
     padding-bottom: 19rem;
   }
