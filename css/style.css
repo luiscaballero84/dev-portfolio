@@ -9,6 +9,10 @@
   font-family: 'JetMono';
   src: url("../../css/font/JetBrainsMono-Regular.woff") format("woff"); }
 
+@font-face {
+  font-family: 'Custom';
+  src: url("../../css/font/custom-regular.woff") format("woff"); }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -17,7 +21,7 @@ html {
 
 body {
   color: #020202;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Custom", sans-serif; }
 
 h1 {
   font-size: 3rem;
