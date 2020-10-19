@@ -1,4 +1,4 @@
-.footer { background-color: $color-black; }
+.footer { background-color: $color-primary; }
 
 .footer a {
   padding-bottom: .5rem;
@@ -6,7 +6,7 @@
 }
 
 .footer a:hover {
-  @include respond(tablet) { border-bottom: 2px solid $color-primary; }
+  @include respond(tablet) { border-bottom: 2px solid $color-white; }
 }
 
 .footer__mail {
@@ -36,7 +36,7 @@
   margin-top: 8rem;
   font-size: 1.2rem;
   font-weight: 400;
-  color: $color-dark-grey;
+  color: $color-primary-light;
   @include respond(small-tablet) { font-size: 1.4rem; }
   @include respond(tablet) { margin-top: 0; }
 }

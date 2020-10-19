@@ -144,7 +144,7 @@ ol {
   grid-column: content-start / content-end; }
 
 .skills {
-  background-color: #020202; }
+  background-color: #0057ff; }
 
 .anchor {
   display: block;
@@ -403,7 +403,7 @@ ol {
   border-radius: 50rem; }
 
 .about {
-  background-color: #0057ff; }
+  background-color: #ffffff; }
 
 .about-title {
   margin-top: 3rem; }
@@ -436,7 +436,7 @@ ol {
   font-weight: 400; }
 
 .footer {
-  background-color: #020202; }
+  background-color: #0057ff; }
 
 .footer a {
   padding-bottom: .5rem;
@@ -444,7 +444,7 @@ ol {
 
 @media only screen and (min-width: 48.1em) {
   .footer a:hover {
-    border-bottom: 2px solid #0057ff; } }
+    border-bottom: 2px solid #ffffff; } }
 
 .footer__mail {
   margin-top: 4rem;
@@ -471,7 +471,7 @@ ol {
   margin-top: 8rem;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #525252; }
+  color: #b3d0ff; }
   @media only screen and (min-width: 26.9em) {
     .footer__copyright {
       font-size: 1.4rem; } }
