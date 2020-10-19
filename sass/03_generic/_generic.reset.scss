@@ -10,16 +10,6 @@
   box-sizing: inherit;
 }
 
-@font-face {
-  font-family: 'JetMono';
-  src:  url('../../css/font/JetBrainsMono-Regular.woff') format('woff'),
-}
-
-@font-face {
-  font-family: 'Custom';
-  src:  url('../../css/font/custom-regular.woff') format('woff'),
-}
-
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -30,4 +20,40 @@ html {
 body {
   color: $color-black;
   font-family: $body-font;
+  letter-spacing: .2px;
+}
+
+
+// FONTS 
+/////////////////
+// Jet Mono Font
+@font-face {
+  font-family: 'JetMono';
+  src:  url('../../css/font/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: 400;
+}
+
+// Custom Font
+@font-face {
+  font-family: 'Custom';
+  src:  url('../../css/font/custom-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Custom';
+  src:  url('../../css/font/custom-book.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Custom';
+  src:  url('../../css/font/custom-medium.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Custom';
+  src:  url('../../css/font/custom-bold.woff') format('woff');
+  font-weight: 700;
 }
