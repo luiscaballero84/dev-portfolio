@@ -8,11 +8,6 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: $color-primary;
-
-  @include respond(tablet) { 
-    // padding-top: 2.5rem;
-    // padding-bottom: 2.5rem;
-  }
 }
 
 ///////////////////
@@ -124,9 +119,9 @@
   }
 }
 
-.navbar-menu .is-active {
-  
-}
+// .navbar-menu .is-active {
+
+// }
 
 
 ///////////////////
@@ -138,10 +133,7 @@
   display: block;
   cursor: pointer;
 
-  @include respond(tablet) {
-    display: none;
-  }
-
+  @include respond(tablet) { display: none; }
 }
 
 //the 3 lines of the burger

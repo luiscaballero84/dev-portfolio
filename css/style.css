@@ -42,19 +42,25 @@ body {
   font-weight: 700; }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 300;
-  line-height: 1.2; }
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.1; }
   @media only screen and (min-width: 48.1em) {
     h1 {
-      font-size: 3.4rem; } }
+      font-size: 7rem;
+      line-height: 1; } }
   @media only screen and (min-width: 75em) {
     h1 {
-      font-size: 5.4rem; } }
+      font-size: 10rem; } }
 
 h2 {
-  font-size: 2.4rem;
-  font-weight: 400; }
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2; }
+  @media only screen and (min-width: 48.1em) {
+    h2 {
+      font-size: 3.3rem;
+      line-height: 1.1; } }
 
 h3 {
   font-size: 2.4rem; }
@@ -317,50 +323,21 @@ ol {
   align-items: center; }
 
 .header {
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-bottom: 15rem;
   background-color: #0057ff; }
   @media only screen and (min-width: 48.1em) {
     .header {
-      padding-top: 12rem;
-      padding-bottom: 19rem; } }
-
-.header__subtitle {
-  font-size: 2.2rem;
-  font-weight: 400;
-  letter-spacing: 2.5px;
-  color: #ffffff;
-  text-transform: uppercase; }
-  @media only screen and (min-width: 75em) {
-    .header__subtitle {
-      font-size: 2.4rem;
-      font-weight: 500; } }
+      padding-top: 15rem;
+      padding-bottom: 20rem;
+      text-align: center; } }
 
 .header__title {
-  display: inline-block;
-  font-size: 5.2rem;
-  font-weight: 100;
-  line-height: 1;
   color: #ffffff;
-  padding-bottom: 1rem; }
-  @media only screen and (min-width: 48.1em) {
-    .header__title {
-      font-size: 6.5rem;
-      line-height: 1.1; } }
-  @media only screen and (min-width: 75em) {
-    .header__title {
-      position: relative;
-      padding-bottom: 0;
-      font-weight: 300; } }
+  padding-bottom: 4rem; }
 
-@media only screen and (min-width: 75em) {
-  .header__btn {
-    margin-left: 1rem;
-    position: absolute;
-    right: 200px;
-    bottom: 27px;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem; } }
+.header__subtitle {
+  color: #ffffff; }
 
 .card {
   margin-top: 2rem;
