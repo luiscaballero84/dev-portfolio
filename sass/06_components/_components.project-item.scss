@@ -18,6 +18,8 @@ $detail-bg: lighten($color-primary-light,10%);
   @include respond(tablet) {padding-bottom: 2.5rem;}
   @include respond(desktop) {
     display: flex;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
     align-items: baseline;
     justify-content: space-between;
   }
@@ -54,8 +56,45 @@ $detail-bg: lighten($color-primary-light,10%);
   }
   @include respond(desktop) {
     position: static;
-    vertical-align: -.8rem;
+    vertical-align: -1rem;
     padding-left: 5rem;
+    margin-right: -.6rem;
+  }
+}
+
+/// ABOUT CV/PORTFOLIO
+.project-item__about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: $color-black !important;
+  border-top: 2px solid $color-primary;
+  transition: all .1s ease;
+  &:hover {
+    color: $color-primary !important;
+  }
+  &:last-of-type{
+    border-bottom: 2px solid $color-primary;
+    margin-top: 0rem;
+  }
+
+  @include respond(desktop) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.project-item__about-icon {
+  padding-left: .2rem;
+  @include respond(tablet) {
+    font-size: 4rem;
+  }
+  @include respond(desktop) {
     margin-right: -.6rem;
   }
 }

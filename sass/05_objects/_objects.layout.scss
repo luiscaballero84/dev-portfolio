@@ -69,7 +69,9 @@
 .skills,
 .about,
 .experience {
-  padding-bottom: 8rem;
+  padding-bottom: 1rem;
+  @include respond(tablet) { padding-bottom: 4rem; }
+  @include respond(desktop) { padding-bottom: 6rem; }
 }
 
 .footer {
@@ -84,4 +86,34 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
   }
+}
+
+.col-2-container-plus {
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+  @include respond(desktop) {
+    grid-template-columns: 1fr 30%;
+  }
+}
+
+.col-2-of-2-item {
+  @include respond(tablet) {
+    grid-column: 2 / span 1; 
+  }
+}
+
+//////// 3 Cols
+.col-3-container {
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+  }
+}
+
+.col-2-of-3-item {
+  grid-column: 1 / span 2; 
 }
