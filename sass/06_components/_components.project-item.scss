@@ -1,0 +1,61 @@
+$detail-bg: lighten($color-primary-light,10%);
+
+.project-item {
+  position: relative;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  color: $color-black !important;
+  border-top: 2px solid $color-primary;
+  transition: all .1s ease;
+  &:hover {
+    color: $color-primary !important;
+  }
+  &:last-of-type{
+    border-bottom: 2px solid $color-primary;;
+  }
+
+  @include respond(tablet) {padding-bottom: 2.5rem;}
+  @include respond(desktop) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.project-item__titel {
+  padding-bottom: .5rem;
+  
+  @include respond(tablet) {
+    padding-bottom: 0;
+  }
+}
+
+.project-item__text {
+  display:inline-block;
+  line-height: 1.2;
+  @include respond(tablet) {
+    display:flex;
+    justify-content: space-between;
+  }
+  @include respond(desktop) {
+    display:block;
+  }
+}
+
+.project-item__icon {
+  vertical-align: -.6rem;
+  padding-left: .2rem;
+  @include respond(tablet) {
+    position: absolute;
+    top: 33%;
+    right: 0;
+    font-size: 4rem;
+  }
+  @include respond(desktop) {
+    position: static;
+    vertical-align: -.8rem;
+    padding-left: 5rem;
+    margin-right: -.6rem;
+  }
+}
