@@ -3,12 +3,24 @@
 // --------------------------------------------------
 
 a:link {
-  color: $color-white;
+  color: $color-primary;
   text-decoration: none;
 }
 
-a:visited {color: $color-white;}
+a:visited {color: $color-primary;}
 
-a:hover {color: $color-white;}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-a:active {color: $color-white;}
+a:active {color: $color-primary;}
+
+.ghost-link {
+  color: $color-white;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    text-decoration: underline;
+  }
+}

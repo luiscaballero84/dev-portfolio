@@ -12,10 +12,11 @@
 
 ///////////////////
 // Logo
-.logo {
+.nav-grid-item .logo{
   font-size: 2.2rem;
   font-weight: 400;
   color: $color-white;
+  text-decoration: none;
   
   @include respond(tablet) { font-size: 2.4rem; }
 }
@@ -79,6 +80,7 @@
 .navbar-menu .link {
   font-size: 2.8rem;
   color: $color-white;
+  text-decoration: none;
   
   @include respond(tablet) {
     font-size: 1.6rem;
@@ -97,13 +99,15 @@
 
 // CTA NAVBAR LINK
 .navbar-menu .cta-link {
-  font-size: 2.5rem;
   padding-top: 1rem;
   padding-right: 2.5rem;
   padding-bottom: 1rem;
   padding-left: 2.5rem;
+  color: $color-white;
+  font-size: 2.5rem;
   border: 2px solid $color-white;
   border-radius: 50rem;
+  text-decoration: none;
 
   @include respond(tablet) {
     padding-top: .7rem;

@@ -7,9 +7,11 @@ $detail-bg: lighten($color-primary-light,10%);
   padding-bottom: 3rem;
   color: $color-black !important;
   border-top: 2px solid $color-primary;
+  
   transition: all .1s ease;
   &:hover {
     color: $color-primary !important;
+    text-decoration: none;
   }
   &:last-of-type{
     border-bottom: 2px solid $color-primary;;
@@ -64,7 +66,7 @@ $detail-bg: lighten($color-primary-light,10%);
 }
 
 /// ABOUT CV/PORTFOLIO
-.project-item__about {
+.about .project-item__about {
   position: relative;
   display: flex;
   align-items: center;
@@ -73,11 +75,12 @@ $detail-bg: lighten($color-primary-light,10%);
   margin-top: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: $color-black !important;
+  color: $color-black;
   border-top: 2px solid $color-primary;
   transition: all .1s ease;
   &:hover {
-    color: $color-primary !important;
+    color: $color-primary;
+    text-decoration: none;
   }
   &:last-of-type{
     border-bottom: 2px solid $color-primary;
