@@ -33,7 +33,7 @@ h3 {
 }
 
 h4 { 
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   @include respond(tablet) {
     font-size: 2.4rem;
@@ -60,7 +60,8 @@ p {
   line-height: 1.5;
 
   @include respond(tablet) {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.8;
   }
   @include respond(desktop) {
     // font-size: 2.4rem;

@@ -39,6 +39,7 @@ $detail-bg: lighten($color-primary-light,10%);
   @include respond(tablet) {
     display:flex;
     justify-content: space-between;
+    font-size: 2.2rem;
   }
   @include respond(desktop) {
     display:block;

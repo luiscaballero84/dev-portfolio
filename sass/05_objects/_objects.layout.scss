@@ -39,9 +39,9 @@
 
 .header-grid-item,
 .projects-grid-item, 
-.skills-grid-item, 
 .about-grid-item,
-.exp-grid-item, 
+.skills-grid-item, 
+.values-grid-item, 
 .footer-grid-item {
   grid-column: content-start / content-end;
 }
@@ -68,10 +68,10 @@
 .projects,
 .skills,
 .about,
-.experience {
-  padding-bottom: 1rem;
-  @include respond(tablet) { padding-bottom: 4rem; }
-  @include respond(desktop) { padding-bottom: 6rem; }
+.values {
+  padding-bottom: 8rem;
+  // @include respond(tablet) { padding-bottom: 4rem; }
+  // @include respond(desktop) { padding-bottom: 6rem; }
 }
 
 .footer {
@@ -95,7 +95,7 @@
     column-gap: 3rem;
   }
   @include respond(desktop) {
-    grid-template-columns: 1fr 30%;
+    grid-template-columns: 1fr 40%;
   }
 }
 
