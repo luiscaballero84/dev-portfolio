@@ -7,11 +7,17 @@ $detail-bg: lighten($color-primary-light,10%);
   padding-bottom: 3rem;
   color: $color-black !important;
   border-top: 2px solid $color-primary;
-  
-  transition: all .1s ease;
+  transition: color .2s ease;
   &:hover {
     color: $color-primary !important;
     text-decoration: none;
+  }
+  & span {
+    transition: transform .2s ease;
+  }
+  // move arrow on hover
+  &:hover span{
+    transform: translate(1rem, 0)
   }
   &:last-of-type{
     border-bottom: 2px solid $color-primary;;
@@ -72,16 +78,26 @@ $detail-bg: lighten($color-primary-light,10%);
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 3rem;
+  margin-top: 7rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: $color-black;
   border-top: 2px solid $color-primary;
-  transition: all .1s ease;
+  transition: color .2s ease;
+  
   &:hover {
     color: $color-primary;
     text-decoration: none;
   }
+
+  & span {
+    transition: transform .2s ease;
+  }
+  // move arrow on hover
+  &:hover span{
+    transform: translate(1rem, 0)
+  }
+
   &:last-of-type{
     border-bottom: 2px solid $color-primary;
     margin-top: 0rem;
