@@ -230,6 +230,9 @@ ol {
   background-color: #0057ff;
   transition: background-color .3s ease; }
 
+.navbar:not(.navbar-burger div) {
+  transition: none; }
+
 .nav-grid-item .logo {
   font-size: 2.2rem;
   font-weight: 400;
@@ -243,7 +246,7 @@ ol {
   z-index: 1000;
   position: absolute;
   top: 0rem;
-  left: -100rem;
+  right: -100rem;
   height: 100vh;
   width: 100vw;
   padding-bottom: 5rem;
@@ -252,7 +255,7 @@ ol {
   justify-content: center;
   align-items: center;
   background-color: #0057ff;
-  transition: left .4s ease-in; }
+  transition: right .35s ease-out; }
   @media only screen and (min-width: 48.1em) {
     .navbar-menu {
       position: static;
@@ -265,7 +268,7 @@ ol {
       background-color: transparent; } }
 
 .menu-active {
-  left: 0rem; }
+  right: 0rem; }
 
 .navbar-menu li {
   margin-bottom: 2.5rem;
@@ -331,7 +334,7 @@ ol {
   margin-top: 0.7rem;
   background-color: #ffffff;
   border-radius: 1rem;
-  transition: transform .3s ease,  background-color .5s ease-in; }
+  transition: transform .3s ease; }
 
 .navbar-burger div:last-of-type {
   margin-bottom: 0.7rem; }
@@ -351,19 +354,25 @@ ol {
   background-color: #ffffff; }
   .nav-scroll .logo {
     color: #0057ff; }
-  .nav-scroll .link {
-    color: #0057ff; }
-    .nav-scroll .link:hover {
-      border-bottom: 2px solid #0057ff; }
-  .nav-scroll .cta-link {
-    color: #0057ff;
-    border: 2px solid #0057ff; }
-    .nav-scroll .cta-link:hover {
-      background-color: #0057ff;
-      color: #ffffff; }
+  .nav-scroll .navbar-burger div {
+    background-color: #0057ff; }
+  @media only screen and (min-width: 48.1em) {
+    .nav-scroll .link {
+      color: #0057ff; }
+      .nav-scroll .link:hover {
+        border-bottom: 2px solid #0057ff; }
+    .nav-scroll .cta-link {
+      color: #0057ff;
+      border: 2px solid #0057ff; }
+      .nav-scroll .cta-link:hover {
+        background-color: #0057ff;
+        color: #ffffff; } }
 
 .link-is-selected {
   border-bottom: 2px solid red; }
+
+.lines-bg-white .navbar-burger div {
+  background-color: #ffffff !important; }
 
 .btn-primary {
   display: inline-block;
