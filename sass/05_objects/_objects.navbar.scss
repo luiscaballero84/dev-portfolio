@@ -8,13 +8,28 @@
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: $color-primary;
-  transition: background-color .3s ease;
   
 }
+
+.navbar:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10rem;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  background-color: $color-white;
+  transition: top .15s ease-out;
+}
+
+
 
 .navbar:not(.navbar-burger div) {
   transition: none;
 }
+
+
 
 ///////////////////
 // Logo
@@ -175,7 +190,9 @@
 
 //// Scroll down change Navbar
 .nav-scroll {
-  background-color: $color-white; 
+  background-color: transparent; 
+  &:before { top: 0rem; }
+  
   & .logo { color: $color-primary }
   & .navbar-burger div {background-color: $color-primary}
   @include respond(tablet) { 
