@@ -24,3 +24,13 @@ elements.navLinks.forEach((link) => {
     }, 620);
   })
 });
+
+// Nav / on Scroll change color navbar
+window.onscroll = function() {
+  "use strict";
+  if (document.body.scrollTop >= 120 || document.documentElement.scrollTop >= 120) {
+    elements.nav.classList.add("nav-scroll");
+  } else {
+    elements.nav.classList.remove("nav-scroll");
+  }
+};

@@ -225,9 +225,10 @@ ol {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #0057ff; }
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #0057ff;
+  transition: background-color .3s ease; }
 
 .nav-grid-item .logo {
   font-size: 2.2rem;
@@ -290,7 +291,6 @@ ol {
       border-bottom: 2px solid transparent;
       padding-top: .7rem;
       padding-bottom: .7rem;
-      color: #ffffff;
       transition: border-bottom .2s ease; }
       .navbar-menu .link:hover {
         border-bottom: 2px solid #ffffff; } }
@@ -346,6 +346,24 @@ ol {
 .burger-animate .line3 {
   background-color: #ffffff;
   transform: rotate(45deg) translate(-0.6rem, -0.6rem); }
+
+.nav-scroll {
+  background-color: #ffffff; }
+  .nav-scroll .logo {
+    color: #0057ff; }
+  .nav-scroll .link {
+    color: #0057ff; }
+    .nav-scroll .link:hover {
+      border-bottom: 2px solid #0057ff; }
+  .nav-scroll .cta-link {
+    color: #0057ff;
+    border: 2px solid #0057ff; }
+    .nav-scroll .cta-link:hover {
+      background-color: #0057ff;
+      color: #ffffff; }
+
+.link-is-selected {
+  border-bottom: 2px solid red; }
 
 .btn-primary {
   display: inline-block;
@@ -501,8 +519,8 @@ ol {
   background-color: #0057ff; }
 
 .values-titel {
-  margin-top: 6.5rem;
-  margin-bottom: 6.5rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
   text-align: center; }
 
 .values-text {
@@ -516,6 +534,12 @@ ol {
     .values-text {
       margin-bottom: 4.5rem;
       font-size: 2.6rem; } }
+
+.values-icon {
+  display: block;
+  width: 5rem;
+  margin: 0 auto;
+  margin-top: 8rem; }
 
 .footer {
   background-color: #0057ff; }

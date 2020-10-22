@@ -6,7 +6,7 @@ const projectList = [
   },
   {
     name: "Grid Systems",
-    text: "Personal project to explore the possibilities of the CSS Grid",
+    text: "Responsive site to explore the posibilities of CSS Grids",
     link: "https://github.com/losgridos/01-gridsystems",
   },
   {

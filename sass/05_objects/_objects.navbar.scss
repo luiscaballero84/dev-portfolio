@@ -5,9 +5,10 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-color: $color-primary;
+  transition: background-color .3s ease;
 }
 
 ///////////////////
@@ -88,7 +89,6 @@
     border-bottom: 2px solid transparent;
     padding-top: .7rem;
     padding-bottom: .7rem;
-    color: $color-white;
     transition: border-bottom .2s ease;
     
     &:hover {
@@ -165,4 +165,28 @@
 .burger-animate .line3 {
   background-color: $color-white;
   transform: rotate(45deg) translate(-0.6rem,-0.6rem);
+}
+
+
+//// Scroll down change Navbar
+.nav-scroll {
+  background-color: $color-white; 
+  & .logo { color: $color-primary }
+  & .link {
+    color: $color-primary;
+    &:hover { border-bottom: 2px solid $color-primary; }
+  }
+  & .cta-link {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    &:hover { 
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}
+
+///// Links is-selected
+.link-is-selected {
+  border-bottom: 2px solid red; 
 }
