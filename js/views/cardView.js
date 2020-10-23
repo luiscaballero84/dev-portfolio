@@ -26,7 +26,7 @@ function renderProjects() {
         <h3 class="project-item__titel">${project.name}</h3>
         <p class="project-item__text">
           ${project.text}
-        <span class="project-item__icon material-icons"> arrow_forward </span>
+        <span class="project-item__icon material-icons"> navigate_next </span>
         </p>
       </a>
     `

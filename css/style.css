@@ -570,12 +570,10 @@ ol {
   margin-top: 2rem; }
 
 .about__reasons {
-  background-color: #ffffff;
-  color: #403b3b;
-  margin-top: 10rem; }
-  @media only screen and (min-width: 48.1em) {
-    .about__reasons {
-      margin-top: 10rem; } }
+  background-color: #ffffff; }
+
+.about__reasons p {
+  color: #403b3b; }
 
 .about__reasons-titel {
   text-align: center; }
@@ -723,8 +721,10 @@ ol {
       display: block; } }
 
 .project-item__icon {
+  margin-right: -1rem;
   padding-left: .2rem;
-  vertical-align: -.6rem;
+  font-size: 3rem;
+  vertical-align: -.9rem;
   color: #241C15; }
   @media only screen and (min-width: 48.1em) {
     .project-item__icon {
@@ -737,7 +737,7 @@ ol {
       position: static;
       vertical-align: -1rem;
       padding-left: 5rem;
-      margin-right: -.6rem; } }
+      margin-right: -1.6rem; } }
 
 .about .project-item__about {
   position: relative;
@@ -768,13 +768,16 @@ ol {
       padding-bottom: 1.5rem; } }
 
 .project-item__about-icon {
-  padding-left: .2rem; }
+  margin-right: -1rem;
+  padding-left: .2rem;
+  font-size: 3rem;
+  vertical-align: -.65rem; }
   @media only screen and (min-width: 48.1em) {
     .project-item__about-icon {
       font-size: 4rem; } }
   @media only screen and (min-width: 75em) {
     .project-item__about-icon {
-      margin-right: -.6rem; } }
+      margin-right: -1.6rem; } }
 
 .u-text-center {
   text-align: center; }

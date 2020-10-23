@@ -24,9 +24,13 @@
 ///////////////////
 .about__reasons {
   background-color: $color-white;
+  //color: $color-grey-dark;
+  // margin-top: 10rem;
+  //@include respond(tablet) { margin-top: 10rem;}
+}
+
+.about__reasons p {
   color: $color-grey-dark;
-  margin-top: 10rem;
-  @include respond(tablet) { margin-top: 10rem;}
 }
 
 .about__reasons-titel {
