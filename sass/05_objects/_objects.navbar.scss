@@ -8,7 +8,9 @@
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: $color-primary;
-  
+  &:hover { 
+    &:before { top: 0rem; }
+  }
 }
 
 .navbar:before {
@@ -23,27 +25,18 @@
   transition: top .15s ease-out;
 }
 
-
-
-.navbar:not(.navbar-burger div) {
-  transition: none;
-}
-
-
-
 ///////////////////
 // Logo
 .nav-grid-item .logo{
   font-size: 2.2rem;
   font-weight: 400;
-  color: $color-white;
+  color: $color-primary-contrast;
   text-decoration: none;
-  
   @include respond(tablet) { font-size: 2.4rem; }
 }
 
 ///////////////////
-// Menu
+// Menu (When burger Icon is clicked)
 .navbar-menu {
   z-index: 1000;
   position: absolute;
@@ -61,7 +54,6 @@
 
   background-color: $color-primary;
   transition: right .35s ease-out;
-
 
   @include respond(tablet) {
     position: static;
@@ -81,8 +73,8 @@
 
 //  margins of Navbar links
 .navbar-menu li {
-    margin-bottom: 2.5rem;
-    user-select: none;
+  margin-bottom: 2.5rem;
+  user-select: none;
   &:last-of-type {
     margin-top: 4rem;
   }
@@ -100,19 +92,20 @@
 // REGULAR NAVBAR LINK
 .navbar-menu .link {
   font-size: 2.8rem;
-  color: $color-white;
+  color: $color-primary-contrast;
   text-decoration: none;
   
   @include respond(tablet) {
     font-size: 1.6rem;
     display: block;
     border-bottom: 2px solid transparent;
-    padding-top: .7rem;
-    padding-bottom: .7rem;
-    transition: border-bottom .2s ease;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    transition: border-bottom .1s ease, color .1s ease;
     
     &:hover {
-      border-bottom: 2px solid $color-white;
+      // color: $color-red;
+      border-bottom: 2px solid $color-primary-contrast;
     }
   }
 }
@@ -123,31 +116,27 @@
   padding-right: 2.5rem;
   padding-bottom: 1rem;
   padding-left: 2.5rem;
-  color: $color-white;
+  color: $color-primary-contrast;
   font-size: 2.5rem;
-  border: 2px solid $color-white;
+  border: 2px solid $color-primary-contrast;
   border-radius: 50rem;
   text-decoration: none;
 
   @include respond(tablet) {
-    padding-top: .7rem;
-    padding-right: 2rem;
-    padding-bottom: .7rem;
-    padding-left: 2rem;
+    padding-top: .5rem;
+    padding-right: 1.5rem;
+    padding-bottom: .5rem;
+    padding-left: 1.5rem;
     font-size: 1.6rem;
     transition: background-color .2s ease;
 
     &:hover {
-      background-color: $color-white;
-      color: $color-primary;
+      background-color: $color-primary-contrast;
+      color: $color-white;
+      // border: 2px solid $color-red;
     }
   }
 }
-
-// .navbar-menu .is-active {
-
-// }
-
 
 ///////////////////
 // BURGER ICON
@@ -157,60 +146,56 @@
   z-index: 1030;
   display: block;
   cursor: pointer;
-
   @include respond(tablet) { display: none; }
 }
 
-//the 3 lines of the burger
+//the 3 lines of the burger icon
 .navbar-burger div {
   height: 0.2rem;
   width: 3rem;
   margin-top: 0.7rem;
-  background-color: $color-white;
+  background-color: $color-primary-contrast;
   border-radius: 1rem;
-  transition: transform .3s ease; // background-color .5s ease-in;
+  transition: transform .3s ease; 
 }
 
 .navbar-burger div:last-of-type {
   margin-bottom: 0.7rem;
 }
 
+// Three burger lines while animating
 .burger-animate .line1 {
-  background-color: $color-white;
+  background-color: $color-primary-contrast;
   transform: rotate(-45deg) translate(-0.7rem,0.6rem);
 }
-
 .burger-animate .line2 { opacity: 0; }
 
 .burger-animate .line3 {
-  background-color: $color-white;
+  background-color: $color-primary-contrast;
   transform: rotate(45deg) translate(-0.6rem,-0.6rem);
 }
-
 
 //// Scroll down change Navbar
 .nav-scroll {
   background-color: transparent; 
   &:before { top: 0rem; }
   
-  & .logo { color: $color-primary }
-  & .navbar-burger div {background-color: $color-primary}
-  @include respond(tablet) { 
-   
-    
-    & .link {
-      color: $color-primary;
-      &:hover { border-bottom: 2px solid $color-primary; }
-    }
-    & .cta-link {
-      color: $color-primary;
-      border: 2px solid $color-primary;
-      &:hover { 
-        background-color: $color-primary;
-        color: $color-white;
-      }
-    }
-  }
+  // & .logo { padding-bottom: 1rem }
+  // & .navbar-burger div {background-color: $color-primary}
+  // @include respond(tablet) { 
+  //   & .link {
+  //     color: $color-primary;
+  //     &:hover { border-bottom: 2px solid $color-primary; }
+  //   }
+  //   & .cta-link {
+  //     color: $color-primary;
+  //     border: 2px solid $color-primary;
+  //     &:hover { 
+  //       background-color: $color-primary;
+  //       color: $color-white;
+  //     }
+  //   }
+  // }
 }
 
 ///// Links is-selected
@@ -218,6 +203,6 @@
   border-bottom: 2px solid red; 
 }
 
-.lines-bg-white {
-  & .navbar-burger div {background-color: $color-white !important}
-}
+// .lines-bg-white {
+//   & .navbar-burger div {background-color: $color-white !important}
+// }

@@ -4,27 +4,34 @@
 
 $color-white:#ffffff;
 $color-black: #171717;
-$color-black: #020202; // S-black
+
 $color-black: #001126; // black blue
+$color-black: #020202; // S-black
+$color-black: #241C15; // S-black
+
 
 $color-grey-1: #e7ecf2;
 $color-dark-grey: #525252;
+/// 
+$color-grey-dark: #403b3b; // larg body text
 
-$color-primary: #0057ff;
-// $color-primary: #fbd64a;
-// $color-primary: #7aff42;
+$color-primary: #0057ff; // BLUE
+$color-primary: #6500b2; // LILA
+////
+$color-primary:#ffc93c; // YELLOW
+$color-primary:#FDE14C; // YELLOW 02 
+$color-primary:#FEF04F; // YELLOW 03
+$color-primary:#fddb3a; // YELLOW 04
 
+$color-primary-contrast: $color-black;
 
-// $color-primary: #000000; 
-// $color-primary: #8e64f7;
-
-$color-primary-light: b3d0ff;
-// $color-primary: #00b1ff;
 
 
 $color-primary-light: #b3d0ff;
 $color-primary-dark:#ff99af;
 
 $color-red: #ff511d;
+$color-red: #EE4F34; // red 02
+// $color-red: #317C89; // GREEN
 $color-purple: #834bf6;
 $color-yellow: #f1e05a;
