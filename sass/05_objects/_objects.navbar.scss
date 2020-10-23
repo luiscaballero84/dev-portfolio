@@ -32,6 +32,7 @@
   font-weight: 400;
   letter-spacing: -.5px;
   color: $color-primary-contrast;
+  box-shadow:none;
   text-decoration: none;
   @include respond(tablet) { font-size: 2.4rem; }
 }
@@ -95,6 +96,7 @@
   font-size: 2.8rem;
   color: $color-primary-contrast;
   text-decoration: none;
+  box-shadow:none;
   
   @include respond(tablet) {
     font-size: 1.6rem;
@@ -122,6 +124,7 @@
   border: 2px solid $color-primary-contrast;
   border-radius: 50rem;
   text-decoration: none;
+  box-shadow:none;
 
   @include respond(tablet) {
     padding-top: .5rem;

@@ -1,12 +1,13 @@
 $detail-bg: lighten($color-primary-light,10%);
 
-.project-item {
+.projects .project-item {
   position: relative;
   display: block;
   padding-top: 2rem;
   padding-bottom: 3rem;
-  color: $color-black !important;
+  color: $color-black;
   border-top: 2px solid $color-grey;
+  box-shadow:none;
   transition: color .2s ease, transform .2s ease;
   &:hover {
     text-decoration: none;
@@ -20,7 +21,8 @@ $detail-bg: lighten($color-primary-light,10%);
   }
 
   &:last-of-type{
-    border-bottom: 2px solid $color-grey;;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid $color-grey;
   }
 
   @include respond(tablet) {padding-bottom: 2.5rem;}
@@ -85,6 +87,7 @@ $detail-bg: lighten($color-primary-light,10%);
   padding-bottom: 2rem;
   color: $color-black;
   border-top: 2px solid $color-grey;
+  box-shadow:none;
   transition: color .2s ease;
   
   &:hover {

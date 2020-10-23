@@ -3,18 +3,26 @@
 // --------------------------------------------------
 
 a:link {
-  color: $color-primary;
+  color: $color-grey-dark;
   text-decoration: none;
+  box-shadow: rgba($color-primary, 1) 0px -3px 0px inset;
+  padding-bottom: .2rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s, color 0.15s ease 0s;
 }
 
-a:visited {color: $color-primary;}
+a:visited { 
+  color: $color-grey-dark;
+  border-bottom-color: $color-primary;
+}
 
 a:hover {
-  text-decoration: underline;
+  box-shadow: rgba($color-primary, 1) 0px -40px inset;
   cursor: pointer;
 }
 
-a:active {color: $color-primary;}
+a:active {color: $color-grey-dark;}
 
 .ghost-link {
   color: $color-white;
