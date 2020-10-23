@@ -186,6 +186,15 @@ ol {
   top: -7.5rem;
   visibility: hidden; }
 
+#contact-section {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden; }
+  @media only screen and (min-width: 48.1em) {
+    #contact-section {
+      top: -400px; } }
+
 .section-title {
   margin-top: 6.5rem;
   margin-bottom: 4rem; }
@@ -303,16 +312,20 @@ ol {
   @media only screen and (min-width: 48.1em) {
     .navbar-menu li {
       margin-bottom: 0rem;
-      margin-right: 2.5rem; }
+      margin-right: 3.5rem; }
       .navbar-menu li:last-of-type {
         margin-top: 0rem;
         margin-right: 0rem; } }
 
+@media only screen and (min-width: 48.1em) {
+  .link-home {
+    display: none !important; } }
+
 .navbar-menu .link {
   font-size: 2.8rem;
-  color: #241C15;
   text-decoration: none;
-  box-shadow: none; }
+  box-shadow: none;
+  color: #241C15; }
   @media only screen and (min-width: 48.1em) {
     .navbar-menu .link {
       font-size: 1.6rem;
@@ -383,8 +396,13 @@ ol {
   .nav-scroll:before {
     top: 0rem; }
 
-.link-is-selected {
-  border-bottom: 2px solid red; }
+.navbar-menu .link-active {
+  border-bottom: 2px solid #fddb3a; }
+
+.navbar-menu li:last-of-type .link-active {
+  background-color: #fddb3a;
+  color: #241C15;
+  border: 2px solid #fddb3a; }
 
 .btn-primary {
   display: inline-block;

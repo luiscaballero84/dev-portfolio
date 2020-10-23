@@ -83,7 +83,7 @@
   
   @include respond(tablet) {
     margin-bottom: 0rem;
-    margin-right: 2.5rem;
+    margin-right: 3.5rem;
     &:last-of-type {
       margin-top: 0rem;
       margin-right: 0rem;
@@ -92,11 +92,14 @@
 }
 
 // REGULAR NAVBAR LINK
+.link-home {
+  @include respond(tablet) { display: none !important }
+}
 .navbar-menu .link {
   font-size: 2.8rem;
-  color: $color-primary-contrast;
   text-decoration: none;
   box-shadow:none;
+  color: $color-black;
   
   @include respond(tablet) {
     font-size: 1.6rem;
@@ -202,9 +205,18 @@
 }
 
 ///// Links is-selected
-.link-is-selected {
-  border-bottom: 2px solid red; 
+.navbar-menu .link-active {
+  border-bottom: 2px solid $color-primary;
 }
+
+.navbar-menu li:last-of-type .link-active  {
+  background-color: $color-primary;
+  color: $color-primary-contrast;
+  border: 2px solid $color-primary;
+}
+
+
+
 //////// NOT IN USE FOR THE MOMENT
 // .lines-bg-white {
 //   & .navbar-burger div {background-color: $color-white !important}
