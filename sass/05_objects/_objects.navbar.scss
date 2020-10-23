@@ -27,10 +27,15 @@
 
 ///////////////////
 // Logo
-.nav-grid-item .logo{
-  font-size: 2.2rem;
-  font-weight: 400;
-  letter-spacing: -.5px;
+.nav-grid-item .logo {
+  font-size: 1.6rem !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .8px;
+  padding-bottom: .5rem;
+  padding-left: 0; 
+  padding-right: 0;
+  border-bottom: 2px solid $color-primary;
   color: $color-primary-contrast;
   box-shadow:none;
   text-decoration: none;
