@@ -251,7 +251,7 @@ ol {
   height: 100%;
   z-index: -100;
   background-color: #ffffff;
-  transition: top .15s ease-out; }
+  transition: top .2s ease-out; }
 
 .nav-grid-item .logo {
   font-size: 2.2rem;
@@ -408,23 +408,38 @@ ol {
   align-items: center; }
 
 .arrow-up {
+  z-index: 3000;
   position: fixed;
   bottom: -5rem;
-  right: 6rem;
-  padding: .4rem .5rem;
-  font-size: 3rem;
-  border: 2px solid #7f7f7f;
+  right: 3rem;
+  padding: 1rem 1rem;
+  font-size: 2.5rem;
+  background-color: #ffffff;
   border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transition: transform .3s ease-out, bottom .5s ease-out; }
   .arrow-up:hover {
     transform: translateY(-0.5rem);
     cursor: pointer; }
   .arrow-up a {
     box-shadow: none;
-    padding: 0; }
+    padding: 0;
+    color: rgba(64, 59, 59, 0.7); }
+  @media only screen and (min-width: 48.1em) {
+    .arrow-up {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 75em) {
+    .arrow-up {
+      right: 5.5rem; } }
 
 .arrow-up-active {
-  bottom: 6rem; }
+  bottom: 3rem; }
+  @media only screen and (min-width: 48.1em) {
+    .arrow-up-active {
+      bottom: 4rem; } }
+  @media only screen and (min-width: 75em) {
+    .arrow-up-active {
+      bottom: 5.5rem; } }
 
 .header {
   padding-top: 10rem;
