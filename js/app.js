@@ -33,4 +33,12 @@ window.onscroll = function() {
   } else {
     elements.nav.classList.remove("nav-scroll");
   }
+  // Scroll up Arrow
+  if (document.body.scrollTop >= 950 || document.documentElement.scrollTop >= 950) {
+    elements.arrowUp.classList.add("arrow-up-active");
+  } else {
+    elements.arrowUp.classList.remove("arrow-up-active");
+  }
 };
+
+console.log(elements.arrowUp)

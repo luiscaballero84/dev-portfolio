@@ -25,3 +25,27 @@
   display: flex;
   align-items: center;
 }
+
+.arrow-up {
+  position: fixed; 
+  bottom: -5rem;
+  right: 6rem;
+  padding: .4rem .5rem; 
+  font-size: 3rem;
+  // color: #7f7f7f;
+  border: 2px solid #7f7f7f;
+  border-radius: 50%;
+  transition: transform .3s ease-out, bottom .5s ease-out; 
+  &:hover {
+    transform: translateY(-.5rem);
+    cursor: pointer;
+  }
+  & a {
+    box-shadow: none;
+    padding: 0; 
+  }
+}
+
+.arrow-up-active {
+  bottom: 6rem;
+}
