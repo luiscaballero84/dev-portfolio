@@ -1,14 +1,18 @@
-.footer { background-color: $color-primary; }
+.footer { background-color: $color-grey; }
 
 .footer a {
   padding-bottom: .5rem;
   border-bottom: 1px solid transparent;
-  color: $color-white;
+  color: $color-black;
   text-decoration: none;
+  box-shadow: none;
+  transition: border-bottom .1s ease;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer a:hover {
-  @include respond(tablet) { border-bottom: 2px solid $color-white; }
+  @include respond(tablet) { border-bottom: 2px solid $color-black; }
 }
 
 .footer__mail {
@@ -38,7 +42,7 @@
   margin-top: 8rem;
   font-size: 1.2rem;
   font-weight: 400;
-  color: $color-primary-light;
+  color: $color-grey-dark;
   @include respond(small-tablet) { font-size: 1.4rem; }
   @include respond(tablet) { margin-top: 0; }
 }

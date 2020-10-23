@@ -64,19 +64,16 @@
 }
 .section-title--white { color: $color-white;}
   
-
 .projects,
 .skills,
 .about,
 .values {
-  padding-bottom: 8rem;
-  // @include respond(tablet) { padding-bottom: 4rem; }
-  // @include respond(desktop) { padding-bottom: 6rem; }
+  padding-bottom: 12rem;
 }
 
 .footer {
   padding-bottom: 3rem;
-  @include respond(tablet) { padding-bottom: 8rem; }
+  @include respond(tablet) { padding-bottom: 6rem; }
 }
 
 //////// 2 Cols

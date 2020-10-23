@@ -3,12 +3,12 @@
 // --------------------------------------------------
 
 a:link {
-  color: $color-grey-dark;
-  text-decoration: none;
-  box-shadow: rgba($color-primary, 1) 0px -3px 0px inset;
   padding-bottom: .2rem;
   padding-left: .3rem;
   padding-right: .3rem;
+  color: $color-grey-dark;
+  text-decoration: none;
+  box-shadow: rgba($color-primary, 1) 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s, color 0.15s ease 0s;
 }
 

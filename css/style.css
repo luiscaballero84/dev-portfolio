@@ -102,12 +102,12 @@ p {
       line-height: 1.8; } }
 
 a:link {
-  color: #403b3b;
-  text-decoration: none;
-  box-shadow: #fddb3a 0px -3px 0px inset;
   padding-bottom: .2rem;
   padding-left: .3rem;
   padding-right: .3rem;
+  color: #403b3b;
+  text-decoration: none;
+  box-shadow: #fddb3a 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s, color 0.15s ease 0s; }
 
 a:visited {
@@ -194,13 +194,13 @@ ol {
 .skills,
 .about,
 .values {
-  padding-bottom: 8rem; }
+  padding-bottom: 12rem; }
 
 .footer {
   padding-bottom: 3rem; }
   @media only screen and (min-width: 48.1em) {
     .footer {
-      padding-bottom: 8rem; } }
+      padding-bottom: 6rem; } }
 
 @media only screen and (min-width: 48.1em) {
   .col-2-container {
@@ -317,7 +317,7 @@ ol {
       border-bottom: 2px solid transparent;
       padding-top: .5rem;
       padding-bottom: .5rem;
-      transition: border-bottom .1s ease, color .1s ease; }
+      transition: border-bottom .1s ease; }
       .navbar-menu .link:hover {
         border-bottom: 2px solid #241C15; } }
 
@@ -341,8 +341,9 @@ ol {
       font-size: 1.6rem;
       transition: background-color .2s ease; }
       .navbar-menu .cta-link:hover {
-        background-color: #241C15;
-        color: #ffffff; } }
+        background-color: #fddb3a;
+        color: #241C15;
+        border: 2px solid #fddb3a; } }
 
 .navbar-burger {
   z-index: 1030;
@@ -562,17 +563,21 @@ ol {
   margin-top: 8rem; }
 
 .footer {
-  background-color: #fddb3a; }
+  background-color: #e5e5e5; }
 
 .footer a {
   padding-bottom: .5rem;
   border-bottom: 1px solid transparent;
-  color: #ffffff;
-  text-decoration: none; }
+  color: #241C15;
+  text-decoration: none;
+  box-shadow: none;
+  transition: border-bottom .1s ease;
+  padding-left: 0;
+  padding-right: 0; }
 
 @media only screen and (min-width: 48.1em) {
   .footer a:hover {
-    border-bottom: 2px solid #ffffff; } }
+    border-bottom: 2px solid #241C15; } }
 
 .footer__mail {
   margin-top: 4rem;
@@ -599,7 +604,7 @@ ol {
   margin-top: 8rem;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #b3d0ff; }
+  color: #403b3b; }
   @media only screen and (min-width: 26.9em) {
     .footer__copyright {
       font-size: 1.4rem; } }
@@ -625,7 +630,6 @@ ol {
   .projects .project-item:hover p {
     transform: translate(1rem, 0); }
   .projects .project-item:last-of-type {
-    margin-bottom: 4rem;
     border-bottom: 2px solid #e5e5e5; }
   @media only screen and (min-width: 48.1em) {
     .projects .project-item {
