@@ -3,18 +3,20 @@
   padding-bottom: 15rem;
   background-color: $color-primary;
   @include respond(tablet) {
-    padding-top: 15rem;
-    padding-bottom: 20rem;
+    padding-top: 14rem;
+    padding-bottom: 24rem;
     text-align: center;
   }
 }
 
 .header__title { 
-  color: $color-white; 
-  padding-bottom: 4rem;
+  color: $color-primary-contrast; 
+  padding-bottom: 3rem;
 }
 
 .header__subtitle { 
-  color: $color-white; 
+  color: $color-primary-contrast; 
+  font-weight: 300;
+
 }
 

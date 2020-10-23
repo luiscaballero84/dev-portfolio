@@ -23,6 +23,11 @@ body {
 
 @font-face {
   font-family: 'Custom';
+  src: url("../../css/font/custom-light.woff") format("woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Custom';
   src: url("../../css/font/custom-regular.woff") format("woff");
   font-weight: 400; }
 
@@ -60,7 +65,7 @@ h2 {
   @media only screen and (min-width: 48.1em) {
     h2 {
       font-size: 3.3rem;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
 
 h3 {
   font-size: 3rem;
@@ -245,6 +250,7 @@ ol {
 .nav-grid-item .logo {
   font-size: 2.2rem;
   font-weight: 400;
+  letter-spacing: -.5px;
   color: #241C15;
   text-decoration: none; }
   @media only screen and (min-width: 48.1em) {
@@ -397,16 +403,17 @@ ol {
   background-color: #fddb3a; }
   @media only screen and (min-width: 48.1em) {
     .header {
-      padding-top: 15rem;
-      padding-bottom: 20rem;
+      padding-top: 14rem;
+      padding-bottom: 24rem;
       text-align: center; } }
 
 .header__title {
-  color: #ffffff;
-  padding-bottom: 4rem; }
+  color: #241C15;
+  padding-bottom: 3rem; }
 
 .header__subtitle {
-  color: #ffffff; }
+  color: #241C15;
+  font-weight: 300; }
 
 .card {
   margin-top: 2rem;
@@ -595,17 +602,18 @@ ol {
   padding-top: 2rem;
   padding-bottom: 3rem;
   color: #241C15 !important;
-  border-top: 2px solid #fddb3a;
-  transition: color .2s ease; }
+  border-top: 2px solid #e5e5e5;
+  transition: color .2s ease, transform .2s ease; }
   .project-item:hover {
-    color: #fddb3a !important;
     text-decoration: none; }
-  .project-item span {
+  .project-item h3, .project-item p {
     transition: transform .2s ease; }
-  .project-item:hover span {
+  .project-item:hover h3 {
+    transform: translate(1rem, 0); }
+  .project-item:hover p {
     transform: translate(1rem, 0); }
   .project-item:last-of-type {
-    border-bottom: 2px solid #fddb3a; }
+    border-bottom: 2px solid #e5e5e5; }
   @media only screen and (min-width: 48.1em) {
     .project-item {
       padding-bottom: 2.5rem; } }
@@ -625,7 +633,8 @@ ol {
 
 .project-item__text {
   display: inline-block;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #403b3b; }
   @media only screen and (min-width: 48.1em) {
     .project-item__text {
       display: flex;
@@ -636,8 +645,9 @@ ol {
       display: block; } }
 
 .project-item__icon {
+  padding-left: .2rem;
   vertical-align: -.6rem;
-  padding-left: .2rem; }
+  color: #241C15; }
   @media only screen and (min-width: 48.1em) {
     .project-item__icon {
       position: absolute;
@@ -660,17 +670,18 @@ ol {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #241C15;
-  border-top: 2px solid #fddb3a;
+  border-top: 2px solid #e5e5e5;
   transition: color .2s ease; }
   .about .project-item__about:hover {
-    color: #fddb3a;
     text-decoration: none; }
-  .about .project-item__about span {
+  .about .project-item__about h4, .about .project-item__about p {
     transition: transform .2s ease; }
-  .about .project-item__about:hover span {
+  .about .project-item__about:hover h4 {
+    transform: translate(1rem, 0); }
+  .about .project-item__about:hover p {
     transform: translate(1rem, 0); }
   .about .project-item__about:last-of-type {
-    border-bottom: 2px solid #fddb3a;
+    border-bottom: 2px solid #e5e5e5;
     margin-top: 0rem; }
   @media only screen and (min-width: 75em) {
     .about .project-item__about {

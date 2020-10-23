@@ -37,6 +37,12 @@ body {
 // Custom Font
 @font-face {
   font-family: 'Custom';
+  src:  url('../../css/font/custom-light.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Custom';
   src:  url('../../css/font/custom-regular.woff') format('woff');
   font-weight: 400;
 }
