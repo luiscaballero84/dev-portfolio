@@ -2,7 +2,6 @@ import {elements} from '../views/selectors.js';
 
 export function displayMenuToggle() {
   elements.navMenu.classList.toggle("menu-active");
-  //elements.navMenu.classList.toggle("u-noScroll");
   document.body.classList.toggle("u-noScroll");
   isRotated();
   /////////// not necesary for the moment
