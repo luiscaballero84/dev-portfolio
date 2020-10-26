@@ -1,5 +1,5 @@
 {
-  "name": "Luis Caballero Dev",
+  "name": "luis-caballero-dev",
   "version": "1.0.0",
   "description": "Luis Caballero Dev Portfolio",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
-    "build": "npm-run-all compile:sass prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",
