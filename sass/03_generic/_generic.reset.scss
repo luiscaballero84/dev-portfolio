@@ -13,6 +13,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: 'scroll-behavior: smooth' /* actual fonts */;
 }
@@ -21,6 +22,7 @@ body {
   color: $color-black;
   font-family: $body-font;
   letter-spacing: .2px;
+  overflow-x: hidden;
 }
 
 

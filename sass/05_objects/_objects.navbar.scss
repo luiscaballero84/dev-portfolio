@@ -8,10 +8,13 @@
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: $color-primary;
-  &:hover { 
-    &:before { top: 0rem; }
+  @media (hover: hover){
+    &:hover { 
+      &:before { top: 0rem; }
+    }
   }
 }
+
 
 // White BG when hover and scrolling down
 .navbar:before {

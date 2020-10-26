@@ -16,10 +16,11 @@ a:visited {
   color: $color-grey-dark;
   border-bottom-color: $color-primary;
 }
-
-a:hover {
-  box-shadow: rgba($color-primary, 1) 0px -40px inset;
-  cursor: pointer;
+@media (hover: hover) {
+  a:hover {
+    box-shadow: rgba($color-primary, 1) 0px -40px inset;
+    cursor: pointer;
+  }
 }
 
 a:active {color: $color-grey-dark;}

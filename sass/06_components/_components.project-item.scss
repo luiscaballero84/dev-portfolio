@@ -8,10 +8,12 @@
   box-shadow:none;
   
   & h3, p { transition: transform .2s ease; }
-  &:hover h3, &:hover p { 
-    transform: translate(1rem, 0);
+  @media (hover: hover){
+    &:hover h3, &:hover p { 
+      transform: translate(1rem, 0);
+    }
   }
-
+  
   &:last-of-type {
     border-bottom: 2px solid $color-grey;
   }
@@ -83,8 +85,9 @@
   
   & h4, p { transition: transform .2s ease; }
   // move arrow on hover
-  &:hover h4, &:hover p { transform: translate(1rem, 0) }
-
+  @media (hover: hover){
+    &:hover h4, &:hover p { transform: translate(1rem, 0) }
+  }
   &:last-of-type{
     border-bottom: 2px solid $color-grey;
     margin-top: 0rem;
