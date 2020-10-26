@@ -8,13 +8,15 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "scroll-behavior: smooth"; }
 
 body {
   color: #241C15;
   font-family: "Custom", sans-serif;
-  letter-spacing: .2px; }
+  letter-spacing: .2px;
+  overflow-x: hidden; }
 
 @font-face {
   font-family: 'JetMono';
@@ -117,9 +119,10 @@ a:visited {
   color: #403b3b;
   border-bottom-color: #fddb3a; }
 
-a:hover {
-  box-shadow: #fddb3a 0px -40px inset;
-  cursor: pointer; }
+@media (hover: hover) {
+  a:hover {
+    box-shadow: #fddb3a 0px -40px inset;
+    cursor: pointer; } }
 
 a:active {
   color: #403b3b; }
@@ -251,8 +254,9 @@ ol {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: #fddb3a; }
-  .navbar:hover:before {
-    top: 0rem; }
+  @media (hover: hover) {
+    .navbar:hover:before {
+      top: 0rem; } }
 
 .navbar:before {
   content: '';
@@ -457,26 +461,6 @@ ol {
   color: #241C15;
   font-weight: 300; }
 
-.card {
-  margin-top: 2rem;
-  margin-bottom: 6rem; }
-
-.card__img {
-  width: 100%; }
-  .card__img:hover {
-    box-shadow: 0 10px 30px rgba(34, 34, 34, 0.25); }
-
-.card__title {
-  margin-top: 2rem; }
-
-.card__text {
-  margin-top: 1rem; }
-
-.card__stack-container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-weight: 400; }
-
 .dot {
   height: 1rem;
   width: 1rem;
@@ -644,8 +628,9 @@ ol {
   box-shadow: none; }
   .projects .project-item h3, .projects .project-item p {
     transition: transform .2s ease; }
-  .projects .project-item:hover h3, .projects .project-item:hover p {
-    transform: translate(1rem, 0); }
+  @media (hover: hover) {
+    .projects .project-item:hover h3, .projects .project-item:hover p {
+      transform: translate(1rem, 0); } }
   .projects .project-item:last-of-type {
     border-bottom: 2px solid #e5e5e5; }
   @media only screen and (min-width: 48.1em) {
@@ -710,8 +695,9 @@ ol {
   box-shadow: none; }
   .about .project-item__about h4, .about .project-item__about p {
     transition: transform .2s ease; }
-  .about .project-item__about:hover h4, .about .project-item__about:hover p {
-    transform: translate(1rem, 0); }
+  @media (hover: hover) {
+    .about .project-item__about:hover h4, .about .project-item__about:hover p {
+      transform: translate(1rem, 0); } }
   .about .project-item__about:last-of-type {
     border-bottom: 2px solid #e5e5e5;
     margin-top: 0rem; }
