@@ -1,55 +1,22 @@
 .header {
-  //height: 50rem;
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-bottom: 15rem;
-  background-color: $color-black;
+  background-color: $color-primary;
   @include respond(tablet) {
-    // height: 55rem;
-    padding-top: 12rem;
-    padding-bottom: 19rem;
-  }
-}
-
-.header__subtitle { 
-  font-size: 2.2rem;
-  font-weight: 400;
-  letter-spacing: 2.5px;
-  color: $color-white; 
-  text-transform: uppercase;
-
-  // @include respond(tablet) {font-size: 2rem;}
-  @include respond(desktop) {
-    font-size: 2.4rem;
-    font-weight: 500;
+    padding-top: 14rem;
+    padding-bottom: 24rem;
+    text-align: center;
   }
 }
 
 .header__title { 
-  display: inline-block;
-  font-size: 5.2rem;
-  font-weight: 100;
-  line-height: 1;
-  color: $color-white; 
-  padding-bottom: 1rem;
-  
-  @include respond(tablet) { 
-    font-size: 6.5rem;
-    line-height: 1.1;
-  }
-  @include respond(desktop) { 
-    position: relative;
-    padding-bottom: 0;
-    font-weight: 300;}
+  color: $color-primary-contrast; 
+  padding-bottom: 3rem;
 }
 
-.header__btn {
-  @include respond(desktop) { 
-    margin-left: 1rem;
-    position: absolute; 
-    right: 200px;
-    bottom: 27px;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-  }
+.header__subtitle { 
+  color: $color-primary-contrast; 
+  font-weight: 300;
+
 }
 

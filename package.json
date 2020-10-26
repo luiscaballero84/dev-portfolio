@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "luis-caballero-dev",
   "version": "1.0.0",
-  "description": "boilerplate for sass projects",
+  "description": "Luis Caballero Dev Portfolio",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",

@@ -3,12 +3,32 @@
 // --------------------------------------------------
 
 a:link {
-  color: $color-white;
+  padding-bottom: .2rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  color: $color-grey-dark;
   text-decoration: none;
+  box-shadow: rgba($color-primary, 1) 0px -2px 0px inset;
+  transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s, color 0.15s ease 0s;
 }
 
-a:visited {color: $color-white;}
+a:visited { 
+  color: $color-grey-dark;
+  border-bottom-color: $color-primary;
+}
 
-a:hover {color: $color-white;}
+a:hover {
+  box-shadow: rgba($color-primary, 1) 0px -40px inset;
+  cursor: pointer;
+}
 
-a:active {color: $color-white;}
+a:active {color: $color-grey-dark;}
+
+.ghost-link {
+  color: $color-white;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    text-decoration: underline;
+  }
+}

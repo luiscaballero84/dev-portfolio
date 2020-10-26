@@ -6,7 +6,36 @@
   text-align: center;
 }
 
+.u-underline {
+  text-decoration: underline;
+  text-decoration-color: $color-primary;
+}
+
+.u-highlight-text {
+  color: $color-primary-contrast;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  border-top: 2px solid $color-grey;
+  border-bottom: 2px solid $color-grey;
+
+  @include respond(tablet) { 
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    line-height: 1.4;
+  }
+}
+
+
 /////////// Margins
+.u-mt-1 { margin-top: 1rem; }
+
+.u-mt-2 { margin-top: 2rem; }
+
 .u-mb-1 { margin-bottom: 1rem; }
 
 .u-mb-2 { margin-bottom: 2rem; }
@@ -28,6 +57,7 @@
 .u-text-white {
   color: $color-white;
 }
+
 
 /////////////// Displays
 .u-hidden { display: none; }

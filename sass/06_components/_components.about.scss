@@ -1,18 +1,47 @@
-.about {
-  background-color: $color-primary;
+////////// About SECTION (Now BIO)
+////////////////////////////
+.about { background-color: $color-grey-light; }
+
+.about-title { margin-top: 1rem; }
+
+.about-text { 
+  margin-top: 2rem; 
+  color: $color-grey-dark;
 }
-
-.about-title { margin-top: 3rem; }
-
-.about-text { margin-top: 2rem; }
-
-.about-text:last-of-type { margin-bottom: 2rem; }
 
 .about__img { 
   width: 100%;
-  margin-top: 5rem; 
-  border-radius: 2px;
-  box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.2);
-  
   @include respond(tablet) { margin-top: 3rem;}
+}
+
+.about img {
+  position: sticky; 
+  top: 11rem;
+  margin-top: 2rem; 
+}
+
+// REASONS SECTION
+///////////////////
+.about__reasons { background-color: $color-white; }
+
+.about__reasons p { color: $color-grey-dark; }
+
+.about__reasons-titel { text-align: center; }
+
+.about__reasons-container {
+  margin-top: 5rem;
+  @include respond(tablet) { margin-top: 6rem;}
+}
+
+.about__reasons-subtitel {
+  margin-bottom: 1rem;
+  @include respond(tablet) { margin-bottom: 1.5rem;}
+}
+
+.about__reasons-line {
+  display: inline-block;
+  height: .5rem;
+  width: 3rem;
+  margin-bottom: 1rem;
+  background-color: $color-primary;
 }
