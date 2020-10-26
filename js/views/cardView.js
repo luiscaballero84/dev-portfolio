@@ -11,7 +11,7 @@ const projectList = [
   },
   {
     name: "Euromillions ",
-    text: "A small Euromillions lottery React app",
+    text: "ReactJS app that get a random number for the Euromillions lottery",
     link: "https://github.com/caballero-react-ex/euromillions",
   },
 ];
