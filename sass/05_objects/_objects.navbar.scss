@@ -2,7 +2,6 @@
 // Navbar  
 .navbar {
   z-index: 1000;
-  position: -webkit-sticky;
   position: fixed;
   top: 0;
   width: 100%;
@@ -51,7 +50,7 @@
 // Menu (When burger Icon is clicked)
 .navbar-menu {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 0rem;
   right: -100rem; // goes with class nav-active right: -3rem;
 

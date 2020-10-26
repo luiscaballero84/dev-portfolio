@@ -8,15 +8,14 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "scroll-behavior: smooth"; }
 
 body {
+  overflow-x: hidden;
   color: #241C15;
   font-family: "Custom", sans-serif;
-  letter-spacing: .2px;
-  overflow-x: hidden; }
+  letter-spacing: .2px; }
 
 @font-face {
   font-family: 'JetMono';
@@ -248,7 +247,6 @@ ol {
 
 .navbar {
   z-index: 1000;
-  position: -webkit-sticky;
   position: fixed;
   top: 0;
   width: 100%;
@@ -288,7 +286,7 @@ ol {
 
 .navbar-menu {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 0rem;
   right: -100rem;
   height: 100vh;
@@ -411,7 +409,7 @@ ol {
   border: 2px solid #fddb3a; }
 
 .arrow-up {
-  z-index: 3000;
+  z-index: 900;
   position: fixed;
   bottom: -5rem;
   right: 3rem;
@@ -445,12 +443,12 @@ ol {
       bottom: 5.5rem; } }
 
 .header {
-  padding-top: 10rem;
+  padding-top: 19rem;
   padding-bottom: 15rem;
   background-color: #fddb3a; }
   @media only screen and (min-width: 48.1em) {
     .header {
-      padding-top: 14rem;
+      padding-top: 23rem;
       padding-bottom: 24rem;
       text-align: center; } }
 
@@ -778,7 +776,7 @@ ol {
   display: none; }
 
 .u-noScroll {
-  overflow: hidden; }
+  overflow-y: hidden; }
 
 .u-flex {
   display: flex;

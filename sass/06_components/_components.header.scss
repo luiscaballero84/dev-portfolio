@@ -1,9 +1,9 @@
 .header {
-  padding-top: 10rem;
+  padding-top: 19rem;
   padding-bottom: 15rem;
   background-color: $color-primary;
   @include respond(tablet) {
-    padding-top: 14rem;
+    padding-top: 23rem;
     padding-bottom: 24rem;
     text-align: center;
   }
