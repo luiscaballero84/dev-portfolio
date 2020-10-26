@@ -249,8 +249,9 @@ ol {
 .navbar {
   z-index: 1000;
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: #fddb3a; }
@@ -454,6 +455,7 @@ ol {
       text-align: center; } }
 
 .header__title {
+  padding-top: 9rem;
   color: #241C15;
   padding-bottom: 3rem; }
 
