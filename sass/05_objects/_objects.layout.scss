@@ -46,9 +46,7 @@
   grid-column: content-start / content-end;
 }
 
-.skills {
-  background-color: $color-primary;
-}
+.skills { background-color: $color-primary; }
 
 // for the spy scroll
 .anchor {
@@ -66,12 +64,16 @@
   @include respond(tablet) { top: -400px;  }
 }
 
+
+// Section title
 .section-title {
   margin-top: 6.5rem;
   margin-bottom: 4rem;
 }
+
 .section-title--white { color: $color-white;}
-  
+
+// Section padding bottom
 .projects,
 .skills,
 .about,
@@ -119,6 +121,4 @@
   }
 }
 
-.col-2-of-3-item {
-  grid-column: 1 / span 2; 
-}
+.col-2-of-3-item { grid-column: 1 / span 2; }

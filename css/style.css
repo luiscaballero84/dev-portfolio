@@ -322,22 +322,18 @@ ol {
         margin-top: 0rem;
         margin-right: 0rem; } }
 
-@media only screen and (min-width: 48.1em) {
-  .link-home {
-    display: none !important; } }
-
 .navbar-menu .link {
   font-size: 2.8rem;
+  color: #241C15;
   text-decoration: none;
-  box-shadow: none;
-  color: #241C15; }
+  box-shadow: none; }
   @media only screen and (min-width: 48.1em) {
     .navbar-menu .link {
-      font-size: 1.6rem;
       display: block;
-      border-bottom: 2px solid transparent;
       padding-top: .5rem;
       padding-bottom: .5rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid transparent;
       transition: border-bottom .1s ease; }
       .navbar-menu .link:hover {
         border-bottom: 2px solid #241C15; } }
@@ -362,8 +358,8 @@ ol {
       font-size: 1.6rem;
       transition: background-color .2s ease; }
       .navbar-menu .cta-link:hover {
-        background-color: #fddb3a;
         color: #241C15;
+        background-color: #fddb3a;
         border: 2px solid #fddb3a; } }
 
 .navbar-burger {
