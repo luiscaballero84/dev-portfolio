@@ -48,8 +48,6 @@ window.onscroll = function() {
 document.addEventListener('DOMContentLoaded', function(){ 
   
   const { sections, navLinks } = elements;
-  console.log(navLinks)
-  console.log(sections)
 
   // functions to add and remove the active class from links as appropriate
   const makeActive = (link) => navLinks[link].classList.add("link-active");

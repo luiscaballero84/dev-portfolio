@@ -62,7 +62,8 @@
 /////////////// Displays
 .u-hidden { display: none; }
 
-.u-noScroll { overflow: hidden; }
+.u-noScroll { overflow-x: hidden }
+
 
 .u-flex { 
   display: flex;

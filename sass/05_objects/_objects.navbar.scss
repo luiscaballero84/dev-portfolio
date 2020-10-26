@@ -2,9 +2,9 @@
 // Navbar  
 .navbar {
   z-index: 1000;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: $color-primary;
