@@ -2,12 +2,14 @@ const projectList = [
   {
     name: "ChillQuotes",
     text: "App built in ReactJS where you can share quotes on Twitter",
-    link: "https://github.com/caballero-react-ex/chillquotes",
+    img: "img/projects/quotes-thumb.jpg",
+    alt: "chill quotes project image"
   },
   {
     name: "Grid Systems",
     text: "Responsive site to explore the posibilities of CSS Grids",
-    link: "https://github.com/losgridos/01-gridsystems",
+    img: "img/projects/grids-thumb.png",
+    alt: "grid system project image"
   },
 ];
 
@@ -18,12 +20,12 @@ function renderProjects() {
 
     return `
       <a class="card" href="#">
-        <div>
-          <img src="img/profile-pic-600x600.jpg" alt="profile-pic">
-          <h3>${project.name}</h3>
-          <p>${project.text}</p>
-          <h6>View Project <span class="material-icons"> navigate_next </span></h6>
-        </div>
+        
+          <img src="${project.img}" alt="${project.alt}">
+          <h3 class="card__title">${project.name}</h3>
+          <p class="card__text">${project.text}</p>
+          <h6 class="card__link">View Project <span class="card__icon material-icons"> navigate_next </span></h6>
+        
       </a>
     `
   }).join('');

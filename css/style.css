@@ -472,11 +472,28 @@ ol {
   margin-bottom: 1px;
   margin-right: .4rem; }
 
-.card {
-  background-color: red; }
+.card:link {
+  box-shadow: none; }
+  .card:link:hover h6 {
+    transform: translate(1rem, 0); }
+  .card:link:hover img {
+    transform: scale(1.02); }
 
 .card img {
-  width: 100%; }
+  width: 100%;
+  transition: transform .2s ease; }
+
+.card__title {
+  margin-top: 2rem; }
+
+.card__link {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  transition: transform .2s ease; }
+
+.card__icon {
+  margin-top: .2rem; }
 
 .link-icon {
   display: inline;
