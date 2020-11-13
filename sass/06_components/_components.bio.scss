@@ -1,23 +1,23 @@
 ////////// About SECTION (Now BIO)
 ////////////////////////////
-.about { background-color: $color-grey-light; }
+.bio { background-color: $color-white; }
 
-.about-title { margin-top: 1rem; }
+.bio__title { margin-top: 1rem; }
 
-.about-text { 
+.bio__text { 
   margin-top: 2rem; 
   color: $color-grey-dark;
 }
 
-.about__img { 
+.bio__img { 
   width: 100%;
   @include respond(tablet) { margin-top: 3rem;}
 }
 
-.about img {
+.bio img {
   position: sticky; 
   top: 11rem;
-  margin-top: 2rem; 
+  margin-top: 5rem; 
 }
 
 // REASONS SECTION

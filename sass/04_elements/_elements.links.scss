@@ -3,9 +3,10 @@
 // --------------------------------------------------
 
 a:link {
+  //display: inline-block; --> solve the break line problems in firefox but doesn look good :) 
   padding-bottom: .2rem;
-  padding-left: .3rem;
-  padding-right: .3rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
   color: $color-grey-dark;
   text-decoration: none;
   box-shadow: rgba($color-primary, 1) 0px -2px 0px inset;

@@ -6,7 +6,8 @@
 .header-grid,
 .projects-grid, 
 .skills-grid, 
-.about-grid, 
+.bio-grid,
+.card-grid, 
 .values-grid, 
 .footer-grid {
   display: grid;
@@ -39,7 +40,8 @@
 
 .header-grid-item,
 .projects-grid-item, 
-.about-grid-item,
+.bio-grid-item,
+.card-grid-item,
 .skills-grid-item, 
 .values-grid-item, 
 .footer-grid-item {
@@ -76,7 +78,7 @@
 // Section padding bottom
 .projects,
 .skills,
-.about,
+.bio,
 .values {
   padding-bottom: 12rem;
 }

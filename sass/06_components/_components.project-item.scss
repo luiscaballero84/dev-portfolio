@@ -70,7 +70,7 @@
 }
 
 /// ABOUT CV/PORTFOLIO
-.about .project-item__about {
+.bio .project-item__about {
   position: relative;
   display: flex;
   align-items: center;
@@ -100,11 +100,11 @@
 }
 
 .project-item__about-icon {
-  margin-right: -1rem;
-  padding-left: .2rem;
+  // margin-right: -1rem;
+  // padding-left: .2rem;
   font-size: 3rem;
   vertical-align: -.65rem;
  
-  @include respond(tablet) { font-size: 4rem; }
-  @include respond(desktop) { margin-right: -1.6rem; }
+  @include respond(tablet) { font-size: 3rem; }
+  @include respond(desktop) {  }
 }
