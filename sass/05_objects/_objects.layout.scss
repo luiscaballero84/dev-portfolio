@@ -8,6 +8,7 @@
 .skills-grid, 
 .bio-grid,
 .card-grid, 
+.about-grid,
 .values-grid, 
 .footer-grid {
   display: grid;
@@ -43,6 +44,7 @@
 .bio-grid-item,
 .card-grid-item,
 .skills-grid-item, 
+.about-grid-item,
 .values-grid-item, 
 .footer-grid-item {
   grid-column: content-start / content-end;
@@ -79,6 +81,7 @@
 .projects,
 .skills,
 .bio,
+.about,
 .values {
   padding-bottom: 12rem;
 }

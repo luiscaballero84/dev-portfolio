@@ -143,6 +143,7 @@ ol {
 .skills-grid,
 .bio-grid,
 .card-grid,
+.about-grid,
 .values-grid,
 .footer-grid {
   display: grid;
@@ -154,6 +155,7 @@ ol {
     .skills-grid,
     .bio-grid,
     .card-grid,
+    .about-grid,
     .values-grid,
     .footer-grid {
       grid-template-columns: [full-start] 3rem [content-start] 1fr [col2] 1fr [content-end] 3rem [full-end]; } }
@@ -164,6 +166,7 @@ ol {
     .skills-grid,
     .bio-grid,
     .card-grid,
+    .about-grid,
     .values-grid,
     .footer-grid {
       grid-template-columns: [full-start] 1fr [content-start] 55rem [col2] 55rem [content-end] 1fr [full-end]; } }
@@ -179,6 +182,7 @@ ol {
 .bio-grid-item,
 .card-grid-item,
 .skills-grid-item,
+.about-grid-item,
 .values-grid-item,
 .footer-grid-item {
   grid-column: content-start / content-end; }
@@ -211,6 +215,7 @@ ol {
 .projects,
 .skills,
 .bio,
+.about,
 .values {
   padding-bottom: 12rem; }
 
@@ -294,13 +299,14 @@ ol {
   top: 0rem;
   right: -100rem;
   height: 100vh;
-  width: 100vw;
+  width: 92vw;
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fddb3a;
+  box-shadow: -5px 0px 15px 2px rgba(0, 0, 0, 0.1);
   transition: right .35s ease-out; }
   @media only screen and (min-width: 48.1em) {
     .navbar-menu {
@@ -311,7 +317,8 @@ ol {
       height: 100%;
       width: 50%;
       padding-bottom: 0;
-      background-color: transparent; } }
+      background-color: transparent;
+      box-shadow: none; } }
 
 .menu-active {
   right: 0rem; }
@@ -462,7 +469,7 @@ ol {
 
 .header__subtitle {
   color: #241C15;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .dot {
   height: 1rem;
@@ -472,14 +479,24 @@ ol {
   margin-bottom: 1px;
   margin-right: .4rem; }
 
-.card:link {
-  box-shadow: none; }
-  .card:link:hover h6 {
-    transform: translate(1rem, 0); }
-  .card:link:hover img {
-    transform: scale(1.02); }
+.card {
+  display: block; }
+  .card:last-of-type {
+    margin-top: 10rem; }
+    @media only screen and (min-width: 48.1em) {
+      .card:last-of-type {
+        margin-top: 0rem; } }
 
-.card img {
+.card:link {
+  padding: 0 0;
+  box-shadow: none; }
+  @media (hover: hover) {
+    .card:link:hover h6 {
+      transform: translate(1rem, 0); }
+    .card:link:hover img {
+      transform: scale(1.02); } }
+
+.card__img {
   width: 100%;
   transition: transform .2s ease; }
 
@@ -712,7 +729,7 @@ ol {
   margin-top: 5rem; }
 
 .about__reasons {
-  background-color: #ffffff; }
+  background-color: #f6f6f4; }
 
 .about__reasons p {
   color: #403b3b; }

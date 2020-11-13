@@ -21,7 +21,7 @@ function renderProjects() {
     return `
       <a class="card" href="#">
         
-          <img src="${project.img}" alt="${project.alt}">
+          <img class="card__img" src="${project.img}" alt="${project.alt}">
           <h3 class="card__title">${project.name}</h3>
           <p class="card__text">${project.text}</p>
           <h6 class="card__link">View Project <span class="card__icon material-icons"> navigate_next </span></h6>
