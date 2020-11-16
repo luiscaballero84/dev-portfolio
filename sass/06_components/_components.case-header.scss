@@ -1,5 +1,6 @@
 .case__header {
-  padding-top: 8rem;
+  padding-top: 5rem;
+  //@include respond(desktop) { padding-top: 8rem; } 
 }
 
 .case__header-title {
@@ -11,12 +12,18 @@
   
   & a {transition: transform .2s ease;}
 
+  &:first-of-type { 
+    margin-top: 4rem; 
+    @include respond(tablet) { margin-top: 0rem; } 
+  }
   &:last-of-type {
     border-bottom: 2px solid $color-grey;
   }
 
-  & a:hover {
-    transform: translateX(1rem);
+  @media (hover: hover) {
+    & a:hover {
+      transform: translateX(1rem);
+    }
   }
 }
 
