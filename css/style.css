@@ -51,7 +51,8 @@ h1 {
   font-size: 6rem;
   font-weight: 400;
   line-height: 1.1;
-  letter-spacing: -.5px; }
+  letter-spacing: -.5px;
+  color: #241C15; }
   @media only screen and (min-width: 48.1em) {
     h1 {
       font-size: 7rem;
@@ -64,7 +65,8 @@ h1 {
 h2 {
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #241C15; }
   @media only screen and (min-width: 48.1em) {
     h2 {
       font-size: 3.3rem;
@@ -73,14 +75,16 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #241C15; }
   @media only screen and (min-width: 75em) {
     h3 {
       font-size: 3.5rem; } }
 
 h4 {
   font-size: 2rem;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #241C15; }
   @media only screen and (min-width: 48.1em) {
     h4 {
       font-size: 2.4rem; } }
@@ -89,23 +93,33 @@ h5 {
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: #241C15; }
 
 h6 {
   font-size: 1.6rem;
   font-family: "JetMono", monospace;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #241C15; }
 
 p {
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #403b3b; }
   @media only screen and (min-width: 48.1em) {
     p {
       font-size: 2rem;
       line-height: 1.8; } }
 
 a:link {
+  color: #241C15;
+  text-decoration: none; }
+
+a:visited {
+  color: #241C15; }
+
+p a:link {
   padding-bottom: .2rem;
   padding-left: .2rem;
   padding-right: .2rem;
@@ -114,16 +128,16 @@ a:link {
   box-shadow: #fddb3a 0px -2px 0px inset;
   transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s, color 0.15s ease 0s; }
 
-a:visited {
+p a:visited {
   color: #403b3b;
   border-bottom-color: #fddb3a; }
 
 @media (hover: hover) {
-  a:hover {
+  p a:hover {
     box-shadow: #fddb3a 0px -40px inset;
     cursor: pointer; } }
 
-a:active {
+p a:active {
   color: #403b3b; }
 
 .ghost-link {
@@ -324,7 +338,7 @@ ol {
       .navbar-menu .link:hover {
         border-bottom: 2px solid #241C15; } }
 
-.navbar-menu .cta-link {
+.cta-link {
   padding-top: 1rem;
   padding-right: 2.5rem;
   padding-bottom: 1rem;
@@ -336,14 +350,14 @@ ol {
   text-decoration: none;
   box-shadow: none; }
   @media only screen and (min-width: 48.1em) {
-    .navbar-menu .cta-link {
+    .cta-link {
       padding-top: .5rem;
       padding-right: 1.5rem;
       padding-bottom: .5rem;
       padding-left: 1.5rem;
       font-size: 1.6rem;
       transition: background-color .2s ease; }
-      .navbar-menu .cta-link:hover {
+      .cta-link:hover {
         color: #241C15;
         background-color: #fddb3a;
         border: 2px solid #fddb3a; } }
@@ -459,7 +473,7 @@ ol {
       right: 0;
       margin: auto;
       margin-top: 14rem;
-      animation: bottomToTop .7s ease 1,  moveToDown 2s 2s ease infinite; }
+      animation: bottomToTop .7s ease 1,  moveToDown 2s 1.5s ease infinite; }
       .header__arrow span {
         color: #241C15;
         font-size: 3rem; }
@@ -590,13 +604,8 @@ ol {
 
 .footer a {
   padding-bottom: .5rem;
-  border-bottom: 1px solid transparent;
-  color: #241C15;
-  text-decoration: none;
-  box-shadow: none;
-  transition: border-bottom .1s ease;
-  padding-left: 0;
-  padding-right: 0; }
+  border-bottom: 2px solid transparent;
+  transition: border-bottom .1s ease; }
 
 @media only screen and (min-width: 48.1em) {
   .footer a:hover {
@@ -635,99 +644,35 @@ ol {
     .footer__copyright {
       margin-top: 0; } }
 
-.projects .project-item {
-  position: relative;
-  display: block;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  color: #241C15;
-  border-top: 2px solid #e5e5e5;
-  box-shadow: none; }
-  .projects .project-item h3, .projects .project-item p {
-    transition: transform .2s ease; }
-  @media (hover: hover) {
-    .projects .project-item:hover h3, .projects .project-item:hover p {
-      transform: translate(1rem, 0); } }
-  .projects .project-item:last-of-type {
-    border-bottom: 2px solid #e5e5e5; }
-  @media only screen and (min-width: 48.1em) {
-    .projects .project-item {
-      padding-bottom: 2.5rem; } }
-  @media only screen and (min-width: 75em) {
-    .projects .project-item {
-      display: flex;
-      padding-top: 1.5rem;
-      padding-bottom: 2rem;
-      align-items: baseline;
-      justify-content: space-between; } }
+.listing {
+  margin-top: 7rem; }
 
-.project-item__titel {
-  padding-bottom: .5rem; }
-  @media only screen and (min-width: 48.1em) {
-    .project-item__titel {
-      padding-bottom: 0; } }
-
-.project-item__text {
-  display: inline-block;
-  line-height: 1.2;
-  color: #403b3b; }
-  @media only screen and (min-width: 48.1em) {
-    .project-item__text {
-      display: flex;
-      justify-content: space-between;
-      font-size: 2.2rem; } }
-  @media only screen and (min-width: 75em) {
-    .project-item__text {
-      display: block; } }
-
-.project-item__icon {
-  margin-right: -1rem;
-  padding-left: .2rem;
-  font-size: 3rem;
-  vertical-align: -.9rem;
-  color: #241C15; }
-  @media only screen and (min-width: 48.1em) {
-    .project-item__icon {
-      position: absolute;
-      top: 33%;
-      right: 0;
-      font-size: 4rem; } }
-  @media only screen and (min-width: 75em) {
-    .project-item__icon {
-      position: static;
-      vertical-align: -1rem;
-      padding-left: 5rem;
-      margin-right: -1.6rem; } }
-
-.bio .project-item__about {
+.listing-item {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 7rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   color: #241C15;
-  border-top: 2px solid #e5e5e5;
-  box-shadow: none; }
-  .bio .project-item__about h4, .bio .project-item__about p {
+  border-top: 2px solid #e5e5e5; }
+  .listing-item:link {
+    box-shadow: none;
+    padding-left: 0rem;
+    padding-right: 0rem; }
+  .listing-item h4, .listing-item p {
     transition: transform .2s ease; }
   @media (hover: hover) {
-    .bio .project-item__about:hover h4, .bio .project-item__about:hover p {
+    .listing-item:hover h4, .listing-item:hover p {
       transform: translate(1rem, 0); } }
-  .bio .project-item__about:last-of-type {
-    border-bottom: 2px solid #e5e5e5;
-    margin-top: 0rem; }
-  @media only screen and (min-width: 75em) {
-    .bio .project-item__about {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem; } }
+  .listing-item:last-of-type {
+    border-bottom: 2px solid #e5e5e5; }
 
-.project-item__about-icon {
+.listing-item__icon {
   font-size: 3rem;
-  vertical-align: -.65rem; }
+  vertical-align: -.75rem; }
   @media only screen and (min-width: 48.1em) {
-    .project-item__about-icon {
+    .listing-item__icon {
       font-size: 3rem; } }
 
 .bio {

@@ -45,7 +45,7 @@
     margin-top: 14rem;
     animation: 
       bottomToTop .7s ease 1, 
-      moveToDown 2s 2s ease infinite;
+      moveToDown 2s 1.5s ease infinite;
 
     & span {
       color: $color-black;
