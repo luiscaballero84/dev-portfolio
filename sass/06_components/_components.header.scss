@@ -10,13 +10,39 @@
 }
 
 .header__title { 
-  //padding-top: 9rem;
   color: $color-primary-contrast; 
   padding-bottom: 3rem;
+  animation: fadeIn .6s ease-in 1, bottomToTop .8s ease 1; 
 }
 
 .header__subtitle { 
   color: $color-primary-contrast; 
   font-weight: 400;
+  animation: fadeIn .7s ease-in 1, bottomToTop 1s ease 1; 
+}
+
+//ANIMATIONS keyframes
+//////////////////////
+@keyframes fadeIn  {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;;
+  }
+}
+
+
+
+@keyframes bottomToTop  {
+  0% {
+    transform: translateY(10rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
 }
 

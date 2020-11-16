@@ -32,6 +32,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  animation: topToBottom .7s ease 1;
 }
 
 
@@ -114,3 +115,15 @@
 }
 
 .col-2-of-3-item { grid-column: 1 / span 2; }
+
+
+//ANIMATIONS keyframes
+//////////////////////
+@keyframes topToBottom  {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
