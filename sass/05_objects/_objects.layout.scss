@@ -2,15 +2,7 @@
 // #Layout
 // --------------------------------------------------
 
-.nav-grid,
-.header-grid,
-.projects-grid, 
-.skills-grid, 
-.bio-grid,
-.card-grid, 
-.about-grid,
-.values-grid, 
-.footer-grid {
+.grid {
   display: grid;
   grid-template-columns:
     [full-start] 2rem
@@ -32,25 +24,16 @@
   }
 }
 
-.nav-grid-item {
+.grid-item {
   grid-column: content-start / content-end;
+}
+
+.nav-flex {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-grid-item,
-.projects-grid-item, 
-.bio-grid-item,
-.card-grid-item,
-.skills-grid-item, 
-.about-grid-item,
-.values-grid-item, 
-.footer-grid-item {
-  grid-column: content-start / content-end;
-}
-
-.skills { background-color: $color-primary; }
 
 // for the spy scroll
 .anchor {
@@ -68,6 +51,8 @@
   @include respond(tablet) { top: -400px;  }
 }
 
+// SECTIONS
+//////////////
 
 // Section title
 .section-title {
@@ -77,11 +62,13 @@
 
 .section-title--white { color: $color-white;}
 
+.stack { background-color: $color-primary; }
+
 // Section padding bottom
 .projects,
-.skills,
+.stack,
 .bio,
-.about,
+.about__reasons,
 .values {
   padding-bottom: 12rem;
 }
@@ -96,7 +83,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
+    column-gap: 4rem;
   }
 }
 
@@ -104,7 +91,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
+    column-gap: 4rem;
   }
   @include respond(desktop) {
     grid-template-columns: 1fr 40%;
@@ -122,7 +109,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3rem;
+    column-gap: 4rem;
   }
 }
 
