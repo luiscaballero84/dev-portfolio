@@ -11,13 +11,8 @@
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   transition: transform .3s ease-out, bottom .5s ease-out; 
   &:hover {
-    transform: translateY(-.5rem);
+    transform: translateY(-1rem);
     cursor: pointer;
-  }
-  & a {
-    box-shadow: none;
-    padding: 0; 
-    color: rgba($color-grey-dark, .7)
   }
 
   @include respond(tablet) { 
