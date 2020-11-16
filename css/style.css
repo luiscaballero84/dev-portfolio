@@ -267,8 +267,8 @@ ol {
   background-color: #ffffff;
   transition: top .2s ease-out; }
 
-.navbar .logo {
-  font-size: 1.6rem !important;
+.logo {
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .8px;
@@ -279,9 +279,6 @@ ol {
   color: #241C15;
   box-shadow: none;
   text-decoration: none; }
-  @media only screen and (min-width: 48.1em) {
-    .navbar .logo {
-      font-size: 2.4rem; } }
 
 .navbar-menu {
   z-index: 1000;
@@ -729,7 +726,7 @@ ol {
   background-color: #fddb3a; }
 
 .case__header {
-  padding-top: 15rem; }
+  padding-top: 8rem; }
 
 .case__header-title {
   margin-bottom: 2rem; }
@@ -757,9 +754,16 @@ ol {
   margin-left: auto; }
 
 .case__img {
-  border-radius: 2px;
+  display: block;
+  border-radius: 5px;
   box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.1);
-  margin-top: 10rem; }
+  margin-top: 8rem; }
+
+.case__navbar {
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #ffffff; }
 
 .u-text-center {
   text-align: center; }

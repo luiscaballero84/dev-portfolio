@@ -1,6 +1,5 @@
 .case__header {
-  // margin-top: 9rem;
-  padding-top: 15rem;
+  padding-top: 8rem;
 }
 
 .case__header-title {
@@ -39,7 +38,8 @@
 }
 
 .case__img {
-  border-radius: 2px;
+  display: block;
+  border-radius: 5px;
   box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
