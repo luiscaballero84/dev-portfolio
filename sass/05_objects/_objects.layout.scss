@@ -64,11 +64,8 @@
 .stack { background-color: $color-primary; }
 
 // Section padding bottom
-.projects,
-.stack,
-.bio,
-.about__reasons,
-.values {
+
+.section-bottom {
   padding-bottom: 12rem;
 }
 
@@ -78,6 +75,7 @@
 }
 
 //////// 2 Cols
+// Grid Containers
 .col-2-container {
   @include respond(tablet) {
     display: grid;
@@ -96,6 +94,20 @@
     grid-template-columns: 1fr 40%;
   }
 }
+
+.col-2-container-plus-reverse {
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+  @include respond(desktop) {
+    grid-template-columns: 40% 1fr ;
+  }
+}
+
+
+// Grid Items
 .col-1-of-2-item {
   @include respond(tablet) {
     grid-column: 1 / span 1; 

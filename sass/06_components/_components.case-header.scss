@@ -44,9 +44,27 @@
   margin-left: auto;
 }
 
-.case__img {
+.case__img-full {
   display: block;
   border-radius: 5px;
   box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
   margin-top: 8rem;
+}
+
+.case__img {
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
+}
+
+.case__img-alt {
+  display: block;
+  border-radius: 5px;
+  //box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
+  margin-top: 8rem;
+}
+
+.case__section {
+  margin-top: 6.5rem;
+  margin-bottom: 2rem;
 }
