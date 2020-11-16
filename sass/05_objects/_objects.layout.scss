@@ -96,7 +96,11 @@
     grid-template-columns: 1fr 40%;
   }
 }
-
+.col-1-of-2-item {
+  @include respond(tablet) {
+    grid-column: 1 / span 1; 
+  }
+}
 .col-2-of-2-item {
   @include respond(tablet) {
     grid-column: 2 / span 1; 

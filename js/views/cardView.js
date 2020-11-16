@@ -3,13 +3,15 @@ const projectList = [
     name: "ChillQuotes",
     text: "App built in ReactJS where you can share quotes on Twitter",
     img: "img/projects/quotes-thumb.jpg",
-    alt: "chill quotes project image"
+    alt: "chill quotes project image",
+    link: "pages/case-quotes.html"
   },
   {
     name: "Grid Systems",
     text: "Responsive site to explore the posibilities of CSS Grids",
     img: "img/projects/grids-thumb.png",
-    alt: "grid system project image"
+    alt: "grid system project image",
+    link: "pages/case-quotes.html"
   },
 ];
 
@@ -19,7 +21,7 @@ function renderProjects() {
   const cardMarkup = projectList.map(function(project) {  
 
     return `
-      <a class="card" href="#">
+      <a class="card" href="${project.link}">
         
           <img class="card__img" src="${project.img}" alt="${project.alt}">
           <h3 class="card__title">${project.name}</h3>

@@ -1,0 +1,32 @@
+.case__header {
+  // margin-top: 9rem;
+  padding-top: 15rem;
+}
+
+.case__header-title {
+  margin-bottom: 2rem;
+}
+
+.case__info-container {
+  display: flex;
+  //margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 2px solid $color-grey;
+
+  &:last-of-type {
+    border-bottom: 2px solid $color-grey;
+  }
+  
+}
+
+.case__info_title {
+  margin-right: 2rem;
+  flex-basis: 20%;
+  flex-shrink: 0;
+}
+
+.case__icon {
+  margin-left: auto;
+}
+
