@@ -33,13 +33,6 @@
   @include respond(tablet) {  grid-column: content-start / content-end; }
 }
 
-.nav-flex {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  animation: topToBottom .7s ease 1;
-}
-
 
 // for the spy scroll
 .anchor {
@@ -127,13 +120,4 @@
 //////// ORDER 
 .grid-order-1 { order: 1; }
 
-//ANIMATIONS keyframes
-//////////////////////
-@keyframes topToBottom  {
-  0% {
-    transform: translateY(-5rem);
-  }
-  100% {
-    transform: translateY(0rem);
-  }
-}
+

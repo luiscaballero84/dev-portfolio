@@ -14,11 +14,9 @@ consoleMessages();
 // Nav Controller
 /////////////////////////
 const {burgerIcon, navLinks, navMenu, nav, arrowUp, sections } = elements; 
-// Nav / Burger Menu Controller
 
-if (burgerIcon !== null ) {
-  burgerIcon.addEventListener('click', navModel.burgerMenuToggle);
-}
+// Nav / Burger Menu Controller
+burgerIcon.addEventListener('click', navModel.burgerMenuToggle);
 
 
 // Nav / Links
@@ -49,22 +47,12 @@ window.onscroll = function() {
 };
 
 
-if (nav !== null ) { nav.classList.add("nav-scroll") };
 ////////////////////////
 // Spy Scroll for NAV
 document.addEventListener('DOMContentLoaded', function(){ 
-  
-  // const { sections, navLinks } = elements;
-
   // functions to add and remove the active class from links as appropriate
-  const makeActive = (link) => {
-    if (navLinks !== null) { 
-      navLinks[link].classList.add("link-active")}
-  };
-  const removeActive = (link) => {
-    if (navLinks !== null) { 
-      navLinks[link].classList.remove("link-active")}
-  };
+  const makeActive = (link) => navLinks[link].classList.add("link-active");
+  const removeActive = (link) => navLinks[link].classList.remove("link-active");
   const removeAllActive = () => [...Array(sections.length).keys()].forEach((link) => removeActive(link));
   
   const sectionMargin = 200;
@@ -80,5 +68,3 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 }, false);
-
-

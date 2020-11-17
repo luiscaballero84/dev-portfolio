@@ -25,13 +25,6 @@
     &:hover h4, &:hover p { transform: translate(1rem, 0) }
   }
   &:last-of-type { border-bottom: 2px solid $color-grey; }
-
-  
 }
 
-.listing-item__icon {
-  font-size: 3rem;
-  vertical-align: -.75rem;
- 
-  @include respond(tablet) { font-size: 3rem; }
-}
+.listing-item__icon { vertical-align: -.5rem; }

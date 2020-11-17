@@ -11,7 +11,7 @@ const projectList = [
     text: "Responsive site to explore the posibilities of CSS Grids",
     img: "img/projects/grids-thumb.png",
     alt: "grid system project image",
-    link: "pages/case-quotes.html"
+    link: "pages/case-grids.html"
   },
 ];
 

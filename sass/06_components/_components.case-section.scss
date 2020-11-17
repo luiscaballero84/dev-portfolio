@@ -1,11 +1,12 @@
+///////////// 
+// sections images
+
 .case__img {
   display: block;
   border-radius: 5px;
-  box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
 }
 
 .case__img-full {
-  box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
   border-radius: none; 
   @include respond(tablet) { border-radius: 5px; } 
 }

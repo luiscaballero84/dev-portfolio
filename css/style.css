@@ -151,6 +151,52 @@ ul,
 ol {
   list-style: none; }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  70% {
+    opacity: .6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-5rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+@keyframes topToBottom-2 {
+  0% {
+    transform: translateY(-3rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(10rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+@keyframes bottomToTop-2 {
+  0% {
+    transform: translateY(3rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+@keyframes moveToDown {
+  0% {
+    transform: translateY(0rem); }
+  10% {
+    transform: translateY(1rem); }
+  20% {
+    transform: translateY(0rem); }
+  30% {
+    transform: translateY(1rem); }
+  40% {
+    transform: translateY(0rem); }
+  100% {
+    transform: translateY(0rem); } }
+
 .grid {
   display: grid;
   grid-template-columns: [full-start] 2rem [content-start] 1fr [content-end] 2rem [full-end]; }
@@ -169,12 +215,6 @@ ol {
   @media only screen and (min-width: 48.1em) {
     .grid-item-full {
       grid-column: content-start / content-end; } }
-
-.nav-flex {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  animation: topToBottom .7s ease 1; }
 
 .anchor {
   display: block;
@@ -242,12 +282,6 @@ ol {
 .grid-order-1 {
   order: 1; }
 
-@keyframes topToBottom {
-  0% {
-    transform: translateY(-5rem); }
-  100% {
-    transform: translateY(0rem); } }
-
 .navbar {
   z-index: 1000;
   position: fixed;
@@ -270,6 +304,12 @@ ol {
   z-index: -100;
   background-color: #ffffff;
   transition: top .2s ease-out; }
+
+.nav-flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: topToBottom .7s ease 1; }
 
 .logo {
   font-size: 1.6rem;
@@ -335,7 +375,7 @@ ol {
   @media only screen and (min-width: 48.1em) {
     .navbar-menu .link {
       display: block;
-      padding-top: .5rem;
+      padding-top: .7rem;
       padding-bottom: .5rem;
       font-size: 1.6rem;
       border-bottom: 2px solid transparent;
@@ -356,6 +396,7 @@ ol {
   box-shadow: none; }
   @media only screen and (min-width: 48.1em) {
     .cta-link {
+      margin-top: -10rem !important;
       padding-top: .5rem;
       padding-right: 1.5rem;
       padding-bottom: .5rem;
@@ -484,34 +525,6 @@ ol {
         font-size: 3rem; }
       .header__arrow:link {
         box-shadow: none; } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  70% {
-    opacity: .6; }
-  100% {
-    opacity: 1; } }
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(10rem); }
-  100% {
-    transform: translateY(0rem); } }
-
-@keyframes moveToDown {
-  0% {
-    transform: translateY(0rem); }
-  10% {
-    transform: translateY(1rem); }
-  20% {
-    transform: translateY(0rem); }
-  30% {
-    transform: translateY(1rem); }
-  40% {
-    transform: translateY(0rem); }
-  100% {
-    transform: translateY(0rem); } }
 
 .dot {
   height: 1rem;
@@ -677,11 +690,7 @@ ol {
     border-bottom: 2px solid #e5e5e5; }
 
 .listing-item__icon {
-  font-size: 3rem;
-  vertical-align: -.75rem; }
-  @media only screen and (min-width: 48.1em) {
-    .listing-item__icon {
-      font-size: 3rem; } }
+  vertical-align: -.5rem; }
 
 .bio {
   background-color: #ffffff; }
@@ -741,6 +750,12 @@ ol {
 .case__header {
   padding-top: 5rem; }
 
+.case__animate {
+  animation: topToBottom-2 .5s ease,  fadeIn .5s ease; }
+
+.case__animate-img {
+  animation: bottomToTop .7s ease,  fadeIn .1s ease; }
+
 .case__header-title {
   margin-bottom: 2rem; }
 
@@ -774,11 +789,9 @@ ol {
 
 .case__img {
   display: block;
-  border-radius: 5px;
-  box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.1); }
+  border-radius: 5px; }
 
 .case__img-full {
-  box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.1);
   border-radius: none; }
   @media only screen and (min-width: 48.1em) {
     .case__img-full {
@@ -891,3 +904,6 @@ ol {
 
 .u-relative {
   position: relative; }
+
+.u-img-shadow {
+  box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.1); }

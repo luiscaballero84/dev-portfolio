@@ -29,6 +29,13 @@
   transition: top .2s ease-out;
 }
 
+.nav-flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: topToBottom .7s ease 1;
+}
+
 ///////////////////
 // Logo
 .logo {
@@ -106,7 +113,7 @@
   
   @include respond(tablet) {
     display: block;
-    padding-top: .5rem;
+    padding-top: .7rem;
     padding-bottom: .5rem;
     font-size: 1.6rem;
     border-bottom: 2px solid transparent;
@@ -129,6 +136,7 @@
   box-shadow:none;
 
   @include respond(tablet) {
+    margin-top: -10rem !important;
     padding-top: .5rem;
     padding-right: 1.5rem;
     padding-bottom: .5rem;
@@ -197,3 +205,4 @@
   color: $color-primary-contrast;
   border: 2px solid $color-primary;
 }
+
