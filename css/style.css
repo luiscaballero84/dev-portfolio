@@ -533,7 +533,7 @@ ol {
   padding: 0 0;
   box-shadow: none; }
   @media (hover: hover) {
-    .card:link:hover h6 {
+    .card:link:hover .card__link {
       border-bottom: 2px solid #241C15; }
     .card:link:hover img {
       transform: scale(1.03); } }
@@ -549,6 +549,7 @@ ol {
   display: inline-flex;
   align-items: center;
   margin-top: 2rem;
+  padding-bottom: .3rem;
   border-bottom: 2px solid transparent;
   transition: transform .2s ease, border-bottom .1s ease; }
 
@@ -731,6 +732,12 @@ ol {
   margin-bottom: 1rem;
   background-color: #fddb3a; }
 
+.case__navbar {
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #ffffff; }
+
 .case__header {
   padding-top: 5rem; }
 
@@ -803,12 +810,6 @@ ol {
   @media only screen and (min-width: 48.1em) {
     .case__section-title-alt {
       margin-top: 10rem; } }
-
-.case__navbar {
-  width: 100%;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  background-color: #ffffff; }
 
 .u-text-center {
   text-align: center; }

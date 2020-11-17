@@ -14,7 +14,7 @@
   box-shadow: none;
   
   @media (hover: hover) {
-    &:hover h6 { 
+    &:hover .card__link { 
       // transform: translate(1rem, 0);
       border-bottom: 2px solid $color-primary-contrast;
     }
@@ -37,6 +37,7 @@
   display: inline-flex;
   align-items: center;
   margin-top: 2rem;
+  padding-bottom: .3rem;
   border-bottom: 2px solid transparent;
   transition: transform .2s ease, border-bottom .1s ease;
 }
