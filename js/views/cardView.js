@@ -8,7 +8,7 @@ const projectList = [
   },
   {
     name: "Grid Systems",
-    text: "Responsive site to explore the posibilities of CSS Grids",
+    text: "Responsive site to explore the posibilities of CSS Grid",
     img: "img/projects/grids-thumb.png",
     alt: "grid system project image",
     link: "pages/case-grids.html"

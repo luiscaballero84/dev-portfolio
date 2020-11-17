@@ -277,7 +277,7 @@ ol {
   .col-3-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 4rem; } }
+    column-gap: 3rem; } }
 
 .grid-order-1 {
   order: 1; }
