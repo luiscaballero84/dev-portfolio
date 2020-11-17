@@ -33,7 +33,10 @@ function renderProjects() {
   }).join('');
 
   const projects = document.querySelector(".js-project");  
-  projects.insertAdjacentHTML('afterbegin', cardMarkup);
+
+  if (projects !== null) { 
+    projects.insertAdjacentHTML('afterbegin', cardMarkup);
+  }
 }
   
 renderProjects();

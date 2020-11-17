@@ -12,9 +12,16 @@
 .card:link{
   padding: 0 0 ;
   box-shadow: none;
+  
+
   @media (hover: hover) {
-    &:hover h6 { transform: translate(1rem, 0) }
-    &:hover img { transform: scale(1.02);}
+    &:hover h6 { 
+      // transform: translate(1rem, 0);
+      border-bottom: 2px solid $color-primary-contrast;
+    }
+    &:hover img { 
+      transform: scale(1.03);
+    }
   } 
 }
 
@@ -28,11 +35,15 @@
 
 
 .card__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-top: 2rem;
-  transition: transform .2s ease;
+  border-bottom: 2px solid transparent;
+  transition: transform .2s ease, border-bottom .1s ease;
 }
 
-.card__icon { margin-top: .2rem; }
+.card__icon { 
+  margin-top: .2rem;
+  margin-right: -1rem;
+}
 

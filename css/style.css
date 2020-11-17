@@ -164,6 +164,12 @@ ol {
 .grid-item {
   grid-column: content-start / content-end; }
 
+.grid-item-full {
+  grid-column: full-start / full-end; }
+  @media only screen and (min-width: 48.1em) {
+    .grid-item-full {
+      grid-column: content-start / content-end; } }
+
 .nav-flex {
   display: inline-flex;
   align-items: center;
@@ -218,22 +224,14 @@ ol {
     grid-template-columns: 1fr 40%; } }
 
 @media only screen and (min-width: 48.1em) {
-  .col-2-container-plus-reverse {
+  .col-2-container-plus-reversed {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem; } }
 
 @media only screen and (min-width: 75em) {
-  .col-2-container-plus-reverse {
+  .col-2-container-plus-reversed {
     grid-template-columns: 40% 1fr; } }
-
-@media only screen and (min-width: 48.1em) {
-  .col-1-of-2-item {
-    grid-column: 1 / span 1; } }
-
-@media only screen and (min-width: 48.1em) {
-  .col-2-of-2-item {
-    grid-column: 2 / span 1; } }
 
 @media only screen and (min-width: 48.1em) {
   .col-3-container {
@@ -241,8 +239,8 @@ ol {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 4rem; } }
 
-.col-2-of-3-item {
-  grid-column: 1 / span 2; }
+.grid-order-1 {
+  order: 1; }
 
 @keyframes topToBottom {
   0% {
@@ -536,9 +534,9 @@ ol {
   box-shadow: none; }
   @media (hover: hover) {
     .card:link:hover h6 {
-      transform: translate(1rem, 0); }
+      border-bottom: 2px solid #241C15; }
     .card:link:hover img {
-      transform: scale(1.02); } }
+      transform: scale(1.03); } }
 
 .card__img {
   width: 100%;
@@ -548,13 +546,15 @@ ol {
   margin-top: 2rem; }
 
 .card__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-top: 2rem;
-  transition: transform .2s ease; }
+  border-bottom: 2px solid transparent;
+  transition: transform .2s ease, border-bottom .1s ease; }
 
 .card__icon {
-  margin-top: .2rem; }
+  margin-top: .2rem;
+  margin-right: -1rem; }
 
 .link-icon {
   display: inline;
@@ -778,11 +778,12 @@ ol {
 
 .case__img-alt {
   display: block;
-  border-radius: 5px;
-  margin-top: 8rem; }
+  border-radius: 5px; }
 
 .case__section {
-  margin-top: 6.5rem;
+  margin-top: 10rem; }
+
+.case__section-title {
   margin-bottom: 2rem; }
 
 .case__navbar {

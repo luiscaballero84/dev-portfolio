@@ -14,5 +14,3 @@ export function isRotated() {
   elements.burgerIcon.classList.toggle('burger-animate')
 }
 
-console.log(document.body);
-console.log(document)

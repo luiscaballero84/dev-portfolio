@@ -4,21 +4,28 @@
 import { elements } from './views/selectors.js';
 import * as navModel from './models/Nav.js';
 import * as navView from './views/navView.js';
-import * as cardView from './views/cardView.js';
+import * as cardView from './views/cardView.js'; // show the project cards
+import { consoleMessages } from './models/ConsoleMessage.js'; // show console messages
+
+consoleMessages();
 
 
 /////////////////////////
 // Nav Controller
 /////////////////////////
-
+const {burgerIcon, navLinks, navMenu, nav, arrowUp, sections } = elements; 
 // Nav / Burger Menu Controller
-elements.burgerIcon.addEventListener('click', navModel.burgerMenuToggle);
+
+if (burgerIcon !== null ) {
+  burgerIcon.addEventListener('click', navModel.burgerMenuToggle);
+}
+
 
 // Nav / Links
-elements.navLinks.forEach((link) => {
+navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     setTimeout(function() { 
-      if (elements.navMenu.classList.contains("menu-active")) {
+      if (navMenu.classList.contains("menu-active")) {
         navView.displayMenuToggle(); 
       }
     }, 620);
@@ -29,29 +36,35 @@ elements.navLinks.forEach((link) => {
 window.onscroll = function() {
   "use strict";
   if (document.body.scrollTop >= 80 || document.documentElement.scrollTop >= 80) {
-    elements.nav.classList.add("nav-scroll");
+    nav.classList.add("nav-scroll");
   } else {
-    elements.nav.classList.remove("nav-scroll");
+    nav.classList.remove("nav-scroll");
   }
 // Scroll up Arrow
   if (document.body.scrollTop >= 1100 || document.documentElement.scrollTop >= 1100) {
-    elements.arrowUp.classList.add("arrow-up-active");
+    arrowUp.classList.add("arrow-up-active");
   } else {
-    elements.arrowUp.classList.remove("arrow-up-active");
+    arrowUp.classList.remove("arrow-up-active");
   }
 };
 
 
-
+if (nav !== null ) { nav.classList.add("nav-scroll") };
 ////////////////////////
 // Spy Scroll for NAV
 document.addEventListener('DOMContentLoaded', function(){ 
   
-  const { sections, navLinks } = elements;
+  // const { sections, navLinks } = elements;
 
   // functions to add and remove the active class from links as appropriate
-  const makeActive = (link) => navLinks[link].classList.add("link-active");
-  const removeActive = (link) => navLinks[link].classList.remove("link-active");
+  const makeActive = (link) => {
+    if (navLinks !== null) { 
+      navLinks[link].classList.add("link-active")}
+  };
+  const removeActive = (link) => {
+    if (navLinks !== null) { 
+      navLinks[link].classList.remove("link-active")}
+  };
   const removeAllActive = () => [...Array(sections.length).keys()].forEach((link) => removeActive(link));
   
   const sectionMargin = 200;
@@ -67,3 +80,5 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 }, false);
+
+
