@@ -44,12 +44,7 @@
   margin-left: auto;
 }
 
-.case__img-full {
-  display: block;
-  border-radius: 5px;
-  box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
-  margin-top: 8rem;
-}
+//// ab hier case__section
 
 .case__img {
   display: block;
@@ -57,17 +52,34 @@
   box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
 }
 
+.case__img-full {
+  box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
+  border-radius: none; 
+  @include respond(tablet) { border-radius: 5px; } 
+}
+
 .case__img-alt {
   display: block;
   border-radius: 5px;
-  //box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
-  //margin-top: 8rem;
 }
 
 .case__section {
-  margin-top: 10rem;
+  margin-top: 6rem;
+  @include respond(tablet) { margin-top: 10rem; } 
+}
+
+.case__section-bottom {
+  padding-bottom: 10rem;
 }
 
 .case__section-title {
+  margin-top: 6rem;
   margin-bottom: 2rem;
+  @include respond(tablet) { margin-top: 0rem; } 
+}
+
+.case__section-title-alt {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  @include respond(tablet) { margin-top: 10rem; } 
 }
