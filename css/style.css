@@ -703,15 +703,19 @@ ol {
   color: #403b3b; }
 
 .bio__img {
-  width: 100%; }
-  @media only screen and (min-width: 48.1em) {
-    .bio__img {
-      margin-top: 3rem; } }
-
-.bio img {
   position: sticky;
   top: 11rem;
+  width: 100%; }
+
+.js-animate-img-bio {
+  margin-top: 10rem;
+  transition: margin-top 0.8s; }
+
+.is-animated-bio {
   margin-top: 5rem; }
+  @media only screen and (min-width: 48.1em) {
+    .is-animated-bio {
+      margin-top: 2rem; } }
 
 .about__reasons {
   background-color: #f6f6f4; }
@@ -746,6 +750,13 @@ ol {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: #ffffff; }
+
+.js-animate-img {
+  margin-top: 7rem;
+  transition: margin-top 0.8s; }
+
+.is-animated {
+  margin-top: 0rem; }
 
 .case__header {
   padding-top: 5rem; }

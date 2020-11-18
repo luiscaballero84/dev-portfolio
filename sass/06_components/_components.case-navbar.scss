@@ -4,3 +4,12 @@
   padding-bottom: 2.5rem;
   background-color: $color-white;
 }
+
+// observer api trigger animation
+////// only here as test, should be moved to proper location
+.js-animate-img {
+  margin-top: 7rem;
+  transition: margin-top 0.8s; 
+}
+
+.is-animated { margin-top: 0rem; }
