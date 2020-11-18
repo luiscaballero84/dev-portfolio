@@ -1,5 +1,6 @@
 import { consoleMessages } from './models/ConsoleMessage.js'; // show console messages
 import { elements } from './views/selectors.js';
+import { observerTrigger } from './models/Observer.js';
 
 consoleMessages();
 
@@ -16,25 +17,11 @@ window.onscroll = function() {
 };
 
 
-
 /// Intersection Observer API
-const triggerImgs = document.querySelectorAll('.js-animate-img');
+// Trigger animation to images
+function imgTrigger() {
+  const target = document.querySelectorAll('.js-animate-img');
+  observerTrigger(target, 'is-animated', '5px');
+}
 
-const config = {
-  rootMargin: '5px'
-};
-
-let observer = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
-      entry.target.classList.add('is-animated');
-      imgObserver.unobserve(entry.target); // make that the animation only works once until the page reloads
-    } else {
-      entry.target.classList.remove('is-animated');
-    }
-  });
-}, config);
-
-triggerImgs.forEach(image => {
-  observer.observe(image);
-});
+imgTrigger();

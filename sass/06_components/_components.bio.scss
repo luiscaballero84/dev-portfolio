@@ -15,13 +15,3 @@
   width: 100%;
 }
 
-///// 
-.js-animate-img-bio {
-  margin-top: 10rem;
-  transition: margin-top 0.8s; 
-}
-
-.is-animated-bio { 
-  margin-top: 5rem; 
-  @include respond(tablet) { margin-top: 2rem }  
-}

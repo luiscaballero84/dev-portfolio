@@ -4,14 +4,16 @@ const projectList = [
     text: "App built in ReactJS where you can share quotes on Twitter",
     img: "img/projects/quotes-thumb.jpg",
     alt: "chill quotes project image",
-    link: "pages/case-quotes.html"
+    link: "pages/case-quotes.html",
+    firstImg:"js-first-img"
   },
   {
     name: "Grid Systems",
     text: "Responsive site to explore the posibilities of CSS Grid",
     img: "img/projects/grids-thumb.png",
     alt: "grid system project image",
-    link: "pages/case-grids.html"
+    link: "pages/case-grids.html",
+    firstImg:""
   },
 ];
 
@@ -22,7 +24,7 @@ function renderProjects() {
 
     return `
       <a class="card" href="${project.link}">
-          <img class="card__img" src="${project.img}" alt="${project.alt}">
+          <img class="card__img js-animate-img ${project.firstImg}" src="${project.img}" alt="${project.alt}">
           <h3 class="card__title">${project.name}</h3>
           <p class="card__text">${project.text}</p>
           <h6 class="card__link">View Project 

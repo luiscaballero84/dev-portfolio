@@ -6,6 +6,7 @@ import * as navModel from './models/Nav.js';
 import * as navView from './views/navView.js';
 import * as cardView from './views/cardView.js'; // show the project cards
 import { consoleMessages } from './models/ConsoleMessage.js'; // show console messages
+import { observerTrigger } from './models/Observer.js';
 
 consoleMessages();
 
@@ -72,21 +73,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 /// Intersection Observer API
-const trigger = document.querySelector('.js-animate-img-bio');
+// Trigger animation to images
+function imgTrigger() {
+  const targetBio = document.querySelectorAll('.js-animate-img-bio');
+  const firstTargetProject = document.querySelector('.js-animate-img');
+  const targetProjects = document.querySelectorAll('.js-animate-img');
 
-const config = {
-  rootMargin: '5px'
-};
+  observerTrigger(targetBio, 'is-animated-bio', '5px');
+  observerTrigger(firstTargetProject, 'is-animated-first', '5px');
+  observerTrigger(targetProjects, 'is-animated', '5px'); 
+}
 
-let observer = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
-      entry.target.classList.add('is-animated-bio');
-      imgObserver.unobserve(entry.target); // make that the animation only works once until the page reloads
-    } else {
-      entry.target.classList.remove('is-animated-bio');
-    }
-  });
-}, config);
-
-observer.observe(trigger);
+imgTrigger();

@@ -1,0 +1,26 @@
+// observer api trigger animations
+.js-animate-img {
+  margin-top: 7rem;
+  transition: margin-top 0.8s; 
+}
+
+.is-animated { margin-top: 0rem; }
+
+///// for the bio section image
+.js-animate-img-bio {
+  margin-top: 10rem;
+  transition: margin-top .8s; 
+}
+
+.is-animated-bio { 
+  margin-top: 5rem; 
+  @include respond(tablet) { margin-top: 2rem }  
+}
+
+///// for the first card image
+.js-first-img {
+  margin-top: 100rem;
+  transition: margin-top .8s; 
+}
+
+.is-animated-first { margin-top: 0rem; }
