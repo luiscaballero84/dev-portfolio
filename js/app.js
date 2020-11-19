@@ -73,15 +73,21 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 /// Intersection Observer API
-// Trigger animation to images
-function imgTrigger() {
-  const targetBio = document.querySelectorAll('.js-animate-img-bio');
-  const firstTargetProject = document.querySelector('.js-animate-img');
-  const targetProjects = document.querySelectorAll('.js-animate-img');
+// Trigger animation & lazy load when images are on the screen
+let animatedImg; 
+let bioImg; 
+let firstThumbImg; 
 
-  observerTrigger(targetBio, 'is-animated-bio', '5px');
-  observerTrigger(firstTargetProject, 'is-animated-first', '5px');
-  observerTrigger(targetProjects, 'is-animated', '5px'); 
-}
+window.addEventListener("load", (event) => {
+  // targets
+  animatedImg = document.querySelectorAll('.js-animate-img'); 
+  bioImg = document.querySelector('.js-animate-bio__img');
+  firstThumbImg = document.querySelector('.js-animate-img');
+  // call the observer function
+  observerTrigger(animatedImg, 'isAnimated', '5px');
+  observerTrigger(bioImg, 'isAnimated-bio__img', '5px');
+  observerTrigger(firstThumbImg, 'isAnimated-firstThumb', '5px');
 
-imgTrigger();
+  //observerLazyLoad()
+
+}, false);

@@ -201,24 +201,24 @@ ol {
   margin-top: 7rem;
   transition: margin-top 0.8s; }
 
-.is-animated {
+.isAnimated {
   margin-top: 0rem; }
 
-.js-animate-img-bio {
+.js-animate-bio__img {
   margin-top: 10rem;
   transition: margin-top .8s; }
 
-.is-animated-bio {
+.isAnimated-bio__img {
   margin-top: 5rem; }
   @media only screen and (min-width: 48.1em) {
-    .is-animated-bio {
+    .isAnimated-bio__img {
       margin-top: 2rem; } }
 
 .js-first-img {
-  margin-top: 10rem;
+  margin-top: 12rem;
   transition: margin-top .8s; }
 
-.is-animated-first {
+.isAnimated-firstThumb {
   margin-top: 0rem; }
 
 .grid {

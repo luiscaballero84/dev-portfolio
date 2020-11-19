@@ -19,9 +19,10 @@ window.onscroll = function() {
 
 /// Intersection Observer API
 // Trigger animation to images
-function imgTrigger() {
-  const target = document.querySelectorAll('.js-animate-img');
-  observerTrigger(target, 'is-animated', '5px');
-}
 
-imgTrigger();
+window.addEventListener("load", (event) => {
+  // targets
+  const target = document.querySelectorAll('.js-animate-img');
+   // call the observer function
+  observerTrigger(target, 'isAnimated', '5px');
+}, false);
