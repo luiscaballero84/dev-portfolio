@@ -1,5 +1,6 @@
-// observer API trigger animations
-////////////////////////////////
+//////////////
+// observer API trigger animations classes
+//////////////
 
 // regular image animation
 .js-animate-img {
@@ -20,7 +21,7 @@
   @include respond(tablet) { margin-top: 2rem }  
 }
 
-///// projects / first card thumb image
+///// projects / first card thumb image animation
 .js-first-img {
   margin-top: 12rem;
   transition: margin-top .8s; 

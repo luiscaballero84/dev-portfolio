@@ -17,10 +17,11 @@ consoleMessages();
 const {burgerIcon, navLinks, navMenu, nav, arrowUp, sections } = elements; 
 
 // Nav / Burger Menu Controller
+//
 burgerIcon.addEventListener('click', navModel.burgerMenuToggle);
 
-
 // Nav / Links
+//
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     setTimeout(function() { 
@@ -32,6 +33,7 @@ navLinks.forEach((link) => {
 });
 
 // Nav / on Scroll change color navbar
+//
 window.onscroll = function() {
   "use strict";
   if (document.body.scrollTop >= 80 || document.documentElement.scrollTop >= 80) {
@@ -48,8 +50,8 @@ window.onscroll = function() {
 };
 
 
-////////////////////////
 // Spy Scroll for NAV
+//
 document.addEventListener('DOMContentLoaded', function(){ 
   // functions to add and remove the active class from links as appropriate
   const makeActive = (link) => navLinks[link].classList.add("link-active");
@@ -70,10 +72,12 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 }, false);
 
+/////////////////////////
+// Intersection Observer API
+/////////////////////////
 
-
-/// Intersection Observer API
 // Trigger animation & lazy load when images are on the screen
+//
 let animatedImg; 
 let bioImg; 
 let firstThumbImg; 
@@ -87,7 +91,4 @@ window.addEventListener("load", (event) => {
   observerTrigger(animatedImg, 'isAnimated', '5px');
   observerTrigger(bioImg, 'isAnimated-bio__img', '5px');
   observerTrigger(firstThumbImg, 'isAnimated-firstThumb', '5px');
-
-  //observerLazyLoad()
-
 }, false);

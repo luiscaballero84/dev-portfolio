@@ -1,6 +1,5 @@
-.case__header {
-  padding-top: 5rem;
-}
+.case__header { padding-top: 5rem; }
+
 .case__animate {
   animation: 
     topToBottom-2 .5s ease, 
@@ -13,9 +12,7 @@
     fadeIn .1s ease; 
 }
 
-.case__header-title {
-  margin-bottom: 2rem;
-}
+.case__header-title { margin-bottom: 2rem; }
 
 .case__info-container {
   border-top: 2px solid $color-grey;
@@ -50,6 +47,4 @@
   flex-shrink: 0;
 }
 
-.case__icon {
-  margin-left: auto;
-}
+.case__icon { margin-left: auto; }
