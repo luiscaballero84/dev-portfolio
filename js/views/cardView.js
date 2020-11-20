@@ -5,7 +5,7 @@ const projectList = [
     img: "img/projects/quotes-thumb.jpg",
     alt: "chill quotes project image",
     link: "pages/case-quotes.html",
-    firstImg:"js-first-img"
+    firstImgClass:"js-first-img"
   },
   {
     name: "Grid Systems",
@@ -13,7 +13,7 @@ const projectList = [
     img: "img/projects/grids-thumb.png",
     alt: "grid system project image",
     link: "pages/case-grids.html",
-    firstImg:""
+    firstImgClass:""
   },
 ];
 
@@ -25,8 +25,8 @@ function renderProjects() {
     return `
       <a class="card" href="${project.link}">
           <img 
-            class="card__img js-animate-img lazy-img ${project.firstImg}" 
-            src=""
+            class="card__img js-animate-img lazy-img ${project.firstImgClass}" 
+            src="img/lazy-img-thumb.jpg"
             data-src="${project.img}" 
             alt="${project.alt}"
           >
