@@ -7,6 +7,7 @@ h1 {
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -.5px;
+  color: $color-black;
   @include respond(tablet) {
     font-size: 7rem;
     line-height: 1;
@@ -19,6 +20,7 @@ h2 {
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.2;
+  color: $color-black;
   
   @include respond(tablet) {
     font-size: 3.3rem;
@@ -31,6 +33,7 @@ h2 {
 h3 { 
   font-size: 3rem;
   font-weight: 600;
+  color: $color-black;
   @include respond(desktop) {
     font-size: 3.5rem;
   }
@@ -39,6 +42,7 @@ h3 {
 h4 { 
   font-size: 2rem;
   font-weight: 600;
+  color: $color-black;
   @include respond(tablet) {
     font-size: 2.4rem;
   }
@@ -50,22 +54,25 @@ h5 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: $color-black;
 }
 
 h6 {
   font-size: 1.6rem;
   font-family: $sub-font;
   font-weight: 400;
+  color: $color-black;
 }
 
 p {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.5;
+  color: $color-grey-dark;
 
   @include respond(tablet) {
     font-size: 2rem;
-    line-height: 1.8;
+    line-height: 1.7;
   }
   @include respond(desktop) {
     // font-size: 2.4rem;

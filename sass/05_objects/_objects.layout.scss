@@ -2,13 +2,7 @@
 // #Layout
 // --------------------------------------------------
 
-.nav-grid,
-.header-grid,
-.projects-grid, 
-.skills-grid, 
-.about-grid, 
-.values-grid, 
-.footer-grid {
+.grid {
   display: grid;
   grid-template-columns:
     [full-start] 2rem
@@ -30,23 +24,15 @@
   }
 }
 
-.nav-grid-item {
-  grid-column: content-start / content-end;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-grid-item,
-.projects-grid-item, 
-.about-grid-item,
-.skills-grid-item, 
-.values-grid-item, 
-.footer-grid-item {
+.grid-item {
   grid-column: content-start / content-end;
 }
 
-.skills { background-color: $color-primary; }
+.grid-item-full {
+  grid-column: full-start / full-end;
+  @include respond(tablet) {  grid-column: content-start / content-end; }
+}
+
 
 // for the spy scroll
 .anchor {
@@ -64,6 +50,8 @@
   @include respond(tablet) { top: -400px;  }
 }
 
+// SECTIONS
+//////////////
 
 // Section title
 .section-title {
@@ -71,13 +59,11 @@
   margin-bottom: 4rem;
 }
 
-.section-title--white { color: $color-white;}
+.stack { background-color: $color-primary; }
 
 // Section padding bottom
-.projects,
-.skills,
-.about,
-.values {
+
+.section-bottom {
   padding-bottom: 12rem;
 }
 
@@ -87,11 +73,12 @@
 }
 
 //////// 2 Cols
+// Grid Containers Layouts
 .col-2-container {
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
+    column-gap: 4rem;
   }
 }
 
@@ -99,18 +86,24 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
+    column-gap: 4rem;
   }
   @include respond(desktop) {
     grid-template-columns: 1fr 40%;
   }
 }
 
-.col-2-of-2-item {
+.col-2-container-plus-reversed {
   @include respond(tablet) {
-    grid-column: 2 / span 1; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+  @include respond(desktop) {
+    grid-template-columns: 40% 1fr ;
   }
 }
+
 
 //////// 3 Cols
 .col-3-container {
@@ -121,4 +114,10 @@
   }
 }
 
-.col-2-of-3-item { grid-column: 1 / span 2; }
+//////// FUllWidth 
+
+
+//////// ORDER 
+.grid-order-1 { order: 1; }
+
+

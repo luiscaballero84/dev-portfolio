@@ -29,10 +29,17 @@
   transition: top .2s ease-out;
 }
 
+.nav-flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: topToBottom .7s ease 1;
+}
+
 ///////////////////
 // Logo
-.nav-grid-item .logo {
-  font-size: 1.6rem !important;
+.logo {
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .8px;
@@ -43,7 +50,6 @@
   color: $color-primary-contrast;
   box-shadow:none;
   text-decoration: none;
-  @include respond(tablet) { font-size: 2.4rem; }
 }
 
 ///////////////////
@@ -55,7 +61,7 @@
   right: -100rem; // goes with class nav-active right: -3rem;
 
   height: 100vh;
-  width: 100vw;
+  width: 92vw;
   padding-bottom: 5rem;
 
   display: flex;
@@ -64,6 +70,7 @@
   align-items: center;
 
   background-color: $color-primary;
+  box-shadow: -5px 0px 15px 2px rgba(0,0,0,0.1);
   transition: right .35s ease-out;
 
   @include respond(tablet) {
@@ -75,6 +82,7 @@
     width: 50%;
     padding-bottom: 0;
     background-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -105,7 +113,7 @@
   
   @include respond(tablet) {
     display: block;
-    padding-top: .5rem;
+    padding-top: .7rem;
     padding-bottom: .5rem;
     font-size: 1.6rem;
     border-bottom: 2px solid transparent;
@@ -115,7 +123,7 @@
 }
 
 // CTA Menu LINK
-.navbar-menu .cta-link {
+.cta-link {
   padding-top: 1rem;
   padding-right: 2.5rem;
   padding-bottom: 1rem;
@@ -128,6 +136,7 @@
   box-shadow:none;
 
   @include respond(tablet) {
+    margin-top: -10rem !important;
     padding-top: .5rem;
     padding-right: 1.5rem;
     padding-bottom: .5rem;
@@ -196,3 +205,4 @@
   color: $color-primary-contrast;
   border: 2px solid $color-primary;
 }
+

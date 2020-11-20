@@ -30,11 +30,17 @@
   }
 }
 
+/////////// width
+.u-width-100 {
+  width: 100%;
+}
 
 /////////// Margins
 .u-mt-1 { margin-top: 1rem; }
 
 .u-mt-2 { margin-top: 2rem; }
+
+.u-mt-8 { margin-top: 8rem; }
 
 .u-mb-1 { margin-bottom: 1rem; }
 
@@ -83,4 +89,9 @@
 /////////////// Positions
 .u-relative {
   position: relative; 
+}
+
+/////////////// Box-shadow
+.u-img-shadow {
+  box-shadow: 0px 4px 15px 1px rgba(0,0,0,.1);
 }
