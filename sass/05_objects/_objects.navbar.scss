@@ -1,24 +1,25 @@
 ///////////////////
-// Navbar  
+// Navbar
 .navbar {
   z-index: 1000;
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: $space-50;
+  padding-bottom: $space-50;
   background-color: $color-primary;
-  @media (hover: hover){
-    &:hover { 
-      &:before { top: 0rem; }
+  @media (hover: hover) {
+    &:hover {
+      &:before {
+        top: 0rem;
+      }
     }
   }
 }
 
-
 // White BG when hover and scrolling down
 .navbar:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -10rem;
@@ -26,14 +27,15 @@
   height: 100%;
   z-index: -100;
   background-color: $color-white;
-  transition: top .2s ease-out;
+  transition: top 0.2s ease-out;
 }
 
 .nav-flex {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  animation: topToBottom .7s ease 1;
+  //animation: topToBottom .7s ease 1; old
+  animation: fadeIn 0.6s ease-in 1, topToBottom 0.7s ease 1;
 }
 
 ///////////////////
@@ -42,13 +44,13 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: .8px;
-  padding-bottom: .5rem;
-  padding-left: 0; 
+  letter-spacing: 0.8px;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
   padding-right: 0;
   border-bottom: 2px solid $color-primary;
   color: $color-primary-contrast;
-  box-shadow:none;
+  box-shadow: none;
   text-decoration: none;
 }
 
@@ -70,14 +72,14 @@
   align-items: center;
 
   background-color: $color-primary;
-  box-shadow: -5px 0px 15px 2px rgba(0,0,0,0.1);
-  transition: right .35s ease-out;
+  box-shadow: -5px 0px 15px 2px rgba(0, 0, 0, 0.1);
+  transition: right 0.35s ease-out;
 
   @include respond(tablet) {
     position: static;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;;
+    justify-content: flex-end;
     height: 100%;
     width: 50%;
     padding-bottom: 0;
@@ -86,14 +88,18 @@
   }
 }
 
-.menu-active { right: 0rem; }
+.menu-active {
+  right: 0rem;
+}
 
 //  margins of Menu links
 .navbar-menu li {
   margin-bottom: 2.5rem;
   user-select: none;
-  &:last-of-type { margin-top: 4rem; }
-  
+  &:last-of-type {
+    margin-top: 4rem;
+  }
+
   @include respond(tablet) {
     margin-bottom: 0rem;
     margin-right: 3.5rem;
@@ -109,16 +115,18 @@
   font-size: 2.8rem;
   color: $color-black;
   text-decoration: none;
-  box-shadow:none;
-  
+  box-shadow: none;
+
   @include respond(tablet) {
     display: block;
-    padding-top: .7rem;
-    padding-bottom: .5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
     font-size: 1.6rem;
     border-bottom: 2px solid transparent;
-    transition: border-bottom .1s ease;
-    &:hover { border-bottom: 2px solid $color-primary-contrast; }
+    transition: border-bottom 0.1s ease;
+    &:hover {
+      border-bottom: 2px solid $color-primary-contrast;
+    }
   }
 }
 
@@ -133,16 +141,16 @@
   border: 2px solid $color-primary-contrast;
   border-radius: 50rem;
   text-decoration: none;
-  box-shadow:none;
+  box-shadow: none;
 
   @include respond(tablet) {
     margin-top: -10rem !important;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     padding-right: 1.5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     padding-left: 1.5rem;
     font-size: 1.6rem;
-    transition: background-color .2s ease;
+    transition: background-color 0.2s ease;
 
     &:hover {
       color: $color-primary-contrast;
@@ -160,7 +168,9 @@
   z-index: 1030;
   display: block;
   cursor: pointer;
-  @include respond(tablet) { display: none; }
+  @include respond(tablet) {
+    display: none;
+  }
 }
 
 //the 3 lines of the burger icon
@@ -170,7 +180,7 @@
   margin-top: 0.7rem;
   background-color: $color-primary-contrast;
   border-radius: 1rem;
-  transition: transform .3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .navbar-burger div:last-of-type {
@@ -180,19 +190,23 @@
 // Three burger lines while animating
 .burger-animate .line1 {
   background-color: $color-primary-contrast;
-  transform: rotate(-45deg) translate(-0.7rem,0.6rem);
+  transform: rotate(-45deg) translate(-0.7rem, 0.6rem);
 }
-.burger-animate .line2 { opacity: 0; }
+.burger-animate .line2 {
+  opacity: 0;
+}
 
 .burger-animate .line3 {
   background-color: $color-primary-contrast;
-  transform: rotate(45deg) translate(-0.6rem,-0.6rem);
+  transform: rotate(45deg) translate(-0.6rem, -0.6rem);
 }
 
 //// Scroll down change Navbar
 .nav-scroll {
-  background-color: transparent; 
-  &:before { top: 0rem; }
+  background-color: transparent;
+  &:before {
+    top: 0rem;
+  }
 }
 
 ///// Links is-active when scroll down
@@ -200,9 +214,8 @@
   border-bottom: 2px solid $color-primary;
 }
 
-.navbar-menu li:last-of-type .link-active  {
+.navbar-menu li:last-of-type .link-active {
   background-color: $color-primary;
   color: $color-primary-contrast;
   border: 2px solid $color-primary;
 }
-
