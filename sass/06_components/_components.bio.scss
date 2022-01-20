@@ -1,17 +1,23 @@
 ////////// BIO section
 ////////////////////////////
-.bio { background-color: $color-white; }
-
-.bio__title { margin-top: 1rem; }
-
-.bio__text { 
-  margin-top: 2rem; 
-  color: $color-grey-dark;
+.bio {
+  background-color: $color-white;
 }
 
-.bio__img { 
-  position: sticky; 
+.bio__title {
+  margin-top: 1rem;
+}
+
+.bio__text {
+  margin-top: 2rem;
+  margin-top: $space-10;
+  //margin-top: 1px;
+  color: $color-grey-dark;
+  color: red;
+}
+
+.bio__img {
+  position: sticky;
   top: 11rem;
   width: 100%;
 }
-
