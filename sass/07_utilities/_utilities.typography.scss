@@ -1,0 +1,23 @@
+.txt-hero {
+  font-size: $type-xxx-large;
+
+  @include respond(tablet) { 
+    font-size: 6.2rem;
+  }
+
+  @include respond(desktop) { 
+    font-size: 10rem;
+  }
+}
+
+.txt-hero--small {
+  font-size: $type-small;
+
+  @include respond(tablet) { 
+    font-size: $type-medium;
+  }
+
+  @include respond(desktop) { 
+    font-size: $type-large;
+  }
+}

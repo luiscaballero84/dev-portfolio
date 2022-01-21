@@ -1,19 +1,13 @@
 // --------------------------------------------------
-// <NAME OF THE PROJECT>
+// <LUIS PORTFOLIO>
 //
 // Sass styles import for whole project
 // --------------------------------------------------
 
-@import "01_settings/settings.global";
-@import "01_settings/settings.colors";
+@import "01_settings/settings.@variables";
+@import "01_settings/settings.elements";
+@import "01_settings/settings.fonts";
 
-@import "02_tools/tools.mixins";
-
-@import "03_generic/generic.reset";
-
-@import "04_elements/elements.headings";
-@import "04_elements/elements.links";
-@import "04_elements/elements.lists";
 @import "04_elements/elements.keyframes";
 @import "04_elements/elements.animations";
 
@@ -36,4 +30,5 @@
 @import "06_components/components.case-header";
 @import "06_components/components.case-section";
 
-@import "07_trumps/trumps.utilities.scss";
+@import "07_utilities/utilities.utilities.scss";
+@import "07_utilities/utilities.typography.scss";

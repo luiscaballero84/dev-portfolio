@@ -8,9 +8,13 @@
     height: 100vh;
     text-align: center;
   }
+
+  @include respond(desktop) {
+    padding-top: $space-90;
+  }
 }
 
-.header-item {
+.header-container {
   // layout?
   display: flex;
   flex-direction: column;
@@ -37,11 +41,11 @@
   @include respond(tablet) {
     display: block;
     position: absolute;
-    bottom: 3rem;
+    bottom: $space-60;
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 14rem;
+    //margin-top: $spacing-40;
     animation: bottomToTop 0.7s ease 1, moveToDown 2s 1.5s ease infinite;
 
     & span {
