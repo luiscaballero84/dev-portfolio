@@ -13,63 +13,19 @@ html {
 
 body {
   overflow-x: hidden;
-  color: #241c15;
   color: #161616;
-  font-family: "bs", sans-serif;
+  font-family: "bs", arial, sans-serif;
   letter-spacing: 0.2px; }
 
-@font-face {
-  font-family: "JetMono";
-  src: url("../../css/font/JetBrainsMono-Regular.woff") format("woff");
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Custom";
-  src: url("../../css/font/custom-light.woff") format("woff");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Custom";
-  src: url("../../css/font/custom-regular.woff") format("woff");
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Custom";
-  src: url("../../css/font/custom-book.woff") format("woff");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Custom";
-  src: url("../../css/font/custom-medium.woff") format("woff");
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Custom";
-  src: url("../../css/font/custom-bold.woff") format("woff");
-  font-weight: 700; }
-
-@font-face {
-  font-family: "bs";
-  src: url("../../css/font/bs-regular.woff") format("woff");
-  font-weight: 400; }
-
-@font-face {
-  font-family: "bs";
-  src: url("../../css/font/bs-semibold.woff") format("woff");
-  font-weight: 600; }
-
 h1 {
-  font-size: 5.2rem;
+  font-size: 3.8rem;
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.5px;
   color: #161616; }
   @media only screen and (min-width: 48.1em) {
     h1 {
-      font-size: 6.2rem; } }
-  @media only screen and (min-width: 75em) {
-    h1 {
-      font-size: 10rem; } }
+      font-size: 4.8rem; } }
 
 h2 {
   font-size: 3rem;
@@ -78,48 +34,26 @@ h2 {
   color: #241c15; }
   @media only screen and (min-width: 48.1em) {
     h2 {
-      font-size: 3.3rem;
+      font-size: 3.8rem;
       line-height: 1.3;
       letter-spacing: -0.1px; } }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 600;
   color: #241c15; }
   @media only screen and (min-width: 75em) {
     h3 {
-      font-size: 3.5rem; } }
-
-h4 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #241c15; }
-  @media only screen and (min-width: 48.1em) {
-    h4 {
-      font-size: 2.4rem; } }
-
-h5 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #241c15; }
-
-h6 {
-  font-size: 1.6rem;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 400;
-  color: #241c15; }
+      font-size: 3rem; } }
 
 p {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #403b3b; }
+  color: #393939; }
   @media only screen and (min-width: 48.1em) {
     p {
-      font-size: 2rem;
-      line-height: 1.7; } }
+      font-size: 2.2rem; } }
 
 a:link {
   color: #241c15;
@@ -159,6 +93,16 @@ p a:active {
 ul,
 ol {
   list-style: none; }
+
+@font-face {
+  font-family: "bs";
+  src: url("../../css/font/bs-regular.woff") format("woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "bs";
+  src: url("../../css/font/bs-semibold.woff") format("woff");
+  font-weight: 600; }
 
 @keyframes fadeIn {
   0% {
@@ -410,7 +354,7 @@ ol {
       display: block;
       padding-top: 0.7rem;
       padding-bottom: 0.5rem;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       border-bottom: 2px solid transparent;
       transition: border-bottom 0.1s ease; }
       .navbar-menu .link:hover {
@@ -524,8 +468,11 @@ ol {
     .header {
       height: 100vh;
       text-align: center; } }
+  @media only screen and (min-width: 75em) {
+    .header {
+      padding-top: 9.6rem; } }
 
-.header-item {
+.header-container {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -543,11 +490,10 @@ ol {
     .header__arrow {
       display: block;
       position: absolute;
-      bottom: 3rem;
+      bottom: 3.2rem;
       left: 0;
       right: 0;
       margin: auto;
-      margin-top: 14rem;
       animation: bottomToTop 0.7s ease 1, moveToDown 2s 1.5s ease infinite; }
       .header__arrow span {
         color: #241c15;
@@ -730,8 +676,7 @@ ol {
 .bio__text {
   margin-top: 2rem;
   margin-top: 0.4rem;
-  color: #403b3b;
-  color: green; }
+  color: #403b3b; }
 
 .bio__img {
   position: sticky;
@@ -932,3 +877,21 @@ ol {
 
 .u-img-shadow {
   box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.1); }
+
+.txt-hero {
+  font-size: 5.2rem; }
+  @media only screen and (min-width: 48.1em) {
+    .txt-hero {
+      font-size: 6.2rem; } }
+  @media only screen and (min-width: 75em) {
+    .txt-hero {
+      font-size: 10rem; } }
+
+.txt-hero--small {
+  font-size: 2.2rem; }
+  @media only screen and (min-width: 48.1em) {
+    .txt-hero--small {
+      font-size: 2.4rem; } }
+  @media only screen and (min-width: 75em) {
+    .txt-hero--small {
+      font-size: 3rem; } }

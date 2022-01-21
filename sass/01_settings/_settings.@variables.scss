@@ -1,0 +1,91 @@
+// --------------------------------------------------
+// MEDIA QUERIES MIXIN
+// --------------------------------------------------
+
+@mixin respond($breakpoint) {
+
+  @if $breakpoint == small-tablet {
+    @media only screen and (min-width: 26.9em) { @content }; // 430px
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 48.1em) { @content }; // 770px
+  }
+
+    @if $breakpoint == desktop {
+    @media only screen and (min-width: 75em) { @content }; // 1200
+  }
+}
+
+// use the mixin inside the class:
+// @include respond($breakpoint-name) { font-weight: 400; }
+
+
+// --------------------------------------------------
+// #COLORS
+// --------------------------------------------------
+
+$color-black: #241c15; // old
+/// Primary
+$color-primary: #ffdb58;
+$color-primary-contrast: $color-black; //old
+
+//Gray scale
+$color-white: #ffffff;
+$gray-10: #f4f4f4;
+$gray-15: #ececee;
+$gray-20: #e0e0e0;
+$gray-30: #c6c6c6;
+$gray-60: #757575;
+$gray-80: #393939;
+$gray-100: #161616;
+
+/// OLD GRAYS !REMOVE
+$color-grey: #e5e5e5;
+$color-grey-dark: #403b3b; // large body text
+$color-grey-light: #f6f6f4;
+
+// --------------------------------------------------
+// #SPACING
+// --------------------------------------------------
+$space-unit: 0.8rem;
+$space-10: 0.5 * $space-unit; //4px
+$space-20: $space-unit; //8px
+$space-30: 1.5 * $space-unit; //12px
+$space-40: 2 * $space-unit; //16px
+$space-50: 3 * $space-unit; //24px
+$space-60: 4 * $space-unit; //32px
+$space-70: 6 * $space-unit; //48px
+$space-80: 8 * $space-unit; //64px
+$space-90: 12 * $space-unit; //96px
+$space-100: 20 * $space-unit; //160px
+
+// --------------------------------------------------
+// #FONT STACK
+// --------------------------------------------------
+$body-font: "bs", arial, sans-serif;
+$sub-font: "Times New Roman", Times, serif; // old remove!
+
+// --------------------------------------------------
+// #TYPE-SCALE
+// --------------------------------------------------
+$type-xxx-small: 1.2rem;
+$type-xx-small: 1.6rem;
+$type-x-small: 1.8rem;
+$type-small: 2.2rem;
+$type-medium: 2.4rem;
+$type-large: 3rem;
+$type-x-large: 3.8rem;
+$type-xx-large: 4.8rem;
+$type-xxx-large: 5.2rem;
+
+// $font-size-20: 1.6rem;
+// $font-size-30: 1.8rem;
+// $font-size-40: 2.2rem;
+// $font-size-50: 2.4rem;
+// $font-size-60: 3rem;
+// $font-size-70: 3.8rem;
+// $font-size-80: 5.2rem;
+// $font-size-90: 6.2rem;
+// $font-size-100: 10rem;
+
