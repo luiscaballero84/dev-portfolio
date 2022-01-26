@@ -9,17 +9,17 @@
     [content-start] 1fr
     [content-end] 2rem [full-end];
 
-  @include respond(tablet) { 
+  @include respond(tablet) {
     grid-template-columns:
-      [full-start] 3rem 
-      [content-start] 1fr [col2] 1fr 
+      [full-start] 3rem
+      [content-start] 1fr [col2] 1fr
       [content-end] 3rem [full-end];
   }
-  
-  @include respond(desktop) { 
+
+  @include respond(desktop) {
     grid-template-columns:
       [full-start] 1fr
-      [content-start] 55rem [col2] 55rem 
+      [content-start] 55rem [col2] 55rem
       [content-end] 1fr [full-end];
   }
 }
@@ -30,9 +30,10 @@
 
 .grid-item-full {
   grid-column: full-start / full-end;
-  @include respond(tablet) {  grid-column: content-start / content-end; }
+  @include respond(tablet) {
+    grid-column: content-start / content-end;
+  }
 }
-
 
 // for the spy scroll
 .anchor {
@@ -45,21 +46,19 @@
 #contact-section {
   display: block;
   position: relative;
-  top: -200px; 
+  top: -200px;
   visibility: hidden;
-  @include respond(tablet) { top: -400px;  }
+  @include respond(tablet) {
+    top: -400px;
+  }
 }
 
 // SECTIONS
 //////////////
 
-// Section title
-.section-title {
-  margin-top: 6.5rem;
-  margin-bottom: 4rem;
+.stack {
+  background-color: $color-primary;
 }
-
-.stack { background-color: $color-primary; }
 
 // Section padding bottom
 
@@ -69,7 +68,9 @@
 
 .footer {
   padding-bottom: 3rem;
-  @include respond(tablet) { padding-bottom: 6rem; }
+  @include respond(tablet) {
+    padding-bottom: 6rem;
+  }
 }
 
 //////// 2 Cols
@@ -100,10 +101,9 @@
     column-gap: 4rem;
   }
   @include respond(desktop) {
-    grid-template-columns: 40% 1fr ;
+    grid-template-columns: 40% 1fr;
   }
 }
-
 
 //////// 3 Cols
 .col-3-container {
@@ -114,10 +114,9 @@
   }
 }
 
-//////// FUllWidth 
+//////// FUllWidth
 
-
-//////// ORDER 
-.grid-order-1 { order: 1; }
-
-
+//////// ORDER
+.grid-order-1 {
+  order: 1;
+}
