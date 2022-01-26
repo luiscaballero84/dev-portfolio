@@ -100,15 +100,15 @@ p {
   font-weight: 400;
   line-height: 1.5;
   color: $gray-80;
+  margin-bottom: $space-30;
 
   @include respond(tablet) {
     font-size: $type-small;
   }
 }
 
-// --------------------------------------------------
-// #Links basic styling
-// --------------------------------------------------
+// #Links
+// --------------
 
 a:link {
   color: $color-black;
@@ -156,11 +156,16 @@ p a:active {
   }
 }
 
-// --------------------------------------------------
-// #Lists basic styling
-// --------------------------------------------------
+// #Lists
+// -------------
 
 ul,
 ol {
   list-style: none;
+}
+
+// #images
+// --------------
+img {
+  border-radius: $rounded-default;
 }

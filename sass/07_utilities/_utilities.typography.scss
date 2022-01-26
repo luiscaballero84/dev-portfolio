@@ -26,6 +26,10 @@
   text-transform: uppercase;
 }
 
+.txt-line {
+  text-decoration: line-through;
+}
+
 .txt-heavy {
   font-weight: $fw-bold;
 }
@@ -67,6 +71,7 @@
   font-size: $type-xxx-large;
 }
 
+// txt letter spacing
 .txt-loose {
   letter-spacing: $ls-loose;
 }
@@ -77,12 +82,31 @@
 
 // Section title
 // placed in here for the moment
-.section-title {
-  margin-top: $space-90;
+.txt-section {
+  margin-top: $space-80;
   margin-bottom: $space-30;
   font-size: $type-xx-small;
   font-weight: $fw-bold;
   text-transform: uppercase;
   letter-spacing: $ls-loose;
   color: $gray-100;
+}
+
+.txt-highlight {
+  color: $color-primary-contrast;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  // padding-top: 2rem;
+  // padding-bottom: 2.5rem;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  // border-top: 2px solid $color-grey;
+  // border-bottom: 2px solid $color-grey;
+
+  @include respond(tablet) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    line-height: 1.4;
+  }
 }
