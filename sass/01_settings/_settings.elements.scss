@@ -24,12 +24,23 @@ body {
   letter-spacing: 0.2px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //margin: var(--space-medium) 0 var(--space-x-small) 0;
+  padding: 0;
+  font-weight: $fw-bold;
+  line-height: $lh-tight;
+  color: $gray-100;
+}
+
 h1 {
   font-size: $type-x-large;
-  font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.5px;
-  color: $gray-100;
 
   @include respond(tablet) {
     font-size: $type-xx-large;
@@ -40,14 +51,10 @@ h1 {
 
 h2 {
   font-size: $type-large;
-  font-weight: 400;
-  line-height: 1.2;
-  color: $color-black;
+  margin-bottom: $space-70;
 
   @include respond(tablet) {
     font-size: $type-x-large;
-    line-height: 1.3;
-    letter-spacing: -0.1px;
   }
 }
 
@@ -108,23 +115,24 @@ a:link {
   text-decoration: none;
 }
 
-a:visited { 
+a:visited {
   color: $color-black;
 }
 
-// #Links inside Body Text <p> 
+// #Links inside Body Text <p>
 p a:link {
-  //display: inline-block; --> solve the break line problems in firefox but doesn look good :) 
-  padding-bottom: .2rem;
-  padding-left: .2rem;
-  padding-right: .2rem;
+  //display: inline-block; --> solve the break line problems in firefox but doesn look good :)
+  padding-bottom: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
   color: $color-grey-dark;
   text-decoration: none;
   box-shadow: rgba($color-primary, 1) 0px -2px 0px inset;
-  transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s, color 0.15s ease 0s;
+  transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s,
+    color 0.15s ease 0s;
 }
 
-p a:visited { 
+p a:visited {
   color: $color-grey-dark;
   border-bottom-color: $color-primary;
 }
@@ -135,7 +143,9 @@ p a:visited {
   }
 }
 
-p a:active {color: $color-grey-dark;}
+p a:active {
+  color: $color-grey-dark;
+}
 
 .ghost-link {
   color: $color-white;

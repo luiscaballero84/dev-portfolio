@@ -17,26 +17,31 @@ body {
   font-family: "bs", arial, sans-serif;
   letter-spacing: 0.2px; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #161616; }
+
 h1 {
   font-size: 3.8rem;
-  font-weight: 600;
   line-height: 1.1;
-  letter-spacing: -0.5px;
-  color: #161616; }
+  letter-spacing: -0.5px; }
   @media only screen and (min-width: 48.1em) {
     h1 {
       font-size: 4.8rem; } }
 
 h2 {
   font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #241c15; }
+  margin-bottom: 4.8rem; }
   @media only screen and (min-width: 48.1em) {
     h2 {
-      font-size: 3.8rem;
-      line-height: 1.3;
-      letter-spacing: -0.1px; } }
+      font-size: 3.8rem; } }
 
 h3 {
   font-size: 2.4rem;
@@ -63,9 +68,9 @@ a:visited {
   color: #241c15; }
 
 p a:link {
-  padding-bottom: .2rem;
-  padding-left: .2rem;
-  padding-right: .2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
   color: #403b3b;
   text-decoration: none;
   box-shadow: #ffdb58 0px -2px 0px inset;
@@ -208,10 +213,6 @@ ol {
     #contact-section {
       top: -400px; } }
 
-.section-title {
-  margin-top: 6.5rem;
-  margin-bottom: 4rem; }
-
 .stack {
   background-color: #ffdb58; }
 
@@ -346,7 +347,7 @@ ol {
 
 .navbar-menu .link {
   font-size: 2.8rem;
-  color: #241c15;
+  color: #161616;
   text-decoration: none;
   box-shadow: none; }
   @media only screen and (min-width: 48.1em) {
@@ -895,3 +896,51 @@ ol {
   @media only screen and (min-width: 75em) {
     .txt-hero--small {
       font-size: 3rem; } }
+
+.txt-upcase {
+  text-transform: uppercase; }
+
+.txt-heavy {
+  font-weight: 600; }
+
+.txt-xxx-small {
+  font-size: 1.2rem; }
+
+.txt-xx-small {
+  font-size: 1.6rem; }
+
+.txt-x-small {
+  font-size: 1.8rem; }
+
+.txt-small {
+  font-size: 2.2rem; }
+
+.txt-medium {
+  font-size: 2.4rem; }
+
+.txt-large {
+  font-size: 3rem; }
+
+.txt-x-large {
+  font-size: 3.8rem; }
+
+.txt-xx-large {
+  font-size: 4.8rem; }
+
+.txt-xxx-large {
+  font-size: 5.2rem; }
+
+.txt-loose {
+  letter-spacing: 0.05em; }
+
+.txt-x-loose {
+  letter-spacing: 0.075em; }
+
+.section-title {
+  margin-top: 9.6rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #161616; }

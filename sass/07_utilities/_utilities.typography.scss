@@ -1,11 +1,11 @@
 .txt-hero {
   font-size: $type-xxx-large;
 
-  @include respond(tablet) { 
+  @include respond(tablet) {
     font-size: 6.2rem;
   }
 
-  @include respond(desktop) { 
+  @include respond(desktop) {
     font-size: 10rem;
   }
 }
@@ -13,11 +13,76 @@
 .txt-hero--small {
   font-size: $type-small;
 
-  @include respond(tablet) { 
+  @include respond(tablet) {
     font-size: $type-medium;
   }
 
-  @include respond(desktop) { 
+  @include respond(desktop) {
     font-size: $type-large;
   }
+}
+
+.txt-upcase {
+  text-transform: uppercase;
+}
+
+.txt-heavy {
+  font-weight: $fw-bold;
+}
+
+// txt sizes
+.txt-xxx-small {
+  font-size: $type-xxx-small;
+}
+
+.txt-xx-small {
+  font-size: $type-xx-small;
+}
+
+.txt-x-small {
+  font-size: $type-x-small;
+}
+
+.txt-small {
+  font-size: $type-small;
+}
+
+.txt-medium {
+  font-size: $type-medium;
+}
+
+.txt-large {
+  font-size: $type-large;
+}
+
+.txt-x-large {
+  font-size: $type-x-large;
+}
+
+.txt-xx-large {
+  font-size: $type-xx-large;
+}
+
+.txt-xxx-large {
+  font-size: $type-xxx-large;
+}
+
+.txt-loose {
+  letter-spacing: $ls-loose;
+}
+
+.txt-x-loose {
+  letter-spacing: $ls-x-loose;
+}
+
+// Section title
+// placed in here for the moment
+.section-title {
+  margin-top: $space-90;
+  margin-bottom: $space-30;
+  font-size: $type-xx-small;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  letter-spacing: $ls-loose;
+  color: $gray-100;
 }

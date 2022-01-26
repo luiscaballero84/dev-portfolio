@@ -3,23 +3,27 @@
 // --------------------------------------------------
 
 @mixin respond($breakpoint) {
-
   @if $breakpoint == small-tablet {
-    @media only screen and (min-width: 26.9em) { @content }; // 430px
+    @media only screen and (min-width: 26.9em) {
+      @content;
+    } // 430px
   }
 
   @if $breakpoint == tablet {
-    @media only screen and (min-width: 48.1em) { @content }; // 770px
+    @media only screen and (min-width: 48.1em) {
+      @content;
+    } // 770px
   }
 
-    @if $breakpoint == desktop {
-    @media only screen and (min-width: 75em) { @content }; // 1200
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 75em) {
+      @content;
+    } // 1200
   }
 }
 
 // use the mixin inside the class:
 // @include respond($breakpoint-name) { font-weight: 400; }
-
 
 // --------------------------------------------------
 // #COLORS
@@ -89,3 +93,27 @@ $type-xxx-large: 5.2rem;
 // $font-size-90: 6.2rem;
 // $font-size-100: 10rem;
 
+// --------------------------------------------------
+// #FONT WEIGHT
+// --------------------------------------------------
+$fw-default: 400;
+$fw-bold: 600;
+
+// --------------------------------------------------
+// #LINE HEIGHT
+// --------------------------------------------------
+$lh-default: 1.5;
+$lh-tight: 1.2;
+$lh-x-tight: 1.1;
+
+// --------------------------------------------------
+// #LETTER SPACING
+// --------------------------------------------------
+$ls-loose: 0.05em;
+$ls-x-loose: 0.075em;
+
+// --------------------------------------------------
+// #BORDERS
+// --------------------------------------------------
+$rounded-default: 1rem;
+$rounded-full: 50%;
