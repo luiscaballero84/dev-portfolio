@@ -1,3 +1,9 @@
+.btn--txt {
+  display: inline-flex; 
+  align-items: center;
+  margin-top: $space-60;
+}
+
 .arrow-up {
   z-index: 900;
   position: fixed; 

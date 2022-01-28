@@ -93,20 +93,32 @@
 }
 
 .txt-highlight {
-  color: $color-primary-contrast;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  // color: $color-primary-contrast;
+  margin-top: $space-60;
+  margin-bottom: $space-60;
   // padding-top: 2rem;
   // padding-bottom: 2.5rem;
-  font-size: 2.4rem;
-  line-height: 1.3;
+  font-size: $type-medium;
+  line-height: $lh-tight;
   // border-top: 2px solid $color-grey;
   // border-bottom: 2px solid $color-grey;
 
   @include respond(tablet) {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    // margin-top: $space-70;
+    // margin-bottom: $space-70;
     font-size: 2.8rem;
-    line-height: 1.4;
+    //font-size: $type-large;
+    line-height: $lh-medium;
+  }
+}
+
+.txt-link {
+  display: block;
+  font-size: $type-x-small;
+  line-height: $lh-default;
+  margin-top: $space-60;
+
+  @include respond(tablet) {
+    font-size: $type-small;
   }
 }

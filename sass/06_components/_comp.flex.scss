@@ -1,0 +1,15 @@
+.flex {
+  display: inline-flex;
+  align-items: center;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  //padding: 0;
+}
+
+.flex--center-v {
+  align-items: center;
+}
+
+.flex--center-h {
+  justify-content: center;
+}
