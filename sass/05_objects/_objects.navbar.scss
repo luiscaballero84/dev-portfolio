@@ -111,8 +111,8 @@
 }
 
 // REGULAR NAVBAR LINK
-.navbar-menu .link {
-  font-size: 2.8rem;
+.navbar-menu .nav-link {
+  //font-size: 2.8rem;
   color: $gray-100;
   text-decoration: none;
   box-shadow: none;
@@ -131,13 +131,13 @@
 }
 
 // CTA Menu LINK
-.cta-link {
+.navbar-menu .nav-link--cta {
   padding-top: 1rem;
   padding-right: 2.5rem;
   padding-bottom: 1rem;
   padding-left: 2.5rem;
   color: $color-primary-contrast;
-  font-size: 2.5rem;
+  font-size: $type-x-small;
   border: 2px solid $color-primary-contrast;
   border-radius: 50rem;
   text-decoration: none;
@@ -149,7 +149,7 @@
     padding-right: 1.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1.5rem;
-    font-size: 1.6rem;
+    // font-size: 1.6rem;
     transition: background-color 0.2s ease;
 
     &:hover {
