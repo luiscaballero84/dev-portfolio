@@ -1,0 +1,17 @@
+.chip-container {
+  margin-top: 3rem;
+}
+
+.chip {
+  display: inline-block;
+  margin-right: $space-10;
+  margin-bottom: $space-30;
+  padding-top: $space-20;
+  padding-right: $space-40;
+  padding-bottom: $space-20;
+  padding-left: $space-40;
+  background-color: $color-white;
+  border-radius: $rounded-full;
+  border: 2px solid $gray-80;
+  font-size: $type-x-small;
+}

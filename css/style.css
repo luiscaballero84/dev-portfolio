@@ -727,6 +727,22 @@ img {
 .flex--center-h {
   justify-content: center; }
 
+.chip-container {
+  margin-top: 3rem; }
+
+.chip {
+  display: inline-block;
+  margin-right: 0.4rem;
+  margin-bottom: 1.2rem;
+  padding-top: 0.8rem;
+  padding-right: 1.6rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.6rem;
+  background-color: #ffffff;
+  border-radius: 50rem;
+  border: 2px solid #393939;
+  font-size: 1.8rem; }
+
 .case__navbar {
   width: 100%;
   padding-top: 2.5rem;
