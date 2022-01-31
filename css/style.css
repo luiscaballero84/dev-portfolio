@@ -95,6 +95,9 @@ ol {
 img {
   border-radius: 1rem; }
 
+strong {
+  font-weight: 600; }
+
 @font-face {
   font-family: "bs";
   src: url("../../css/font/bs-regular.woff") format("woff");
@@ -727,21 +730,22 @@ img {
 .flex--center-h {
   justify-content: center; }
 
+.chip-container:first-of-type {
+  margin-top: 4.8rem; }
+
 .chip-container {
-  margin-top: 3rem; }
+  margin-top: 2.4rem; }
 
 .chip {
   display: inline-block;
   margin-right: 0.4rem;
   margin-bottom: 1.2rem;
-  padding-top: 0.8rem;
-  padding-right: 1.6rem;
-  padding-bottom: 0.8rem;
-  padding-left: 1.6rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
   background-color: #ffffff;
   border-radius: 50rem;
   border: 2px solid #393939;
-  font-size: 1.8rem; }
+  color: #393939; }
 
 .case__navbar {
   width: 100%;

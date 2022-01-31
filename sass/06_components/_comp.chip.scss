@@ -1,17 +1,24 @@
+.chip-container:first-of-type {
+  margin-top: $space-70;
+}
+
 .chip-container {
-  margin-top: 3rem;
+  margin-top: $space-50;
 }
 
 .chip {
   display: inline-block;
   margin-right: $space-10;
   margin-bottom: $space-30;
-  padding-top: $space-20;
-  padding-right: $space-40;
-  padding-bottom: $space-20;
-  padding-left: $space-40;
+  //padding-top: $space-10;
+  padding-right: $space-30;
+  //padding-bottom: $space-10;
+  padding-left: $space-30;
   background-color: $color-white;
   border-radius: $rounded-full;
   border: 2px solid $gray-80;
-  font-size: $type-x-small;
+  //font-size: $type-x-small;
+  color: $gray-80;
 }
+
+
