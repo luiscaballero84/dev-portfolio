@@ -67,39 +67,12 @@ h2 {
 /////// not in use yet
 h3 {
   font-size: $type-medium;
-  font-weight: 600;
-  color: $color-black;
+  margin-bottom: $space-70;
+
   @include respond(desktop) {
     font-size: $type-large;
   }
 }
-
-// old, no H4
-// h4 {
-//   font-size: 2rem;
-//   font-weight: 600;
-//   color: $color-black;
-//   @include respond(tablet) {
-//     font-size: 2.4rem;
-//   }
-// }
-
-// // old, no H4
-// h5 {
-//   font-size: 1.6rem;
-//   font-weight: 600;
-//   text-transform: uppercase;
-//   letter-spacing: 2px;
-//   color: $color-black;
-// }
-
-// // old, no H4
-// h6 {
-//   font-size: 1.6rem;
-//   font-family: $sub-font;
-//   font-weight: 400;
-//   color: $color-black;
-// }
 
 p {
   margin-bottom: $space-40;
@@ -145,7 +118,6 @@ p a:active {
   color: $gray-100;
 }
 
-
 .ghost-link {
   color: $color-white;
   &:hover {
@@ -169,6 +141,6 @@ img {
   border-radius: $rounded-default;
 }
 
-strong { 
+strong {
   font-weight: $fw-bold;
 }

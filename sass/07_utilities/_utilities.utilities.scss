@@ -1,15 +1,19 @@
 // --------------------------------------------------
 // #Utilities
 // --------------------------------------------------
-
-.u-text-center {
-  text-align: center;
-}
-
 .bg-color--primary {
   background-color: $color-primary;
 }
 
+.bg-color--lightgray {
+  background-color: $gray-10;
+}
+
+//////
+
+.u-text-center {
+  text-align: center;
+}
 .u-underline {
   text-decoration: underline;
   text-decoration-color: $color-primary;

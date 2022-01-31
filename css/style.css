@@ -50,8 +50,7 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
-  font-weight: 600;
-  color: #241c15; }
+  margin-bottom: 4.8rem; }
   @media only screen and (min-width: 75em) {
     h3 {
       font-size: 3rem; } }
@@ -747,6 +746,10 @@ strong {
   border: 2px solid #393939;
   color: #393939; }
 
+.spot-illu {
+  width: 70%;
+  margin-bottom: 3.2rem; }
+
 .case__navbar {
   width: 100%;
   padding-top: 2.5rem;
@@ -830,11 +833,14 @@ strong {
     .case__section-title-alt {
       margin-top: 10rem; } }
 
-.u-text-center {
-  text-align: center; }
-
 .bg-color--primary {
   background-color: #ffdb58; }
+
+.bg-color--lightgray {
+  background-color: #f4f4f4; }
+
+.u-text-center {
+  text-align: center; }
 
 .u-underline {
   text-decoration: underline;
@@ -943,6 +949,9 @@ strong {
 
 .txt-heavy {
   font-weight: 600; }
+
+.txt-center {
+  text-align: center; }
 
 .txt-xxx-small {
   font-size: 1.2rem; }
