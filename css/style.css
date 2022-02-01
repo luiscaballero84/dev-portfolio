@@ -542,6 +542,61 @@ strong {
   width: 70%;
   margin-bottom: 3.2rem; }
 
+.footer {
+  background-color: #161616;
+  padding-bottom: 4.8rem; }
+
+.footer p,
+.footer a {
+  color: #ffffff; }
+
+.footer a {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.1s ease; }
+
+@media only screen and (min-width: 48.1em) {
+  footer a:hover {
+    border-bottom: 2px solid #ffffff; } }
+
+.footer__mail {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: 2.2rem; }
+
+.footer__social {
+  margin-top: 9.6rem; }
+  @media only screen and (min-width: 48.1em) {
+    .footer__social {
+      display: flex;
+      align-items: baseline;
+      margin-top: 10rem; } }
+
+.footer__social li {
+  margin-bottom: 1.6rem; }
+
+.footer__social li:last-of-type {
+  margin-bottom: 0; }
+
+.footer__social li a {
+  font-size: 1.8rem;
+  margin-top: 15rem;
+  margin-right: 1.5rem; }
+
+.footer__social li:last-of-type {
+  margin-left: auto; }
+
+.footer__copyright {
+  margin-top: 9.6rem;
+  font-size: 1.2rem;
+  color: #757575; }
+  @media only screen and (min-width: 26.9em) {
+    .footer__copyright {
+      font-size: 1.6rem; } }
+  @media only screen and (min-width: 48.1em) {
+    .footer__copyright {
+      margin-top: 0; } }
+
 .header {
   position: relative;
   padding-top: 16rem;
@@ -603,51 +658,6 @@ strong {
 .link-icon__container * {
   color: #241c15;
   margin-bottom: .3rem; }
-
-.footer {
-  background-color: #e5e5e5; }
-
-.footer a {
-  padding-bottom: .5rem;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom .1s ease; }
-
-@media only screen and (min-width: 48.1em) {
-  .footer a:hover {
-    border-bottom: 2px solid #241c15; } }
-
-.footer__mail {
-  margin-top: 4rem;
-  font-weight: 400;
-  font-size: 2rem;
-  letter-spacing: .1rem; }
-
-.footer__social {
-  margin-top: 7.5rem; }
-  @media only screen and (min-width: 48.1em) {
-    .footer__social {
-      display: flex;
-      align-items: baseline;
-      margin-top: 10rem; } }
-
-.footer__social h6 {
-  margin-top: .5rem;
-  margin-right: 1.5rem; }
-
-.footer__social li:last-of-type {
-  margin-left: auto; }
-
-.footer__copyright {
-  margin-top: 8rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #403b3b; }
-  @media only screen and (min-width: 26.9em) {
-    .footer__copyright {
-      font-size: 1.4rem; } }
-  @media only screen and (min-width: 48.1em) {
-    .footer__copyright {
-      margin-top: 0; } }
 
 .listing {
   margin-top: 7rem; }
