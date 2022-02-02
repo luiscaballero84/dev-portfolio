@@ -19,7 +19,7 @@
   @include respond(desktop) {
     grid-template-columns:
       [full-start] 1fr
-      [content-start] 55rem [col2] 55rem
+      [content-start] 60rem [col2] 60rem
       [content-end] 1fr [full-end];
   }
 }
@@ -28,53 +28,14 @@
   grid-column: content-start / content-end;
 }
 
-.grid-item-full {
+.grid-item--full {
   grid-column: full-start / full-end;
   @include respond(tablet) {
     grid-column: content-start / content-end;
   }
 }
 
-// for the spy scroll
-.anchor {
-  display: block;
-  position: relative;
-  top: -7.5rem;
-  visibility: hidden;
-}
-
-#contact-section {
-  display: block;
-  position: relative;
-  top: -200px;
-  visibility: hidden;
-  @include respond(tablet) {
-    top: -400px;
-  }
-}
-
-// SECTIONS
-//////////////
-
-.stack {
-  background-color: $color-primary;
-}
-
-// Section padding bottom
-
-.section-bottom {
-  padding-bottom: 12rem;
-}
-
-.footer {
-  padding-bottom: 3rem;
-  @include respond(tablet) {
-    padding-bottom: 6rem;
-  }
-}
-
 //////// 2 Cols
-// Grid Containers Layouts
 .col-2-container {
   @include respond(tablet) {
     display: grid;
@@ -83,7 +44,7 @@
   }
 }
 
-.col-2-container-plus {
+.col-2-container--plus {
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -94,7 +55,7 @@
   }
 }
 
-.col-2-container-plus-reversed {
+.col-2-container--plus-reversed {
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,10 +72,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 3rem;
+   // display: flex; 
   }
 }
-
-//////// FUllWidth
 
 //////// ORDER
 .grid-order-1 {

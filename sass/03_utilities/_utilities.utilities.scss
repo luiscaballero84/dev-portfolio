@@ -1,0 +1,19 @@
+// --------------------------------------------------
+// #Utilities
+// --------------------------------------------------
+.bg-color--primary {
+  background-color: $color-primary;
+}
+
+.bg-color--lightgray {
+  background-color: $gray-10;
+}
+
+.sticky {
+  position: sticky;
+  top: 11rem;
+}
+
+.section-pb {
+  padding-bottom: 12rem;
+}

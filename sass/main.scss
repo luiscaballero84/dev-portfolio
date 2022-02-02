@@ -8,31 +8,23 @@
 @import "01_settings/settings.elements";
 @import "01_settings/settings.fonts";
 
-@import "04_elements/elements.keyframes";
-@import "04_elements/elements.animations";
+@import "02_components/comp.anchor";
+@import "02_components/comp.button";
+@import "02_components/comp.card";
+@import "02_components/comp.chip";
+@import "02_components/comp.flex";
+@import "02_components/comp.grid";
+@import "02_components/comp.icon";
+@import "02_components/comp.lined-list";
+@import "02_components/comp.navbar";
+@import "02_components/comp.spot-illu";
+@import "02_components/comp.footer";
+@import "02_components/comp.header";
 
-@import "05_objects/objects.layout";
-@import "05_objects/objects.navbar";
+@import "02_components/components.case-navbar";
+@import "02_components/components.case-header";
+@import "02_components/components.case-section";
 
-@import "06_components/comp.button";
-@import "06_components/comp.card";
-@import "06_components/comp.chip";
-@import "06_components/comp.flex";
-@import "06_components/comp.icon";
-@import "06_components/comp.lined-list";
-@import "06_components/comp.spot-illu";
-@import "06_components/comp.footer";
-
-@import "06_components/components.header";
-@import "06_components/components.dot";
-@import "06_components/components.link-icon";
-
-@import "06_components/components.listing";
-@import "06_components/components.bio";
-@import "06_components/components.about";
-@import "06_components/components.case-navbar";
-@import "06_components/components.case-header";
-@import "06_components/components.case-section";
-
-@import "07_utilities/utilities.utilities.scss";
-@import "07_utilities/utilities.typography.scss";
+@import "03_utilities/utilities.animations.scss";
+@import "03_utilities/utilities.utilities.scss";
+@import "03_utilities/utilities.typography.scss";
