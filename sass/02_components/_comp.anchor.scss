@@ -1,0 +1,17 @@
+// Anchors for the spy scroll
+.anchor {
+  display: block;
+  position: relative;
+  top: -7.5rem;
+  visibility: hidden;
+}
+
+#contact-section {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden;
+  @include respond(tablet) {
+    top: -400px;
+  }
+}
