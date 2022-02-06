@@ -1,7 +1,15 @@
 .btn--txt {
   display: inline-flex; 
   align-items: center;
-  margin-top: $space-60;
+  margin-bottom: $space-30;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.1s ease;
+}
+
+.btn--txt:hover {
+  @media (hover: hover) {
+    border-bottom: 2px solid $gray-100;
+  }
 }
 
 .arrow-up {

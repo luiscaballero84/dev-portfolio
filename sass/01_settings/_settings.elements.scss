@@ -44,6 +44,7 @@ h6 {
 }
 
 h1 {
+  margin-bottom: $space-70;
   font-size: $type-x-large;
   line-height: 1.1;
   letter-spacing: -0.5px;
@@ -56,8 +57,8 @@ h1 {
 }
 
 h2 {
-  font-size: $type-large;
   margin-bottom: $space-70;
+  font-size: $type-large;
 
   @include respond(tablet) {
     font-size: $type-x-large;
@@ -66,8 +67,8 @@ h2 {
 
 /////// not in use yet
 h3 {
-  font-size: $type-medium;
   margin-bottom: $space-70;
+  font-size: $type-medium;
 
   @include respond(desktop) {
     font-size: $type-large;
@@ -116,15 +117,6 @@ p a:visited {
 
 p a:active {
   color: $gray-100;
-}
-
-.ghost-link {
-  color: $color-white;
-  &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    text-decoration: underline;
-  }
 }
 
 // #Lists

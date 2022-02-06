@@ -1,6 +1,5 @@
 .flex {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
 }
 
 .flex--center-v {
@@ -14,3 +13,8 @@
 .flex--wrap {
   flex-wrap: wrap;
 }
+
+.flex--column {
+  flex-direction: column;
+}
+
