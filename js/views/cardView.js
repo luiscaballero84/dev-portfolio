@@ -1,7 +1,7 @@
 const projectList = [
   {
-    name: "ChillQuotes",
-    text: "App built in ReactJS where you can share quotes on Twitter.",
+    name: "Personal Branding",
+    text: "Full branding redesign, from strategy and content to web development.",
     img: "img/projects/quotes-thumb.jpg",
     alt: "chill quotes project image",
     link: "pages/case-quotes.html",
