@@ -1,4 +1,4 @@
-//console.log("selectors is connected");
+// console.log("selectors is connected");
 
 export const elements = {
   burgerIcon: document.querySelector('.navbar-burger'),
