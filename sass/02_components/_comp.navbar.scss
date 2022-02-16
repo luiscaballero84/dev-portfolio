@@ -29,6 +29,15 @@
   }
 }
 
+.navbar--case {
+  position: static;
+  padding-top: $space-50;
+  padding-bottom: $space-50;
+  padding-right: $space-50;
+  padding-left: $space-50;
+  background-color: $color-white;
+}
+
 // White BG when hover and scrolling down
 .navbar:before {
   content: "";
@@ -54,27 +63,15 @@
   animation: fadeIn 0.6s ease-in 1, topToBottom 0.7s ease 1;
 }
 
+.nav-flex--case {
+  height: 4.4rem;
+}
+
 ///////////////////
 // Logo
 .logo-icon {
   width: 30px;
   margin-right: $space-30;
-}
-
-.logo-type {
-  font-family: "Syne";
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-
-  @include respond(tablet) {
-    font-size: 2rem;
-  }
-  @include respond(desktop) {
-    font-size: 2.2rem;
-  }
 }
 
 ///////////////////

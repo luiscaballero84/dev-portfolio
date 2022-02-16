@@ -17,7 +17,8 @@ body {
   font-family: "bs", arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #393939; }
   @media only screen and (min-width: 48.1em) {
     body {
       font-size: 2.2rem; } }
@@ -59,12 +60,15 @@ h3 {
 p {
   margin-bottom: 1.6rem; }
 
+strong {
+  color: #161616; }
+
 a:link {
   text-decoration: none;
   color: #161616; }
 
 a:visited {
-  color: #241c15; }
+  color: #161616; }
 
 p a:link {
   color: #161616;
@@ -139,7 +143,7 @@ strong {
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: transform .3s ease-out, bottom .5s ease-out; }
+  transition: transform 0.3s ease-out, bottom 0.5s ease-out; }
   .arrow-up:hover {
     transform: translateY(-1rem);
     cursor: pointer; }
@@ -322,6 +326,14 @@ strong {
       fill: #ffdb58 !important;
       transition: fill 0.15s ease-in; } }
 
+.navbar--case {
+  position: static;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  background-color: #ffffff; }
+
 .navbar:before {
   content: "";
   position: absolute;
@@ -344,23 +356,12 @@ strong {
   margin-right: auto;
   animation: fadeIn 0.6s ease-in 1, topToBottom 0.7s ease 1; }
 
+.nav-flex--case {
+  height: 4.4rem; }
+
 .logo-icon {
   width: 30px;
   margin-right: 1.2rem; }
-
-.logo-type {
-  font-family: "Syne";
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0; }
-  @media only screen and (min-width: 48.1em) {
-    .logo-type {
-      font-size: 2rem; } }
-  @media only screen and (min-width: 75em) {
-    .logo-type {
-      font-size: 2.2rem; } }
 
 .navbar-menu {
   z-index: 1000;
@@ -582,12 +583,6 @@ strong {
         font-size: 3rem; }
       .header__arrow:link {
         box-shadow: none; } }
-
-.case__navbar {
-  width: 100%;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  background-color: #ffffff; }
 
 .case__header {
   padding-top: 5rem; }
@@ -824,6 +819,9 @@ strong {
   @media only screen and (min-width: 48.1em) {
     .txt-link {
       font-size: 2.2rem; } }
+
+.txt-color-black {
+  color: #161616; }
 
 .mt-none {
   margin-top: 0px; }

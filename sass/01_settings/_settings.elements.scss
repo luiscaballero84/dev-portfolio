@@ -24,6 +24,7 @@ body {
   font-size: $type-x-small;
   font-weight: $fw-default;
   line-height: $lh-default;
+  color: $gray-80;
 
   @include respond(tablet) {
     font-size: $type-small;
@@ -77,6 +78,11 @@ h3 {
 
 p {
   margin-bottom: $space-40;
+  // color: $gray-80;
+}
+
+strong {
+  color: $gray-100;
 }
 
 // #Links
@@ -88,7 +94,7 @@ a:link {
 }
 
 a:visited {
-  color: $color-black;
+  color: $gray-100;
 }
 
 // #Links inside Body Text <p>
