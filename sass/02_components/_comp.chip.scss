@@ -7,9 +7,9 @@
 }
 
 .chip {
-  display: inline-block;
-  margin-right: $space-10;
-  margin-bottom: $space-30;
+  display: block;
+  margin-right: $space-20;
+  margin-bottom: $space-20;
   //padding-top: $space-10;
   padding-right: $space-30;
   //padding-bottom: $space-10;
@@ -20,5 +20,12 @@
   //font-size: $type-x-small;
   color: $gray-80;
 }
-
-
+.chip--small {
+  // padding-top: $space-10;
+  // padding-bottom: $space-10;
+  font-size: $type-xx-small;
+  color: $gray-60;
+  background-color: $gray-15;
+  border: none;
+  line-height: 24px;
+}

@@ -16,18 +16,26 @@
       &:before {
         top: 0rem;
       }
-      & .logo-icon rect { 
+      & .logo-icon rect {
         fill: $gray-100 !important;
-        fill-opacity: 1 !important; 
-        transition: fill .15s ease-in;
+        fill-opacity: 1 !important;
+        transition: fill 0.15s ease-in;
       }
-      & .logo-icon path { 
+      & .logo-icon path {
         fill: $color-primary !important;
-        transition: fill .15s ease-in;
+        transition: fill 0.15s ease-in;
       }
-      
     }
   }
+}
+
+.navbar--case {
+  position: static;
+  padding-top: $space-50;
+  padding-bottom: $space-50;
+  padding-right: $space-50;
+  padding-left: $space-50;
+  background-color: $color-white;
 }
 
 // White BG when hover and scrolling down
@@ -39,9 +47,9 @@
   width: 100%;
   height: 100%;
   z-index: -100;
-  backdrop-filter: saturate(.5) blur(5px);
-  background-color: rgba($color-white,0.85);
-  box-shadow: 1px 1px 10px 1px rgba($gray-60,0.1);
+  backdrop-filter: saturate(0.5) blur(5px);
+  background-color: rgba($color-white, 0.85);
+  box-shadow: 1px 1px 10px 1px rgba($gray-60, 0.1);
   transition: top 0.15s ease-out;
 }
 
@@ -50,33 +58,20 @@
   align-items: center;
   justify-content: space-between;
   max-width: 130rem; // new grid!
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-left: auto;
+  margin-right: auto;
   animation: fadeIn 0.6s ease-in 1, topToBottom 0.7s ease 1;
+}
+
+.nav-flex--case {
+  height: 4.4rem;
 }
 
 ///////////////////
 // Logo
-.logo-icon { 
-  width: 32px;
+.logo-icon {
+  width: 30px;
   margin-right: $space-30;
-  
-}
-
-.logo-type {
-  font-family: "Syne";
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 0; 
-  padding-left: 0;
-  padding-right: 0;
-
-  @include respond(tablet) {
-    font-size: 2rem;
-  }
-  @include respond(desktop) {
-    font-size: 2.2rem;
-  }
 }
 
 ///////////////////
@@ -108,7 +103,7 @@
     width: 70%;
     background-color: transparent;
     box-shadow: none;
-  } 
+  }
 }
 
 .menu-active {
@@ -216,15 +211,15 @@
     top: 0rem;
   }
   //change color of logo-icon svg
-  & .logo-icon rect { 
+  & .logo-icon rect {
     fill: $gray-100 !important;
     fill-opacity: 1 !important;
-    transition: fill .15s ease-in; 
+    transition: fill 0.15s ease-in;
   }
 
-  & .logo-icon path { 
+  & .logo-icon path {
     fill: $color-primary !important;
-    transition: fill .15s ease-in;
+    transition: fill 0.15s ease-in;
   }
 }
 

@@ -17,7 +17,7 @@ export function observerTrigger(target, animationClassName, rootMarginInPx) {
 
       //Lazy Loading
       if (entry.isIntersecting && entry.target.classList.contains("lazy-img")) {
-          console.log("lazy image:", entry.target);
+          // console.log("lazy image:", entry.target);
           entry.target.src = entry.target.dataset.src // problem
           entry.target.classList.remove("lazy-img");
           imgObserver.unobserve(entry.target);
