@@ -31,6 +31,11 @@ body {
   }
 }
 
+::selection {
+  //color: red;
+  background: lighten($color-primary, 20%);
+}
+
 h1,
 h2,
 h3,
