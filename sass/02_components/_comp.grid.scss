@@ -40,7 +40,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
+    column-gap: $space-70;
   }
 }
 
@@ -48,7 +48,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
+    column-gap: $space-70;
   }
   @include respond(desktop) {
     grid-template-columns: 1fr 40%;
@@ -59,7 +59,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
+    column-gap: $space-70;
   }
   @include respond(desktop) {
     grid-template-columns: 40% 1fr;
@@ -71,8 +71,8 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3rem;
-   // display: flex; 
+    column-gap: $space-60;
+    // display: flex;
   }
 }
 

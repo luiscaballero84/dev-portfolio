@@ -33,7 +33,15 @@ function renderProjects() {
           <h3 class="card__title">${project.name}</h3>
           <p class="card__text">${project.text}</p>
           <p class="card__link">View Project 
-            <span class="ui-icon material-icons"> east </span>
+            <svg class="ui-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="11" width="20" height="2" fill="#161616"/>
+              <rect x="18" y="9" width="2" height="2" fill="#161616"/>
+              <rect x="18" y="13" width="2" height="2" fill="#161616"/>
+              <rect x="16" y="15" width="2" height="2" fill="#161616"/>
+              <rect x="14" y="17" width="2" height="2" fill="#161616"/>
+              <rect x="16" y="7" width="2" height="2" fill="#161616"/>
+              <rect x="14" y="5" width="2" height="2" fill="#161616"/>
+            </svg>
           </p>
       </a>
     `
