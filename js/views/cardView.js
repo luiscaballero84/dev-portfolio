@@ -2,9 +2,9 @@ const projectList = [
   {
     name: "Personal Branding",
     text: "Full branding redesign, from strategy and content to web development.",
-    img: "img/projects/quotes-thumb.jpg",
+    img: "img/projects/project-brand-thumb.jpg",
     alt: "chill quotes project image",
-    link: "pages/case-quotes.html",
+    link: "pages/case-branding.html",
     firstImgClass:"js-first-img"
   },
   {

@@ -662,7 +662,8 @@ strong {
       margin-top: 10rem; } }
 
 .js-animate-img {
-  margin-top: 7rem; }
+  margin-top: 7rem;
+  transition: margin-top 0.8s; }
 
 .isAnimated {
   margin-top: 0rem; }
