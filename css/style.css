@@ -90,7 +90,7 @@ p a:active {
 
 ul,
 ol {
-  list-style: none; }
+  list-style-type: none; }
 
 img {
   width: 100%;
@@ -173,7 +173,7 @@ strong {
   .card:link:hover img {
     transform: scale(1.03); } }
 
-.card__img {
+a .card__img {
   width: 100%;
   margin-bottom: 2.4rem;
   transition: transform 0.2s ease, margin-top 0.8s; }
@@ -584,6 +584,13 @@ strong {
       .header__arrow:link {
         box-shadow: none; } }
 
+.list {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-bottom: 1.6rem;
+  padding-left: 4.8rem;
+  line-height: 1.8; }
+
 .case__header {
   padding-top: 5rem; }
 
@@ -662,7 +669,8 @@ strong {
       margin-top: 10rem; } }
 
 .js-animate-img {
-  margin-top: 7rem; }
+  margin-top: 7rem;
+  transition: margin-top 0.8s; }
 
 .isAnimated {
   margin-top: 0rem; }
