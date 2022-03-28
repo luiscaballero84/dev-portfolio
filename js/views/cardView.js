@@ -10,7 +10,7 @@ const projectList = [
   {
     name: "tink Blog Redesign",
     text: "Responsive site to explore the posibilities of CSS Grid.",
-    img: "img/projects/project-blog-thumb.jpg",
+    img: "img/projects/project-blog-thumb-2x.jpg",
     alt: "grid system project image",
     link: "pages/case-blog.html",
     firstImgClass:""
