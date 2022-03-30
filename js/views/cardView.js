@@ -2,7 +2,7 @@ const projectList = [
   {
     name: "Personal Branding",
     text: "From strategy and content to web development.",
-    img: "img/projects/project-brand-thumb.jpg",
+    img: "img/projects/project-branding-thumb-2x.jpg",
     alt: "chill quotes project image",
     link: "pages/case-branding.html",
     firstImgClass:"js-first-img"
