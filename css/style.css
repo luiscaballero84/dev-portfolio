@@ -587,86 +587,11 @@ a .card__img {
 .list {
   list-style-type: square;
   list-style-position: outside;
-  margin-bottom: 1.6rem;
-  padding-left: 4.8rem;
-  line-height: 1.8; }
+  margin-bottom: 3.2rem;
+  padding-left: 4.8rem; }
 
-.case__header {
-  padding-top: 5rem; }
-
-.case__animate {
-  animation: topToBottom-2 .5s ease,  fadeIn .5s ease; }
-
-.case__animate-img {
-  animation: bottomToTop .7s ease,  fadeIn .1s ease; }
-
-.case__header-title {
-  margin-bottom: 2rem; }
-
-.case__info-container {
-  border-top: 2px solid #e5e5e5; }
-  .case__info-container a {
-    transition: transform .2s ease; }
-  .case__info-container:first-of-type {
-    margin-top: 4rem; }
-    @media only screen and (min-width: 48.1em) {
-      .case__info-container:first-of-type {
-        margin-top: 0rem; } }
-  .case__info-container:last-of-type {
-    border-bottom: 2px solid #e5e5e5; }
-  @media (hover: hover) {
-    .case__info-container a:hover {
-      transform: translateX(1rem); } }
-
-.case__info-item {
-  display: flex;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
-
-.case__info_title {
-  margin-right: 2rem;
-  flex-basis: 10rem;
-  flex-shrink: 0; }
-
-.case__icon {
-  margin-left: auto; }
-
-.case__img {
-  display: block;
-  border-radius: 5px; }
-
-.case__img-full {
-  border-radius: none; }
-  @media only screen and (min-width: 48.1em) {
-    .case__img-full {
-      border-radius: 5px; } }
-
-.case__img-alt {
-  display: block;
-  border-radius: 5px; }
-
-.case__section {
-  margin-top: 6rem; }
-  @media only screen and (min-width: 48.1em) {
-    .case__section {
-      margin-top: 10rem; } }
-
-.case__section-bottom {
-  padding-bottom: 10rem; }
-
-.case__section-title {
-  margin-top: 6rem;
-  margin-bottom: 2rem; }
-  @media only screen and (min-width: 48.1em) {
-    .case__section-title {
-      margin-top: 0rem; } }
-
-.case__section-title-alt {
-  margin-top: 6rem;
-  margin-bottom: 2rem; }
-  @media only screen and (min-width: 48.1em) {
-    .case__section-title-alt {
-      margin-top: 10rem; } }
+.list li {
+  margin-bottom: 1.2rem; }
 
 .js-animate-img {
   margin-top: 7rem;
@@ -912,3 +837,10 @@ a .card__img {
 
 .section-pb {
   padding-bottom: 12rem; }
+
+.item-center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.max-width-large {
+  max-width: 80rem; }

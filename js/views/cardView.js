@@ -1,7 +1,7 @@
 const projectList = [
   {
     name: "Personal Branding",
-    text: "Full branding design, from strategy and content to web development.",
+    text: "From strategy and content to web development.",
     img: "img/projects/project-brand-thumb.jpg",
     alt: "chill quotes project image",
     link: "pages/case-branding.html",
@@ -9,7 +9,7 @@ const projectList = [
   },
   {
     name: "tink Blog Redesign",
-    text: "Responsive site to explore the posibilities of CSS Grid.",
+    text: "A brand new look for the tink blog. ",
     img: "img/projects/project-blog-thumb-2x.jpg",
     alt: "grid system project image",
     link: "pages/case-blog.html",
