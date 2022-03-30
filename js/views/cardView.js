@@ -1,18 +1,18 @@
 const projectList = [
   {
     name: "Personal Branding",
-    text: "Full branding redesign, from strategy and content to web development.",
-    img: "img/projects/project-brand-thumb.jpg",
+    text: "From strategy and content to web development.",
+    img: "img/projects/project-branding-thumb-2x.jpg",
     alt: "chill quotes project image",
     link: "pages/case-branding.html",
     firstImgClass:"js-first-img"
   },
   {
-    name: "Grid Systems",
-    text: "Responsive site to explore the posibilities of CSS Grid.",
-    img: "img/projects/grids-thumb.png",
+    name: "tink Blog Redesign",
+    text: "A brand new look for the tink blog. ",
+    img: "img/projects/project-blog-thumb-2x.jpg",
     alt: "grid system project image",
-    link: "pages/case-grids.html",
+    link: "pages/case-blog.html",
     firstImgClass:""
   },
 ];
@@ -32,7 +32,7 @@ function renderProjects() {
           >
           <h3 class="card__title">${project.name}</h3>
           <p class="card__text">${project.text}</p>
-          <p class="card__link">View Project 
+          <p class="card__link">View project 
             <svg class="ui-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="11" width="20" height="2" fill="#161616"/>
               <rect x="18" y="9" width="2" height="2" fill="#161616"/>
