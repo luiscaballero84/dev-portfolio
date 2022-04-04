@@ -1,0 +1,151 @@
+// --------------------------------------------------
+// #ELEMENTS & CSS Reset
+// --------------------------------------------------
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "scroll-behavior: smooth" /* actual fonts */;
+}
+
+body {
+  overflow-x: hidden;
+  color: $gray-100;
+  font-family: $body-font;
+  font-size: $type-x-small;
+  font-weight: $fw-default;
+  line-height: $lh-default;
+  color: $gray-80;
+
+  @include respond(tablet) {
+    font-size: $type-small;
+  }
+}
+
+::selection {
+  //color: red;
+  background: lighten($color-primary, 20%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //margin: var(--space-medium) 0 var(--space-x-small) 0;
+  padding: 0;
+  font-weight: $fw-bold;
+  line-height: $lh-tight;
+  color: $gray-100;
+}
+
+h1 {
+  margin-bottom: $space-70;
+  font-size: $type-x-large;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+
+  @include respond(tablet) {
+    font-size: $type-xx-large;
+    //line-height: 1;
+    //letter-spacing: -1px;
+  }
+}
+
+h2 {
+  margin-bottom: $space-70;
+  font-size: $type-large;
+
+  @include respond(tablet) {
+    font-size: $type-x-large;
+  }
+}
+
+/////// not in use yet
+h3 {
+  margin-bottom: $space-70;
+  font-size: $type-medium;
+
+  @include respond(desktop) {
+    font-size: $type-large;
+  }
+}
+
+p {
+  margin-bottom: $space-40;
+  // color: $gray-80;
+}
+
+strong {
+  color: $gray-100;
+}
+
+// #Links
+// --------------
+
+a:link {
+  text-decoration: none;
+  color: $gray-100;
+}
+
+a:visited {
+  color: $gray-100;
+}
+
+// #Links inside Body Text <p>
+p a:link {
+  //display: inline-block; --> solve the break line problems in firefox but doesn look good :)
+  // padding-bottom: 0.2rem;
+  // padding-left: 0.2rem;
+  // padding-right: 0.2rem;
+  color: $gray-100;
+  text-decoration: underline;
+  // box-shadow: rgba($color-primary, 1) 0px -2px 0px inset;
+  // transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s,
+  //   color 0.15s ease 0s;
+}
+
+p a:visited {
+  color: $gray-100;
+  border-bottom-color: $color-primary;
+}
+@media (hover: hover) {
+  p a:hover {
+    cursor: pointer;
+    // box-shadow: rgba($color-primary, 1) 0px -40px inset;
+  }
+}
+
+p a:active {
+  color: $gray-100;
+}
+
+// #Lists
+// -------------
+
+ul,
+ol {
+  list-style-type:none;
+  // list-style: none;
+}
+
+// #images
+// --------------
+img {
+  width: 100%;
+  border-radius: $rounded-default;
+}
+
+strong {
+  font-weight: $fw-bold;
+}

@@ -1,18 +1,18 @@
 const projectList = [
   {
-    name: "ChillQuotes",
-    text: "App built in ReactJS where you can share quotes on Twitter",
-    img: "img/projects/quotes-thumb.jpg",
+    name: "Personal Branding",
+    text: "From strategy and content to web development.",
+    img: "img/projects/project-branding-thumb-2x.jpg",
     alt: "chill quotes project image",
-    link: "pages/case-quotes.html",
+    link: "pages/case-branding.html",
     firstImgClass:"js-first-img"
   },
   {
-    name: "Grid Systems",
-    text: "Responsive site to explore the posibilities of CSS Grid",
-    img: "img/projects/grids-thumb.png",
+    name: "tink Blog Redesign",
+    text: "A brand new look for the tink blog. ",
+    img: "img/projects/project-blog-thumb-2x.jpg",
     alt: "grid system project image",
-    link: "pages/case-grids.html",
+    link: "pages/case-blog.html",
     firstImgClass:""
   },
 ];
@@ -32,9 +32,17 @@ function renderProjects() {
           >
           <h3 class="card__title">${project.name}</h3>
           <p class="card__text">${project.text}</p>
-          <h6 class="card__link">View Project 
-            <span class="card__icon material-icons"> navigate_next </span>
-          </h6>
+          <p class="card__link">View project 
+            <svg class="ui-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="11" width="20" height="2" fill="#161616"/>
+              <rect x="18" y="9" width="2" height="2" fill="#161616"/>
+              <rect x="18" y="13" width="2" height="2" fill="#161616"/>
+              <rect x="16" y="15" width="2" height="2" fill="#161616"/>
+              <rect x="14" y="17" width="2" height="2" fill="#161616"/>
+              <rect x="16" y="7" width="2" height="2" fill="#161616"/>
+              <rect x="14" y="5" width="2" height="2" fill="#161616"/>
+            </svg>
+          </p>
       </a>
     `
   }).join('');

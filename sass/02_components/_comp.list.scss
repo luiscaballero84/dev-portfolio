@@ -1,0 +1,10 @@
+.list {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-bottom: $space-60;
+  padding-left: $space-70;
+}
+
+.list li {
+  margin-bottom: $space-30;
+}

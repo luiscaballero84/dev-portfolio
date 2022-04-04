@@ -1,0 +1,136 @@
+.txt-hero {
+  font-size: $type-xxx-large;
+
+  @include respond(tablet) {
+    font-size: 6.2rem;
+  }
+
+  @include respond(desktop) {
+    font-size: 10rem;
+  }
+}
+
+.txt-hero--small {
+  font-size: $type-small;
+
+  @include respond(tablet) {
+    font-size: $type-medium;
+  }
+
+  @include respond(desktop) {
+    font-size: $type-large;
+  }
+}
+
+.txt-upcase {
+  text-transform: uppercase;
+}
+
+.txt-line {
+  text-decoration: line-through;
+}
+
+.txt-heavy {
+  font-weight: $fw-bold;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+// txt sizes
+.txt-xxx-small {
+  font-size: $type-xxx-small;
+}
+
+.txt-xx-small {
+  font-size: $type-xx-small;
+}
+
+.txt-x-small {
+  font-size: $type-x-small;
+}
+
+.txt-small {
+  font-size: $type-small;
+}
+
+.txt-medium {
+  font-size: $type-medium;
+}
+
+.txt-large {
+  font-size: $type-large;
+}
+
+.txt-x-large {
+  font-size: $type-x-large;
+}
+
+.txt-xx-large {
+  font-size: $type-xx-large;
+}
+
+.txt-xxx-large {
+  font-size: $type-xxx-large;
+}
+
+// txt letter spacing
+.txt-loose {
+  letter-spacing: $ls-loose;
+}
+
+.txt-x-loose {
+  letter-spacing: $ls-x-loose;
+}
+
+// Section title
+// placed in here for the moment
+.txt-section {
+  margin-top: $space-80;
+  margin-bottom: $space-30;
+  font-size: $type-xx-small;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  letter-spacing: $ls-loose;
+  color: $gray-100;
+}
+
+.txt-highlight {
+  // color: $color-primary-contrast;
+  margin-top: $space-60;
+  margin-bottom: $space-60;
+  // padding-top: 2rem;
+  // padding-bottom: 2.5rem;
+  font-size: $type-medium;
+  line-height: $lh-tight;
+  // border-top: 2px solid $color-grey;
+  // border-bottom: 2px solid $color-grey;
+
+  @include respond(tablet) {
+    // margin-top: $space-70;
+    // margin-bottom: $space-70;
+    font-size: 2.8rem;
+    //font-size: $type-large;
+    line-height: $lh-medium;
+  }
+}
+
+.txt-link {
+  display: block;
+  font-size: $type-x-small;
+  line-height: $lh-default;
+  margin-top: $space-60;
+
+  @include respond(tablet) {
+    font-size: $type-small;
+  }
+}
+
+.txt-black {
+  color: $gray-100;
+}
+
+.txt-gray {
+  color: $gray-60;
+}

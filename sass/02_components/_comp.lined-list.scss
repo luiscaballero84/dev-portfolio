@@ -1,0 +1,14 @@
+.lined-list {
+  margin-bottom: $space-80;
+}
+
+.lined-list li {
+  margin-bottom: 0px;
+  padding-top: $space-50;
+  padding-bottom: $space-50;
+  border-bottom: 2px solid $gray-30;
+}
+
+.lined-list li:first-of-type {
+  border-top: 2px solid $gray-30;
+}

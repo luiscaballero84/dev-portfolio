@@ -1,0 +1,39 @@
+.card {
+  display: block;
+  margin-bottom: 12rem;
+}
+
+.card:link {
+  // padding: 0 0;
+  // box-shadow: none;
+
+  @media (hover: hover) {
+    &:hover .card__link {
+      // transform: translate(1rem, 0);
+      border-bottom: 2px solid $gray-100;
+    }
+
+    &:hover img {
+      transform: scale(1.03);
+    }
+  }
+}
+
+a .card__img {
+  width: 100%;
+  margin-bottom: $space-50;
+  transition: transform 0.2s ease, margin-top 0.8s;
+}
+
+.card__title {
+  margin-bottom: $space-30;
+}
+
+.card__link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: $space-20;
+  margin-bottom: 0;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.2s ease, border-bottom 0.1s ease;
+}

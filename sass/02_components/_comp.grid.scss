@@ -1,0 +1,82 @@
+// --------------------------------------------------
+// #Layout
+// --------------------------------------------------
+
+.grid {
+  display: grid;
+  grid-template-columns:
+    [full-start] 2rem
+    [content-start] 1fr
+    [content-end] 2rem [full-end];
+
+  @include respond(tablet) {
+    grid-template-columns:
+      [full-start] 3rem
+      [content-start] 1fr [col2] 1fr
+      [content-end] 3rem [full-end];
+  }
+
+  @include respond(desktop) {
+    grid-template-columns:
+      [full-start] 1fr
+      [content-start] 60rem [col2] 60rem
+      [content-end] 1fr [full-end];
+  }
+}
+
+.grid-item {
+  grid-column: content-start / content-end;
+}
+
+.grid-item--full {
+  grid-column: full-start / full-end;
+  @include respond(tablet) {
+    grid-column: content-start / content-end;
+  }
+}
+
+//////// 2 Cols
+.col-2-container {
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $space-70;
+  }
+}
+
+.col-2-container--plus {
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $space-70;
+  }
+  @include respond(desktop) {
+    grid-template-columns: 1fr 40%;
+  }
+}
+
+.col-2-container--plus-reversed {
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $space-70;
+  }
+  @include respond(desktop) {
+    grid-template-columns: 40% 1fr;
+  }
+}
+
+//////// 3 Cols
+.col-3-container {
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: $space-60;
+    // display: flex;
+  }
+}
+
+//////// ORDER
+.grid-order-1 {
+  order: 1;
+}

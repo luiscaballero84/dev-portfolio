@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+  padding-top: $space-100;
+  padding-bottom: $space-100;
+  background-color: $color-primary;
+
+  @include respond(tablet) {
+    height: 100vh;
+    text-align: center;
+  }
+
+  @include respond(desktop) {
+    padding-top: $space-90;
+  }
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__title {
+  padding-bottom: $space-30;
+  animation: // add all animations as a separate class
+    fadeIn 0.6s ease-in 1, bottomToTop 0.8s ease 1;
+}
+
+.header__subtitle {
+  animation: fadeIn 0.7s ease-in 1, bottomToTop 1s ease 1;
+  // add all animations as a separate class
+}
+
+.header__arrow {
+  display: none;
+  @include respond(tablet) {
+    display: block;
+    position: absolute;
+    bottom: $space-60;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: bottomToTop 0.7s ease 1, moveToDown 2s 1.5s ease infinite;
+
+    & span {
+      color: $color-black;
+      font-size: 3rem;
+    }
+    &:link {
+      box-shadow: none;
+    }
+  }
+}
