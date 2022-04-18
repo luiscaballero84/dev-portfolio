@@ -32,7 +32,6 @@ body {
 }
 
 ::selection {
-  //color: red;
   background: lighten($color-primary, 20%);
 }
 
@@ -42,7 +41,6 @@ h3,
 h4,
 h5,
 h6 {
-  //margin: var(--space-medium) 0 var(--space-x-small) 0;
   padding: 0;
   font-weight: $fw-bold;
   line-height: $lh-tight;
@@ -50,15 +48,14 @@ h6 {
 }
 
 h1 {
-  margin-bottom: $space-70;
+  margin-bottom: $space-50;
   font-size: $type-x-large;
   line-height: 1.1;
   letter-spacing: -0.5px;
 
   @include respond(tablet) {
+    margin-bottom: $space-70;
     font-size: $type-xx-large;
-    //line-height: 1;
-    //letter-spacing: -1px;
   }
 }
 
@@ -104,15 +101,8 @@ a:visited {
 
 // #Links inside Body Text <p>
 p a:link {
-  //display: inline-block; --> solve the break line problems in firefox but doesn look good :)
-  // padding-bottom: 0.2rem;
-  // padding-left: 0.2rem;
-  // padding-right: 0.2rem;
   color: $gray-100;
   text-decoration: underline;
-  // box-shadow: rgba($color-primary, 1) 0px -2px 0px inset;
-  // transition: box-shadow 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0s,
-  //   color 0.15s ease 0s;
 }
 
 p a:visited {
@@ -122,7 +112,6 @@ p a:visited {
 @media (hover: hover) {
   p a:hover {
     cursor: pointer;
-    // box-shadow: rgba($color-primary, 1) 0px -40px inset;
   }
 }
 
