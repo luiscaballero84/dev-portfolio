@@ -448,7 +448,6 @@ a .card__img {
   width: 3rem;
   margin-top: 0.7rem;
   background-color: #161616;
-  border-radius: 1rem;
   transition: transform 0.3s ease; }
 
 .navbar-burger div:last-of-type {
