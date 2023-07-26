@@ -1,18 +1,34 @@
 const projectList = [
   {
-    name: "Personal Branding",
-    text: "From strategy and content to web development.",
-    img: "img/projects/project-branding-thumb-2x.jpg",
-    alt: "chill quotes project image",
-    link: "pages/case-branding.html",
+    name: "Raus Companion",
+    text: "Building the perfect helper for Raus guests.",
+    img: "img/projects/project-companion-img-00-thumb-2x.jpg",
+    alt: "raus companion project image",
+    link: "pages/case-companion.html",
     firstImgClass:"js-first-img"
   },
+  // {
+  //   name: "Raus Companion",
+  //   text: "Building the perfect helper for Raus guests.",
+  //   img: "img/projects/project-companion-img-00-thumb-2x.jpg",
+  //   alt: "chill quotes project image",
+  //   link: "pages/case-companion.html",
+  //   firstImgClass:""
+  // },
   {
     name: "tink Blog Redesign",
     text: "A brand new look for the tink blog. ",
     img: "img/projects/project-blog-thumb-2x.jpg",
-    alt: "grid system project image",
+    alt: "tink blog redesign project image",
     link: "pages/case-blog.html",
+    firstImgClass:""
+  },
+  {
+    name: "Personal Branding",
+    text: "From strategy and content to web development.",
+    img: "img/projects/project-branding-thumb-2x.jpg",
+    alt: "Personal bramding project image",
+    link: "pages/case-branding.html",
     firstImgClass:""
   },
 ];
