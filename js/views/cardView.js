@@ -7,14 +7,14 @@ const projectList = [
     link: "pages/case-companion.html",
     firstImgClass:"js-first-img"
   },
-  // {
-  //   name: "Raus Companion",
-  //   text: "Building the perfect helper for Raus guests.",
-  //   img: "img/projects/project-companion-img-00-thumb-2x.jpg",
-  //   alt: "chill quotes project image",
-  //   link: "pages/case-companion.html",
-  //   firstImgClass:""
-  // },
+  {
+    name: "Raus design assets",
+    text: "Laying the Foundation for Raus design system.",
+    img: "img/projects/project-design-system--img00-thumb.jpg",
+    alt: "raus design assets image",
+    link: "pages/case-design-system.html",
+    firstImgClass:""
+  },
   {
     name: "tink Blog Redesign",
     text: "A brand new look for the tink blog. ",
