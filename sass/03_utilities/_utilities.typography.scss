@@ -1,13 +1,14 @@
 .txt-hero {
-  font-size: $type-xxx-large;
+  font-size: $type-xx-large;
+  font-size: 20px;
 
   @include respond(tablet) {
     font-size: 6.2rem;
   }
 
-  @include respond(desktop) {
-    font-size: 10rem;
-  }
+  // @include respond(desktop) {
+  //   font-size: 10rem;
+  // }
 }
 
 .txt-hero--small {
