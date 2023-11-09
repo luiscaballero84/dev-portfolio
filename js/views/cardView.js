@@ -48,7 +48,7 @@ function renderProjects() {
           >
           <h3 class="card__title">${project.name}</h3>
           <p class="card__text">${project.text}</p>
-          <p class="card__link">View project 
+          <p class="card__link">Read case study 
             <svg class="ui-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="11" width="20" height="2" fill="#161616"/>
               <rect x="18" y="9" width="2" height="2" fill="#161616"/>

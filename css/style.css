@@ -561,7 +561,7 @@ a .card__img {
   justify-content: center; }
 
 .header__title {
-  padding-bottom: 0.8rem;
+  padding-bottom: 1.2rem;
   animation: fadeIn 0.6s ease-in 1, bottomToTop 0.8s ease 1; }
 
 .header__subtitle {
