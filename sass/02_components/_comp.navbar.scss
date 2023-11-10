@@ -185,13 +185,18 @@
 ///// Links is-active when scroll down
 .navbar-menu .link-active {
   border-bottom: 2px solid $color-primary;
+  &:hover {
+    border-bottom: 2px solid $color-primary;
+  }
 }
 
+//Last menu item styling
 .navbar-menu li:last-of-type .link-active {
   color: $gray-100;
-  // background-color: $color-primary;
-  
   border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid $gray-100;
+  }
 }
 
 ///////////////////

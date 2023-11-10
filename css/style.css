@@ -190,12 +190,6 @@ a .card__img {
   border-bottom: 2px solid transparent;
   transition: transform 0.2s ease, border-bottom 0.1s ease; }
 
-.chip-container:first-of-type {
-  margin-top: 4.8rem; }
-
-.chip-container {
-  margin-top: 2.4rem; }
-
 .chip {
   display: block;
   margin-right: 0.8rem;
@@ -205,6 +199,20 @@ a .card__img {
   background-color: #ffffff;
   border-radius: 50rem;
   border: 2px solid #393939;
+  color: #393939; }
+
+.chip--big {
+  display: block;
+  margin-right: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 2.4rem;
+  background-color: #ffffff;
+  border-radius: 50rem;
+  border: 2px solid #c6c6c6;
   color: #393939; }
 
 .chip--small {
@@ -431,10 +439,14 @@ a .card__img {
 
 .navbar-menu .link-active {
   border-bottom: 2px solid pink; }
+  .navbar-menu .link-active:hover {
+    border-bottom: 2px solid pink; }
 
 .navbar-menu li:last-of-type .link-active {
   color: #161616;
   border-bottom: 2px solid transparent; }
+  .navbar-menu li:last-of-type .link-active:hover {
+    border-bottom: 2px solid #161616; }
 
 .navbar-burger {
   z-index: 1030;
