@@ -289,6 +289,12 @@ a .card__img {
   margin-left: 0.8rem;
   color: #161616; }
 
+.ui-icon--small {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.4rem;
+  color: #161616; }
+
 .smiley-icon {
   display: block;
   width: 5rem;
@@ -418,22 +424,17 @@ a .card__img {
       .navbar-menu .nav-link:hover {
         border-bottom: 2px solid #161616; } }
 
-.navbar-menu .nav-link--cta {
-  font-size: 2.2rem; }
-  @media only screen and (min-width: 48.1em) {
-    .navbar-menu .nav-link--cta {
-      padding-top: 0.5rem;
-      padding-right: 1.5rem;
-      padding-bottom: 0.5rem;
-      padding-left: 1.5rem;
-      font-size: 1.8rem;
-      color: #161616;
-      border: 2px solid #161616;
-      border-radius: 50rem;
-      transition: background-color 0.2s ease; }
-      .navbar-menu .nav-link--cta:hover {
-        background-color: pink;
-        border: 2px solid pink; } }
+@media only screen and (min-width: 48.1em) {
+  .navbar-menu .nav-link--external {
+    display: flex;
+    align-items: center; } }
+
+.navbar-menu .link-active {
+  border-bottom: 2px solid pink; }
+
+.navbar-menu li:last-of-type .link-active {
+  color: #161616;
+  border-bottom: 2px solid transparent; }
 
 .navbar-burger {
   z-index: 1030;
@@ -473,14 +474,6 @@ a .card__img {
   .nav-scroll .logo-icon path {
     fill: pink !important;
     transition: fill 0.15s ease-in; }
-
-.navbar-menu .link-active {
-  border-bottom: 2px solid pink; }
-
-.navbar-menu li:last-of-type .link-active {
-  color: #161616;
-  background-color: pink;
-  border: 2px solid pink; }
 
 .spot-illu {
   width: 70%;
