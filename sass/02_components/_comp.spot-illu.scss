@@ -2,3 +2,15 @@
   width: 70%;
   margin-bottom: $space-60;
 }
+
+.spot-card {
+  margin-top: $space-40;
+  padding-top: $space-50;
+  padding-bottom: $space-30;
+  padding-left: $space-50;
+  padding-right: $space-50;
+  background-color: $gray-10;
+  border-radius: $rounded-default;
+  // border: 1px solid $gray-30;
+  line-height: $lh-medium;
+}

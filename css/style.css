@@ -95,7 +95,7 @@ ol {
 
 img {
   width: 100%;
-  border-radius: 1rem; }
+  border-radius: 2rem; }
 
 strong {
   font-weight: 600; }
@@ -315,10 +315,10 @@ a .card__img {
   margin-bottom: 0px;
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
-  border-bottom: 2px solid #c6c6c6; }
+  border-bottom: 1px solid #c6c6c6; }
 
 .lined-list li:first-of-type {
-  border-top: 2px solid #c6c6c6; }
+  border-top: 1px solid #c6c6c6; }
 
 .navbar {
   z-index: 1000;
@@ -490,6 +490,16 @@ a .card__img {
 .spot-illu {
   width: 70%;
   margin-bottom: 3.2rem; }
+
+.spot-card {
+  margin-top: 1.6rem;
+  padding-top: 2.4rem;
+  padding-bottom: 1.2rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  background-color: #f4f4f4;
+  border-radius: 2rem;
+  line-height: 1.35; }
 
 .footer {
   margin-top: 9.6rem;
