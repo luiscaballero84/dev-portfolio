@@ -8,8 +8,15 @@
   font-weight: 400;
 }
 
+// @font-face {
+//   font-family: "bs";
+//   src: url("../../css/font/bs-semibold.woff") format("woff");
+//   font-weight: 600;
+// }
+
 @font-face {
   font-family: "bs";
-  src: url("../../css/font/bs-semibold.woff") format("woff");
+  src: url("../../css/font/bs-medium.woff") format("woff");
   font-weight: 600;
 }
+
