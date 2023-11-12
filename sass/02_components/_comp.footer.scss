@@ -26,7 +26,7 @@
 
 footer a:hover {
   @include respond(tablet) {
-    border-bottom: 2px solid $color-white;
+    border-bottom: 2px solid $gray-100;
   }
 }
 

@@ -24,7 +24,7 @@ body {
   font-size: $type-x-small;
   font-weight: $fw-default;
   line-height: $lh-default;
-  color: $gray-80;
+  color: $gray-100;
 
   @include respond(tablet) {
     font-size: $type-small;
