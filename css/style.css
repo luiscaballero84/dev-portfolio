@@ -506,8 +506,7 @@ a .card__img {
   padding-bottom: 1.6rem;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
-  border-radius: 2rem;
-  background-color: pink; }
+  border-radius: 2rem; }
 
 .footer {
   margin-top: 9.6rem;
@@ -531,14 +530,6 @@ a .card__img {
   display: inline-block;
   margin-top: 1.2rem;
   font-size: 2.2rem; }
-
-.footer__social {
-  margin-top: 9.6rem; }
-  @media only screen and (min-width: 48.1em) {
-    .footer__social {
-      display: flex;
-      align-items: baseline;
-      margin-top: 10rem; } }
 
 .footer__social li {
   margin-bottom: 1.6rem; }
