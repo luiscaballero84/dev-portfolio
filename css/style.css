@@ -18,7 +18,8 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #161616; }
+  color: #161616;
+  background-color: #ffffff; }
   @media only screen and (min-width: 48.1em) {
     body {
       font-size: 2.2rem; } }
@@ -80,7 +81,7 @@ p a:link {
 
 p a:visited {
   color: #161616;
-  border-bottom-color: pink; }
+  border-bottom-color: #FFC0CB; }
 
 @media (hover: hover) {
   p a:hover {
@@ -329,7 +330,7 @@ a .card__img {
   padding-bottom: 2.4rem;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
-  background-color: pink; }
+  background-color: #FFC0CB; }
   @media (hover: hover) {
     .navbar:hover:before {
       top: 0rem; }
@@ -338,7 +339,7 @@ a .card__img {
       fill-opacity: 1 !important;
       transition: fill 0.15s ease-in; }
     .navbar:hover .logo-icon path {
-      fill: pink !important;
+      fill: #FFC0CB !important;
       transition: fill 0.15s ease-in; } }
 
 .navbar--case {
@@ -389,7 +390,7 @@ a .card__img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-color: #FFC0CB;
   box-shadow: -5px 0px 15px 2px rgba(22, 22, 22, 0.1);
   transition: right 0.35s ease-out; }
   @media only screen and (min-width: 48.1em) {
@@ -438,9 +439,9 @@ a .card__img {
     align-items: center; } }
 
 .navbar-menu .link-active {
-  border-bottom: 2px solid pink; }
+  border-bottom: 2px solid #FFC0CB; }
   .navbar-menu .link-active:hover {
-    border-bottom: 2px solid pink; }
+    border-bottom: 2px solid #FFC0CB; }
 
 .navbar-menu li:last-of-type .link-active {
   color: #161616;
@@ -484,7 +485,7 @@ a .card__img {
     fill-opacity: 1 !important;
     transition: fill 0.15s ease-in; }
   .nav-scroll .logo-icon path {
-    fill: pink !important;
+    fill: #FFC0CB !important;
     transition: fill 0.15s ease-in; }
 
 .spot-illu {
@@ -513,37 +514,9 @@ a .card__img {
   padding-bottom: 4.8rem;
   background-color: #161616; }
 
-.footer p,
-.footer a {
-  color: #ffffff; }
-
-.footer a {
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.1s ease; }
-
 @media only screen and (min-width: 48.1em) {
-  footer a:hover {
+  footer ul a:hover {
     border-bottom: 2px solid #161616; } }
-
-.footer__mail {
-  display: inline-block;
-  margin-top: 1.2rem;
-  font-size: 2.2rem; }
-
-.footer__social li {
-  margin-bottom: 1.6rem; }
-
-.footer__social li:last-of-type {
-  margin-bottom: 0; }
-
-.footer__social li a {
-  font-size: 1.8rem;
-  margin-top: 15rem;
-  margin-right: 1.5rem; }
-
-.footer__social li:last-of-type {
-  margin-left: auto; }
 
 .footer__copyright {
   margin-top: 9.6rem;
@@ -560,7 +533,7 @@ a .card__img {
   position: relative;
   padding-top: 16rem;
   padding-bottom: 16rem;
-  background-color: pink; }
+  background-color: #FFC0CB; }
   @media only screen and (min-width: 48.1em) {
     .header {
       height: 100vh;
@@ -850,7 +823,7 @@ a .card__img {
   margin-right: 0.8rem; }
 
 .bg-color--primary {
-  background-color: pink; }
+  background-color: #FFC0CB; }
 
 .bg-color--lightgray {
   background-color: #f4f4f4; }
@@ -869,6 +842,6 @@ a .card__img {
 .max-width-large {
   max-width: 80rem; }
 
-.item-center {
+.flex-center {
   display: flex;
   align-items: center; }
