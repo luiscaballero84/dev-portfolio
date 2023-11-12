@@ -1,3 +1,12 @@
+.footer__box {
+  padding-top: $space-60;
+  padding-bottom: $space-40;
+  padding-left: $space-60;
+  padding-right: $space-60;
+  border-radius: $rounded-default;
+  background-color: $color-primary;
+}
+
 .footer {
   margin-top: $space-90;
   padding-bottom: $space-70;
