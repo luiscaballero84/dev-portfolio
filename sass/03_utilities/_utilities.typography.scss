@@ -1,13 +1,16 @@
 .txt-hero {
-  font-size: $type-xxx-large;
+  font-size: $type-x-large;
 
   @include respond(tablet) {
     font-size: 6.2rem;
   }
 
-  @include respond(desktop) {
-    font-size: 10rem;
-  }
+  // @include respond(desktop) {
+  //   font-size: 10rem;
+  // }
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .txt-hero--small {
@@ -20,6 +23,10 @@
   @include respond(desktop) {
     font-size: $type-large;
   }
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: $lh-medium;
 }
 
 .txt-upcase {

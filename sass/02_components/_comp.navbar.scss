@@ -144,24 +144,58 @@
   }
 }
 
-// CTA Menu LINK
-.navbar-menu .nav-link--cta {
-  font-size: $type-small;
+// CTA Menu --external LINK 
+.navbar-menu .nav-link--external {
+  
   @include respond(tablet) {
-    padding-top: 0.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    font-size: $type-x-small;
-    color: $gray-100;
-    border: 2px solid $gray-100;
-    border-radius: $rounded-full;
-    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    // padding-top: 1rem; // to igualize with cta-button
+    // padding-bottom: 0.5rem;
+    // font-size: $type-x-small;
+    // border-bottom: 2px solid transparent;
+    // transition: border-bottom 0.1s ease;
+    // &:hover {
+    //   border-bottom: 2px solid $gray-100;
+    // }
+  }
+}
 
-    &:hover {
-      background-color: $color-primary;
-      border: 2px solid $color-primary;
-    }
+// CTA Menu LINK Deprecated
+// .navbar-menu .nav-link--cta {
+//   font-size: $type-small;
+//   @include respond(tablet) {
+//     padding-top: 0.5rem;
+//     padding-right: 1.5rem;
+//     padding-bottom: 0.5rem;
+//     padding-left: 1.5rem;
+//     font-size: $type-x-small;
+//     color: $gray-100;
+//     border: 2px solid $gray-100;
+//     border-radius: $rounded-full;
+//     transition: background-color 0.2s ease;
+
+//     &:hover {
+//       background-color: $color-primary;
+//       border: 2px solid $color-primary;
+//     }
+//   }
+// }
+
+///// Links is-active when scroll down
+.navbar-menu .link-active {
+  border-bottom: 2px solid $color-primary;
+  &:hover {
+    border-bottom: 2px solid $color-primary;
+  }
+}
+
+//Last menu item styling
+.navbar-menu li:last-of-type .link-active {
+  color: $gray-100;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid $gray-100;
   }
 }
 
@@ -222,13 +256,4 @@
   }
 }
 
-///// Links is-active when scroll down
-.navbar-menu .link-active {
-  border-bottom: 2px solid $color-primary;
-}
 
-.navbar-menu li:last-of-type .link-active {
-  color: $gray-100;
-  background-color: $color-primary;
-  border: 2px solid $color-primary;
-}

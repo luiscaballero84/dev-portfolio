@@ -24,7 +24,8 @@ body {
   font-size: $type-x-small;
   font-weight: $fw-default;
   line-height: $lh-default;
-  color: $gray-80;
+  color: $gray-100;
+  background-color: $color-white;
 
   @include respond(tablet) {
     font-size: $type-small;
@@ -43,6 +44,7 @@ h5,
 h6 {
   padding: 0;
   font-weight: $fw-bold;
+  // font-weight: $fw-default;
   line-height: $lh-tight;
   color: $gray-100;
 }
@@ -54,17 +56,17 @@ h1 {
   letter-spacing: -0.5px;
 
   @include respond(tablet) {
-    margin-bottom: $space-70;
+    margin-bottom: $space-50;
     font-size: $type-xx-large;
   }
 }
 
 h2 {
   margin-bottom: $space-70;
-  font-size: $type-large;
+  font-size: $type-x-large;
 
   @include respond(tablet) {
-    font-size: $type-x-large;
+    font-size: $type-xx-large;
   }
 }
 

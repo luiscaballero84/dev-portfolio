@@ -5,6 +5,7 @@
 // --------------------------------------------------
 
 @import "01_settings/settings.@variables";
+@import "01_settings/settings.colors";
 @import "01_settings/settings.elements";
 @import "01_settings/settings.fonts";
 
@@ -23,6 +24,6 @@
 @import "02_components/comp.list";
 
 @import "03_utilities/utilities.animations.scss";
-@import "03_utilities/utilities.typography.scss";
+@import "03_utilities/utilities.typography";
 @import "03_utilities/utilities.spacing.scss";
 @import "03_utilities/utilities.utilities.scss";
