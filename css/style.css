@@ -25,7 +25,7 @@ body {
       font-size: 2.2rem; } }
 
 ::selection {
-  background: white; }
+  background: #ffdae0; }
 
 h1,
 h2,
@@ -229,6 +229,9 @@ a .card__img {
 .flex--center-v {
   align-items: center; }
 
+.flex--baseline-v {
+  align-items: baseline; }
+
 .flex--center-h {
   justify-content: center; }
 
@@ -256,6 +259,11 @@ a .card__img {
   @media only screen and (min-width: 48.1em) {
     .grid-item--full {
       grid-column: content-start / content-end; } }
+
+.col-1-container {
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 @media only screen and (min-width: 48.1em) {
   .col-2-container {
@@ -575,7 +583,7 @@ a .card__img {
   list-style-type: square;
   list-style-position: outside;
   margin-bottom: 3.2rem;
-  padding-left: 4.8rem; }
+  padding-left: 2.4rem; }
 
 .list li {
   margin-bottom: 1.2rem; }
@@ -680,6 +688,9 @@ a .card__img {
 .txt-heavy {
   font-weight: 600; }
 
+.txt-regular {
+  font-weight: 400; }
+
 .txt-center {
   text-align: center; }
 
@@ -749,6 +760,9 @@ a .card__img {
 
 .txt-gray {
   color: #757575; }
+
+.txt-primary {
+  color: #FFC0CB; }
 
 .mt-none {
   margin-top: 0px; }

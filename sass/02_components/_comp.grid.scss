@@ -35,6 +35,13 @@
   }
 }
 
+//////// 1 Col
+.col-1-container {
+  max-width: 65rem;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
 //////// 2 Cols
 .col-2-container {
   @include respond(tablet) {

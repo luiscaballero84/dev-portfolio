@@ -41,6 +41,10 @@
   font-weight: $fw-bold;
 }
 
+.txt-regular {
+  font-weight: $fw-default;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -140,4 +144,8 @@
 
 .txt-gray {
   color: $gray-60;
+}
+
+.txt-primary {
+  color: $color-primary;
 }
