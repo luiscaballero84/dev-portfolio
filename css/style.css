@@ -854,6 +854,9 @@ a .card__img {
 .mr-20 {
   margin-right: 0.8rem; }
 
+.mr-30 {
+  margin-right: 1.2rem; }
+
 .bg-color--primary {
   background-color: #FFC0CB; }
 
@@ -870,6 +873,9 @@ a .card__img {
 .item-center {
   margin-left: auto;
   margin-right: auto; }
+
+.max-width-x-large {
+  max-width: 90rem; }
 
 .max-width-large {
   max-width: 80rem; }
