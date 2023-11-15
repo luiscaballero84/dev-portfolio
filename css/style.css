@@ -740,6 +740,9 @@ a .card__img {
 .txt-center {
   text-align: center; }
 
+.txt-right {
+  text-align: right; }
+
 .txt-xxx-small {
   font-size: 1.2rem; }
 
