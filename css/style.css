@@ -897,6 +897,9 @@ a .card__img {
 .bg-color--lightgray {
   background-color: #f4f4f4; }
 
+.bg-color--gray-30 {
+  background-color: #c6c6c6; }
+
 .sticky {
   position: sticky;
   top: 11rem; }
