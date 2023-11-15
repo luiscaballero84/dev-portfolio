@@ -745,6 +745,9 @@ a .card__img {
 .txt-x-loose {
   letter-spacing: 0.075em; }
 
+.txt-lh-medium {
+  line-height: 1.35; }
+
 .txt-section {
   margin-top: 6.4rem;
   margin-bottom: 1.2rem;
@@ -778,6 +781,9 @@ a .card__img {
 
 .txt-gray {
   color: #757575; }
+
+.txt-gray-80 {
+  color: #393939; }
 
 .txt-primary {
   color: #FFC0CB; }

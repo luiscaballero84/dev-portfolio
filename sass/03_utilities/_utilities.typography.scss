@@ -95,6 +95,11 @@
   letter-spacing: $ls-x-loose;
 }
 
+// txt line height
+.txt-lh-medium {
+  line-height: $lh-medium;
+}
+
 // Section title
 // placed in here for the moment
 .txt-section {
@@ -145,6 +150,10 @@
 
 .txt-gray {
   color: $gray-60;
+}
+
+.txt-gray-80 {
+  color: $gray-80;
 }
 
 .txt-primary {
