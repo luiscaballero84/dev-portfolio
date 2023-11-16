@@ -22,7 +22,7 @@
   padding: 1rem 1rem;
 
   background-color: $color-white;
-  background-color: $gray-10;
+  background-color: $gray-15;
   border-radius: $rounded-full;
  // box-shadow: 0 5px 10px rgba($gray-100, 0.1);
   transition: transform 0.3s ease-out, bottom 0.5s ease-out;
@@ -60,7 +60,7 @@
   padding: 1rem 1rem;
 
   background-color: $color-white;
-  background-color: $gray-10;
+  background-color: $gray-15;
   border-radius: $rounded-full;
   //box-shadow: 0 5px 10px rgba($gray-100, 0.1);
   transition: transform 0.3s ease-out, bottom 0.5s ease-out;
@@ -85,4 +85,30 @@
   @include respond(desktop) {
     bottom: 5.5rem;
   }
+}
+
+.card-btn {
+  display: flex;
+  opacity:0;
+  justify-content: center;
+  align-items: center;
+  width: $space-70; 
+  height: $space-70;
+  padding: 1rem 1rem;
+  background-color: $gray-15;
+  background-color: $color-white;
+  border-radius: $rounded-full;
+  transition: opacity 0.3s ease-out, bottom 0.5s ease-out;
+  // transition: transform 0.3s ease-out, bottom 0.5s ease-out;
+  // &:hover {
+  //   transform: translateY(0.3rem);
+  //   cursor: pointer;
+  // }
+
+  // @include respond(tablet) {
+  //   font-size: 3rem;
+  // }
+  // @include respond(desktop) {
+  //   right: 5.5rem;
+  // }
 }

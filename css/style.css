@@ -157,7 +157,7 @@ strong {
   height: 4.8rem;
   padding: 1rem 1rem;
   background-color: #ffffff;
-  background-color: #f4f4f4;
+  background-color: #ececee;
   border-radius: 50rem;
   transition: transform 0.3s ease-out, bottom 0.5s ease-out; }
   .arrow-up:hover {
@@ -185,7 +185,7 @@ strong {
   height: 4.8rem;
   padding: 1rem 1rem;
   background-color: #ffffff;
-  background-color: #f4f4f4;
+  background-color: #ececee;
   border-radius: 50rem;
   transition: transform 0.3s ease-out, bottom 0.5s ease-out; }
   .close-btn:hover {
@@ -204,23 +204,41 @@ strong {
     .close-btn--active {
       bottom: 5.5rem; } }
 
+.card-btn {
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  padding: 1rem 1rem;
+  background-color: #ececee;
+  background-color: #ffffff;
+  border-radius: 50rem;
+  transition: opacity 0.3s ease-out, bottom 0.5s ease-out; }
+
 .card {
   display: block;
-  margin-bottom: 12rem; }
+  margin-bottom: 12rem;
+  padding: 2.4rem;
+  border-radius: 2rem;
+  background-color: #f4f4f4;
+  transition: transform 0.12s ease-in; }
 
 @media (hover: hover) {
-  .card:link:hover .card__link {
-    border-bottom: 2px solid #161616; }
-  .card:link:hover img {
+  .card:link:hover a {
     transform: scale(1.03); } }
 
 a .card__img {
   width: 100%;
   margin-bottom: 2.4rem;
-  transition: transform 0.2s ease, margin-top 0.8s; }
+  transition: transform 0.2s ease, margin-top 0.8s;
+  border-radius: 1.5rem; }
 
 .card__title {
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.2rem;
+  color: #393939;
+  font-weight: 400; }
 
 .card__link {
   display: inline-flex;
@@ -229,6 +247,20 @@ a .card__img {
   margin-bottom: 0;
   border-bottom: 2px solid transparent;
   transition: transform 0.2s ease, border-bottom 0.1s ease; }
+
+.card .card__chip-container {
+  justify-content: space-between;
+  align-items: center; }
+
+.card .chip--small {
+  margin-bottom: 0;
+  background-color: #ffffff; }
+
+.card:hover {
+  transform: translateY(-0.5rem); }
+
+.card:hover .card-btn {
+  opacity: 1; }
 
 .chip {
   display: block;

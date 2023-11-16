@@ -1,0 +1,91 @@
+.card {
+  display: block;
+  margin-bottom: 12rem;
+  padding: $space-50;
+  //border: 1px solid $gray-30; 
+  border-radius: $rounded-default;
+  background-color: $gray-10;
+  transition: transform 0.12s ease-in;
+}
+
+// .card:link {
+
+//   @media (hover: hover) {
+//     &:hover .card__link {
+//       // transform: translate(1rem, 0);
+//       border-bottom: 2px solid $gray-100;
+//     }
+
+//     &:hover img {
+//       transform: scale(1.03);
+//     }
+//   }
+// }
+
+.card:link {
+
+  @media (hover: hover) {
+    // &:hover .card__link {
+    //   // transform: translate(1rem, 0);
+    //   border-bottom: 2px solid $gray-100;
+    // }
+
+    &:hover a {
+      transform: scale(1.03);
+    }
+  }
+}
+
+a .card__img {
+  width: 100%;
+  margin-bottom: $space-50;
+  transition: transform 0.2s ease, margin-top 0.8s;
+  border-radius: 1.5rem;
+}
+
+.card__title {
+  margin-bottom: $space-30;
+  color: $gray-80;
+  font-weight: 400;;
+}
+
+.card__link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: $space-20;
+  margin-bottom: 0;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.2s ease, border-bottom 0.1s ease;
+}
+
+.card .card__chip-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .chip--small { 
+  margin-bottom: 0;
+  background-color: $color-white;
+}
+
+// .card a { 
+//   @media (hover: hover) {
+   
+//     &:hover .card-btn {
+//       opacity: 1;
+//       //transform: scale(1.03);
+//     }
+//   }
+// }
+.card:hover {
+  transform: translateY(-0.5rem);
+}
+
+
+.card:hover .card-btn {
+  opacity: 1;
+}
+
+
+
+

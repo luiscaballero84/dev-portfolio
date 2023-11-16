@@ -91,5 +91,5 @@ window.addEventListener("load", (event) => {
   // call the observer function
   observerTrigger(animatedImg, 'isAnimated', '5px');
   observerTrigger(bioImg, 'isAnimated-bio__img', '5px');
-  observerTrigger(firstThumbImg, 'isAnimated-firstThumb', '5px');
+  //observerTrigger(firstThumbImg, 'isAnimated-firstThumb', '5px'); //firstThumbImg is not in use (2023)
 }, false);
