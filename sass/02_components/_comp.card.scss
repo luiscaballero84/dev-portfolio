@@ -1,10 +1,16 @@
 .card {
   display: block;
-  margin-bottom: $space-90;
+  margin-bottom: $space-60;
   padding: $space-50;
   border-radius: $rounded-default;
   background-color: $gray-10;
   transition: transform 0.18s ease-in;
+    @include respond(tablet) {
+      margin-bottom: $space-70;
+    }
+    @include respond(desktop) {
+      margin-bottom: $space-90;
+    }
 }
 
 a .card__img {
@@ -30,8 +36,14 @@ a .card__img {
 }
 
 .card .chip--small { 
+  margin-top: $space-20;
   margin-bottom: 0;
   background-color: $color-white;
+  font-size: $type-xxx-small;
+  @include respond(tablet) {
+    font-size: $type-xx-small;
+  }
+  
 }
 
 // .card a { 

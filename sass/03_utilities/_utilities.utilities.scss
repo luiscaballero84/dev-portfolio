@@ -19,7 +19,23 @@
 }
 
 .section-pb {
-  padding-bottom: 12rem;
+  padding-bottom: 8rem;
+  @include respond(tablet) {
+    padding-bottom: 10rem;
+  }
+  @include respond(desktop) {
+    padding-bottom: 12rem;
+  }
+}
+
+.section-pt {
+  padding-top: $space-70;
+  @include respond(tablet) {
+    padding-top: $space-80;
+  }
+  // @include respond(desktop) {
+  //   padding-top: $space-80;
+  // }
 }
 
 .item-center {

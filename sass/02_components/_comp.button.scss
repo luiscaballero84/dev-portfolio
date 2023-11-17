@@ -88,17 +88,20 @@
 }
 
 .card-btn {
-  display: flex;
-  opacity:0;
-  justify-content: center;
-  align-items: center;
-  width: $space-70; 
-  height: $space-70;
-  padding: 1rem 1rem;
-  background-color: $gray-15;
-  background-color: $color-white;
-  border-radius: $rounded-full;
-  transition: opacity 0.25s ease-out, bottom 0.5s ease-out;
+  display: none;
+  @include respond(desktop) {
+    display: flex;
+    opacity:0;
+    justify-content: center;
+    align-items: center;
+    width: $space-70; 
+    height: $space-70;
+    padding: 1rem 1rem;
+    background-color: $gray-15;
+    background-color: $color-white;
+    border-radius: $rounded-full;
+    transition: opacity 0.25s ease-out, bottom 0.5s ease-out;
+  }
   // transition: transform 0.3s ease-out, bottom 0.5s ease-out;
   // &:hover {
   //   transform: translateY(0.3rem);

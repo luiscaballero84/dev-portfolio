@@ -7,6 +7,15 @@
   padding-top: $space-50;
   padding-bottom: $space-50;
   border-bottom: 1px solid $gray-30;
+  //font-size: $type-x-small;
+  font-size: 2rem;
+
+  @include respond(tablet) {
+    font-size: $type-small;
+  }
+  @include respond(desktop) {
+    font-size: $type-medium;
+  }
 }
 
 .lined-list li:first-of-type {

@@ -19,13 +19,18 @@
   @include respond(desktop) {
     grid-template-columns:
       [full-start] 1fr
-      [content-start] 60rem [col2] 60rem
+      [content-start] 58.8rem [col2] 58.8rem
       [content-end] 1fr [full-end];
   }
 }
 
 .grid-item {
   grid-column: content-start / content-end;
+  // @include respond(desktop) {
+    
+  //     margin-left: 16px;
+  //   margin-right: 16px;
+  // }
 }
 
 .grid-item--full {
@@ -47,7 +52,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: $space-70;
+    column-gap: $space-60;
   }
 }
 
@@ -55,7 +60,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: $space-70;
+    column-gap: $space-60;
   }
   @include respond(desktop) {
     grid-template-columns: 1fr 40%;
@@ -66,7 +71,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: $space-70;
+    column-gap: $space-60;
   }
   @include respond(desktop) {
     grid-template-columns: 40% 1fr;
@@ -78,7 +83,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: $space-60;
+    column-gap: $space-50;
     // display: flex;
   }
 }

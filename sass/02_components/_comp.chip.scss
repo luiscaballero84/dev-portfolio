@@ -2,11 +2,15 @@
 //   margin-top: $space-70;
 // }
 
-// .chip-container {
-//   margin-top: $space-50;
-// }
-
-
+.chip-container {
+  margin-top: $space-60;
+  @include respond(tablet) {
+    margin-top: 0;
+  }
+  @include respond(desktop) {
+    font-size: $type-medium;
+  }
+}
 
 .chip {
   display: block;
@@ -31,12 +35,19 @@
   padding-left: $space-50;
   padding-top: $space-20;
   padding-bottom: $space-20;
-  font-size: $type-medium;
+  //font-size: $type-x-small;
+  font-size: 2rem;
   background-color: $color-white;
   border-radius: $rounded-full;
   border: 1px solid $gray-30;
-  //font-size: $type-x-small;
   color: $gray-80;
+
+  @include respond(tablet) {
+    font-size: $type-small;
+  }
+  @include respond(desktop) {
+    font-size: $type-medium;
+  }
 }
 
 .chip--small {

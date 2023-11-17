@@ -4,7 +4,7 @@
 }
 
 .spot-card {
-  margin-top: $space-40;
+  margin-top: $space-60;
   padding-top: $space-50;
   padding-bottom: $space-30;
   padding-left: $space-50;
@@ -13,4 +13,8 @@
   border-radius: $rounded-default;
   // border: 1px solid $gray-30;
   line-height: $lh-medium;
+
+  @include respond(tablet) {
+    margin-top: $space-40;
+  }
 }

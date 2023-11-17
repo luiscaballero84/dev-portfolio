@@ -205,25 +205,34 @@ strong {
       bottom: 5.5rem; } }
 
 .card-btn {
-  display: flex;
-  opacity: 0;
-  justify-content: center;
-  align-items: center;
-  width: 4.8rem;
-  height: 4.8rem;
-  padding: 1rem 1rem;
-  background-color: #ececee;
-  background-color: #ffffff;
-  border-radius: 50rem;
-  transition: opacity 0.25s ease-out, bottom 0.5s ease-out; }
+  display: none; }
+  @media only screen and (min-width: 75em) {
+    .card-btn {
+      display: flex;
+      opacity: 0;
+      justify-content: center;
+      align-items: center;
+      width: 4.8rem;
+      height: 4.8rem;
+      padding: 1rem 1rem;
+      background-color: #ececee;
+      background-color: #ffffff;
+      border-radius: 50rem;
+      transition: opacity 0.25s ease-out, bottom 0.5s ease-out; } }
 
 .card {
   display: block;
-  margin-bottom: 9.6rem;
+  margin-bottom: 3.2rem;
   padding: 2.4rem;
   border-radius: 2rem;
   background-color: #f4f4f4;
   transition: transform 0.18s ease-in; }
+  @media only screen and (min-width: 48.1em) {
+    .card {
+      margin-bottom: 4.8rem; } }
+  @media only screen and (min-width: 75em) {
+    .card {
+      margin-bottom: 9.6rem; } }
 
 a .card__img {
   width: 100%;
@@ -244,8 +253,13 @@ a .card__img {
   align-items: center; }
 
 .card .chip--small {
+  margin-top: 0.8rem;
   margin-bottom: 0;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-size: 1.2rem; }
+  @media only screen and (min-width: 48.1em) {
+    .card .chip--small {
+      font-size: 1.6rem; } }
 
 @media (hover: hover) {
   .card:hover {
@@ -258,6 +272,15 @@ a .card__img {
 @media (hover: hover) {
   .card:hover img {
     scale: 1.03; } }
+
+.chip-container {
+  margin-top: 3.2rem; }
+  @media only screen and (min-width: 48.1em) {
+    .chip-container {
+      margin-top: 0; } }
+  @media only screen and (min-width: 75em) {
+    .chip-container {
+      font-size: 2.4rem; } }
 
 .chip {
   display: block;
@@ -278,11 +301,17 @@ a .card__img {
   padding-left: 2.4rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   background-color: #ffffff;
   border-radius: 50rem;
   border: 1px solid #c6c6c6;
   color: #393939; }
+  @media only screen and (min-width: 48.1em) {
+    .chip--big {
+      font-size: 2.2rem; } }
+  @media only screen and (min-width: 75em) {
+    .chip--big {
+      font-size: 2.4rem; } }
 
 .chip--small {
   font-size: 1.6rem;
@@ -317,7 +346,7 @@ a .card__img {
       grid-template-columns: [full-start] 3rem [content-start] 1fr [col2] 1fr [content-end] 3rem [full-end]; } }
   @media only screen and (min-width: 75em) {
     .grid {
-      grid-template-columns: [full-start] 1fr [content-start] 60rem [col2] 60rem [content-end] 1fr [full-end]; } }
+      grid-template-columns: [full-start] 1fr [content-start] 58.8rem [col2] 58.8rem [content-end] 1fr [full-end]; } }
 
 .grid-item {
   grid-column: content-start / content-end; }
@@ -337,13 +366,13 @@ a .card__img {
   .col-2-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4.8rem; } }
+    column-gap: 3.2rem; } }
 
 @media only screen and (min-width: 48.1em) {
   .col-2-container--plus {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4.8rem; } }
+    column-gap: 3.2rem; } }
 
 @media only screen and (min-width: 75em) {
   .col-2-container--plus {
@@ -353,7 +382,7 @@ a .card__img {
   .col-2-container--plus-reversed {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4.8rem; } }
+    column-gap: 3.2rem; } }
 
 @media only screen and (min-width: 75em) {
   .col-2-container--plus-reversed {
@@ -363,7 +392,7 @@ a .card__img {
   .col-3-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3.2rem; } }
+    column-gap: 2.4rem; } }
 
 .grid-order-1 {
   order: 1; }
@@ -392,7 +421,14 @@ a .card__img {
   margin-bottom: 0px;
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
-  border-bottom: 1px solid #c6c6c6; }
+  border-bottom: 1px solid #c6c6c6;
+  font-size: 2rem; }
+  @media only screen and (min-width: 48.1em) {
+    .lined-list li {
+      font-size: 2.2rem; } }
+  @media only screen and (min-width: 75em) {
+    .lined-list li {
+      font-size: 2.4rem; } }
 
 .lined-list li:first-of-type {
   border-top: 1px solid #c6c6c6; }
@@ -569,7 +605,7 @@ a .card__img {
   margin-bottom: 3.2rem; }
 
 .spot-card {
-  margin-top: 1.6rem;
+  margin-top: 3.2rem;
   padding-top: 2.4rem;
   padding-bottom: 1.2rem;
   padding-left: 2.4rem;
@@ -577,6 +613,9 @@ a .card__img {
   background-color: #f4f4f4;
   border-radius: 2rem;
   line-height: 1.35; }
+  @media only screen and (min-width: 48.1em) {
+    .spot-card {
+      margin-top: 1.6rem; } }
 
 .footer__box {
   padding-top: 3.2rem;
@@ -940,7 +979,19 @@ a .card__img {
   top: 11rem; }
 
 .section-pb {
-  padding-bottom: 12rem; }
+  padding-bottom: 8rem; }
+  @media only screen and (min-width: 48.1em) {
+    .section-pb {
+      padding-bottom: 10rem; } }
+  @media only screen and (min-width: 75em) {
+    .section-pb {
+      padding-bottom: 12rem; } }
+
+.section-pt {
+  padding-top: 4.8rem; }
+  @media only screen and (min-width: 48.1em) {
+    .section-pt {
+      padding-top: 6.4rem; } }
 
 .item-center {
   margin-left: auto;

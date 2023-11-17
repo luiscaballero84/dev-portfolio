@@ -42,70 +42,11 @@ const projectList = [
     firstImgClass:"",
     chip01: "Strategy",
     chip02: "Branding",
-    chip03: "Web development"
+    chip03: "Web dev"
   },
 ];
 
-
-//function with lazy load -> make the anchor to not being correct
-//
-// function renderProjects() {
-//   const cardMarkup = projectList.map(function(project) {  
-
-//     return `
-//       <a class="card" href="${project.link}">
-//           <img 
-//             class="card__img js-animate-img lazy-img ${project.firstImgClass}" 
-//             src="img/lazy-img-thumb.jpg"
-//             data-src="${project.img}" 
-//             alt="${project.alt}"
-//           >
-//           <h3 class="card__title">${project.name}</h3>
-//           <p class="card__text">${project.text}</p>
-//           <p class="card__link">Read case study 
-//             <svg class="ui-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-//               <rect x="2" y="11" width="20" height="2" fill="#161616"/>
-//               <rect x="18" y="9" width="2" height="2" fill="#161616"/>
-//               <rect x="18" y="13" width="2" height="2" fill="#161616"/>
-//               <rect x="16" y="15" width="2" height="2" fill="#161616"/>
-//               <rect x="14" y="17" width="2" height="2" fill="#161616"/>
-//               <rect x="16" y="7" width="2" height="2" fill="#161616"/>
-//               <rect x="14" y="5" width="2" height="2" fill="#161616"/>
-//             </svg>
-//           </p>
-//       </a>
-//     `
-//   }).join('');
-
-//function without lazy load 
-// function renderProjects() {
-//   const cardMarkup = projectList.map(function(project) {  
-
-//     return `
-//       <a class="card" href="${project.link}">
-//           <img 
-//             class="card__img" 
-//             src="${project.img}" 
-//             alt="${project.alt}"
-//           >
-//           <h3 class="card__title">${project.name}</h3>
-//           <p class="card__text">${project.text}</p>
-//           <p class="card__link">Read case study 
-//             <svg class="ui-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-//               <rect x="2" y="11" width="20" height="2" fill="#161616"/>
-//               <rect x="18" y="9" width="2" height="2" fill="#161616"/>
-//               <rect x="18" y="13" width="2" height="2" fill="#161616"/>
-//               <rect x="16" y="15" width="2" height="2" fill="#161616"/>
-//               <rect x="14" y="17" width="2" height="2" fill="#161616"/>
-//               <rect x="16" y="7" width="2" height="2" fill="#161616"/>
-//               <rect x="14" y="5" width="2" height="2" fill="#161616"/>
-//             </svg>
-//           </p>
-//       </a>
-//     `
-//   }).join('');
-
-//function with new card design
+//function with new card design & not lazy load -> make the anchor to not being correct
 function renderProjects() {
   const cardMarkup = projectList.map(function(project) {  
     return `
