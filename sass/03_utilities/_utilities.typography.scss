@@ -99,6 +99,10 @@
   letter-spacing: $ls-x-loose;
 }
 
+.txt-tight {
+  letter-spacing: $ls-tight;
+}
+
 // txt line height
 .txt-lh-medium {
   line-height: $lh-medium;

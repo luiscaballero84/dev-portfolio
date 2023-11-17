@@ -215,38 +215,29 @@ strong {
   background-color: #ececee;
   background-color: #ffffff;
   border-radius: 50rem;
-  transition: opacity 0.3s ease-out, bottom 0.5s ease-out; }
+  transition: opacity 0.25s ease-out, bottom 0.5s ease-out; }
 
 .card {
   display: block;
-  margin-bottom: 12rem;
+  margin-bottom: 9.6rem;
   padding: 2.4rem;
   border-radius: 2rem;
   background-color: #f4f4f4;
-  transition: transform 0.12s ease-in; }
-
-@media (hover: hover) {
-  .card:link:hover a {
-    transform: scale(1.03); } }
+  transition: transform 0.18s ease-in; }
 
 a .card__img {
   width: 100%;
   margin-bottom: 2.4rem;
-  transition: transform 0.2s ease, margin-top 0.8s;
-  border-radius: 1.5rem; }
+  transition: scale 0.2s ease-in; }
 
 .card__title {
   margin-bottom: 1.2rem;
   color: #393939;
   font-weight: 400; }
 
-.card__link {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 0.8rem;
-  margin-bottom: 0;
-  border-bottom: 2px solid transparent;
-  transition: transform 0.2s ease, border-bottom 0.1s ease; }
+.card__text {
+  margin-bottom: 1.6rem;
+  line-height: 1.35; }
 
 .card .card__chip-container {
   justify-content: space-between;
@@ -256,11 +247,17 @@ a .card__img {
   margin-bottom: 0;
   background-color: #ffffff; }
 
-.card:hover {
-  transform: translateY(-0.5rem); }
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-0.5rem); } }
 
-.card:hover .card-btn {
-  opacity: 1; }
+@media (hover: hover) {
+  .card:hover .card-btn {
+    opacity: 1; } }
+
+@media (hover: hover) {
+  .card:hover img {
+    scale: 1.03; } }
 
 .chip {
   display: block;
@@ -807,6 +804,9 @@ a .card__img {
 
 .txt-x-loose {
   letter-spacing: 0.075em; }
+
+.txt-tight {
+  letter-spacing: -0.02em; }
 
 .txt-lh-medium {
   line-height: 1.35; }

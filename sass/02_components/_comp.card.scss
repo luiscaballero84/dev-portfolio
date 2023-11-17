@@ -1,0 +1,72 @@
+.card {
+  display: block;
+  margin-bottom: $space-90;
+  padding: $space-50;
+  border-radius: $rounded-default;
+  background-color: $gray-10;
+  transition: transform 0.18s ease-in;
+}
+
+a .card__img {
+  width: 100%;
+  margin-bottom: $space-50;
+  transition: scale 0.2s ease-in; 
+}
+
+.card__title {
+  margin-bottom: $space-30;
+  color: $gray-80;
+  font-weight: 400;;
+}
+
+.card__text {
+  margin-bottom: $space-40;
+  line-height: $lh-medium;
+}
+
+.card .card__chip-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .chip--small { 
+  margin-bottom: 0;
+  background-color: $color-white;
+}
+
+// .card a { 
+//   @media (hover: hover) {
+   
+//     &:hover .card-btn {
+//       opacity: 1;
+//       //transform: scale(1.03);
+//     }
+//   }
+// }
+.card:hover {
+  @media (hover: hover) {
+    transform: translateY(-0.5rem);
+  }
+}
+
+
+// .card:hover .card-btn {
+//   opacity: 1;
+// }
+
+.card:hover .card-btn {
+  @media (hover: hover) {
+      opacity: 1;
+  }
+}
+
+.card:hover img {
+  @media (hover: hover) {
+    scale: 1.03;
+  }
+}
+
+
+
+
+
