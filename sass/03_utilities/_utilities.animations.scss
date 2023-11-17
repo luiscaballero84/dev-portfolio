@@ -35,6 +35,12 @@
   margin-top: 0rem;
 }
 
+//animations in cases
+.case__animate {
+  animation:
+  fadeIn 0.6s ease-in 1, bottomToTop-2 0.8s ease 1;
+}
+
 //ANIMATIONS keyframes
 //////////////////////
 @keyframes fadeIn {

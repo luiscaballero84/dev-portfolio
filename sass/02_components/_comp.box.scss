@@ -1,12 +1,49 @@
 .box { 
-  padding-top: $space-80;
-  padding-bottom: $space-70;
   border-radius: $rounded-default;
   background-color: $gray-10;
+  padding-top: $space-50;
+  padding-bottom: $space-30;
+  padding-left: $space-40;
+  padding-right: $space-40;
+
+  @include respond(tablet) {
+    padding-left: $space-50;
+    padding-right: $space-50;
+  }
+
+  @include respond(desktop) {
+    padding-top: $space-80;
+    padding-bottom: $space-70;
+  }
+ 
 }
 
 .box div { 
   max-width: 85rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.box  ul span {
+  font-size: $type-medium;
+  margin-right: $space-30;
+  margin-top: -0.2rem;
+  @include respond(tablet) {
+    font-size: $type-large;
+    margin-right: $space-40;
+    margin-top: -0.4rem;
+  }
+}
+
+.box  ul li {
+  font-size: $type-small;
+  
+  // @include respond(tablet) {
+  //   font-size: $type-small;
+    
+  // }
+
+  @include respond(tablet) {
+    font-size: $type-medium;
+  }
 }
