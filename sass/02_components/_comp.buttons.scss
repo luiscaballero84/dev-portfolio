@@ -13,6 +13,16 @@
   }
 }
 
+.btn--txt--case {
+  color: $gray-60 !important;
+}
+
+.btn--txt--case:hover {
+  @media (hover: hover) {
+    border-bottom: 2px solid $gray-60;
+  }
+}
+
 // Arrow-up button to top page
 .arrow-up {
   z-index: 900;

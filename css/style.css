@@ -174,6 +174,13 @@ strong {
   .btn--txt:hover {
     border-bottom: 2px solid #161616; } }
 
+.btn--txt--case {
+  color: #757575 !important; }
+
+@media (hover: hover) {
+  .btn--txt--case:hover {
+    border-bottom: 2px solid #757575; } }
+
 .arrow-up {
   z-index: 900;
   position: fixed;
@@ -648,6 +655,9 @@ a .card__img {
 
 footer {
   margin-top: 1.2rem; }
+
+.footer-case-pages {
+  margin-top: 9.6rem; }
 
 .footer__box {
   padding-top: 3.2rem;
