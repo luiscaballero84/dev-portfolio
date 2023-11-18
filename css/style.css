@@ -178,9 +178,9 @@ strong {
   z-index: 900;
   position: fixed;
   bottom: -6rem;
-  right: 3rem;
-  width: 4.8rem;
-  height: 4.8rem;
+  right: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
   padding: 1rem 1rem;
   background-color: #ffffff;
   background-color: #ececee;
@@ -189,26 +189,32 @@ strong {
   .arrow-up:hover {
     transform: translateY(-1rem);
     cursor: pointer; }
+  @media only screen and (min-width: 48.1em) {
+    .arrow-up {
+      width: 4.8rem;
+      height: 4.8rem; } }
   @media only screen and (min-width: 75em) {
     .arrow-up {
       right: 5.5rem; } }
 
 .arrow-up-active {
-  bottom: 3rem; }
+  bottom: 2rem; }
   @media only screen and (min-width: 48.1em) {
     .arrow-up-active {
-      bottom: 4rem; } }
+      bottom: 2.5rem;
+      right: 2.5rem; } }
   @media only screen and (min-width: 75em) {
     .arrow-up-active {
-      bottom: 5.5rem; } }
+      bottom: 5.5rem;
+      right: 5.5rem; } }
 
 .close-btn {
   z-index: 900;
   position: fixed;
-  top: 3rem;
-  right: 3rem;
-  width: 4.8rem;
-  height: 4.8rem;
+  top: 2rem;
+  right: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
   padding: 1rem 1rem;
   background-color: #ffffff;
   background-color: #ececee;
@@ -217,6 +223,12 @@ strong {
   .close-btn:hover {
     transform: translateY(0.3rem);
     cursor: pointer; }
+  @media only screen and (min-width: 48.1em) {
+    .close-btn {
+      top: 2.5rem;
+      right: 2.5rem;
+      width: 4.8rem;
+      height: 4.8rem; } }
   @media only screen and (min-width: 75em) {
     .close-btn {
       right: 5.5rem; } }
@@ -634,6 +646,9 @@ a .card__img {
     .spot-card {
       margin-top: 1.6rem; } }
 
+footer {
+  margin-top: 1.2rem; }
+
 .footer__box {
   padding-top: 3.2rem;
   padding-bottom: 1.6rem;
@@ -641,25 +656,28 @@ a .card__img {
   padding-right: 3.2rem;
   border-radius: 2rem; }
 
-.footer {
-  margin-top: 9.6rem;
-  padding-bottom: 4.8rem;
-  background-color: #161616; }
-
 @media only screen and (min-width: 48.1em) {
   footer ul a:hover {
     border-bottom: 2px solid #161616; } }
 
 .footer__copyright {
-  margin-top: 9.6rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
   font-size: 1.2rem;
   color: #757575; }
   @media only screen and (min-width: 26.9em) {
     .footer__copyright {
+      width: 85%;
+      margin-top: 9.6rem;
+      margin-bottom: 1.2rem;
       font-size: 1.6rem; } }
   @media only screen and (min-width: 48.1em) {
     .footer__copyright {
-      margin-top: 0; } }
+      margin-bottom: 3.2rem; } }
+  @media only screen and (min-width: 75em) {
+    .footer__copyright {
+      margin-top: 4.8rem;
+      margin-bottom: 4.8rem; } }
 
 .header {
   position: relative;
@@ -801,11 +819,7 @@ a .card__img {
       font-size: 6.2rem; } }
 
 .txt-hero--small {
-  font-size: 2.2rem;
-  max-width: 90rem;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.35; }
+  font-size: 2.2rem; }
   @media only screen and (min-width: 48.1em) {
     .txt-hero--small {
       font-size: 2.4rem; } }
@@ -1028,8 +1042,8 @@ a .card__img {
   align-items: center; }
 
 .case-title {
-  font-size: 3.2rem;
-  margin-top: 3.8rem; }
+  font-size: 2.8rem;
+  margin-top: 2.7rem; }
   @media only screen and (min-width: 48.1em) {
     .case-title {
       font-size: 3.8rem; } }

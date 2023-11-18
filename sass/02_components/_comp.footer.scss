@@ -1,3 +1,7 @@
+footer {
+  margin-top: $space-30;
+}
+
 .footer__box {
   padding-top: $space-60;
   padding-bottom: $space-40;
@@ -6,73 +10,31 @@
   border-radius: $rounded-default;
 }
 
-.footer {
-  margin-top: $space-90;
-  padding-bottom: $space-70;
-  background-color: $gray-100;
-}
-
-// .footer p,
-// .footer a {
-//   color: $color-white;
-// }
-
-//
-// .footer a {
-//   padding-bottom: 0.5rem;
-//   border-bottom: 2px solid red !important;
-//   transition: border-bottom 0.1s ease;
-// }
-
 footer ul a:hover {
   @include respond(tablet) {
     border-bottom: 2px solid $gray-100;
   }
 }
 
-//
-
-// .footer__mail {
-//   display: inline-block;
-//   margin-top: $space-30;
-//   font-size: $type-small;
-// }
-
-// .footer__social {
-//   margin-top: $space-90;
-//   @include respond(tablet) {
-//     display: flex;
-//     align-items: baseline;
-//     margin-top: 10rem;
-//   }
-// }
-
-// .footer__social li {
-//   margin-bottom: $space-40;
-// }
-
-// .footer__social li:last-of-type {
-//   margin-bottom: 0;
-// }
-
-// .footer__social li a {
-//   font-size: $type-x-small;
-//   margin-top: 15rem;
-//   margin-right: 1.5rem;
-// }
-
-// .footer__social li:last-of-type {
-//   margin-left: auto;
-// }
-
 .footer__copyright {
-  margin-top: $space-90;
+  margin-top: $space-30;
+  margin-bottom: $space-10; 
   font-size: $type-xxx-small;
   color: $gray-60;
+  
   @include respond(small-tablet) {
+    width: 85%;
+    margin-top: $space-90;
+    margin-bottom: $space-30; 
     font-size: $type-xx-small;
   }
+
   @include respond(tablet) {
-    margin-top: 0;
+    margin-bottom: $space-60; 
+  }
+
+  @include respond(desktop) {
+    margin-top: $space-70;
+    margin-bottom: $space-70; 
   }
 }
