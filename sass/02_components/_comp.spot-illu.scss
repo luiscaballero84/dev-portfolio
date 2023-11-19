@@ -10,7 +10,8 @@
   padding-bottom: $space-30;
   padding-left: $space-50;
   padding-right: $space-50;
-  background-color: $gray-10;
+  //background-color: $gray-10;
+  background-color: $color-primary;
   border-radius: $rounded-default;
   // border: 1px solid $gray-30;
   line-height: $lh-medium;
@@ -18,4 +19,12 @@
   @include respond(tablet) {
     margin-top: $space-40;
   }
+}
+
+:nth-child(1 of .spot-card) {
+  background-color: $color-banana;
+}
+
+:nth-last-child(1 of .spot-card) {
+  background-color: $color-choco;
 }

@@ -1,10 +1,9 @@
 // --------------------------------------------------
 // #Colors settings
 // --------------------------------------------------
+
+//Gray scale
 $color-white: #ffffff;
-$color-black: #241c15;
-//new 2022 color palette
-//GRAY SCALE
 $gray-10: #f4f4f4;
 $gray-15: #ececee;
 $gray-20: #e0e0e0;
@@ -13,19 +12,10 @@ $gray-60: #757575;
 $gray-80: #393939;
 $gray-100: #161616;
 
-$color-primary: #ffdb58;
-$color-primary: pink;
+//Primary
+// $color-primary: #ffdb58;//old primary
 $color-primary:#FFC0CB;
-// $color-primary:#FD86D2;
 
-//pleo
-// $color-primary: #ffdee2; 
-//champagne pink
-// $color-primary: #FFE5D9; 
-// $color-primary:#FFD8D7;
-// $color-primary:#FFEBEB;
-// $color-primary:#ffe7e7;
-
-// $color-primary: #fec4f5;
-// $color-primary:#FFF964;
-$color-primary-contrast: $color-black;
+//Secondary
+$color-banana:#fff0a4;
+$color-choco:#d6c3b8;

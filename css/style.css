@@ -647,12 +647,18 @@ a .card__img {
   padding-bottom: 1.2rem;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  background-color: #f4f4f4;
+  background-color: #FFC0CB;
   border-radius: 2rem;
   line-height: 1.35; }
   @media only screen and (min-width: 48.1em) {
     .spot-card {
       margin-top: 1.6rem; } }
+
+:nth-child(1 of .spot-card) {
+  background-color: #fff0a4; }
+
+:nth-last-child(1 of .spot-card) {
+  background-color: #d6c3b8; }
 
 footer {
   margin-top: 1.2rem; }
@@ -673,18 +679,13 @@ footer {
 
 .footer__copyright {
   margin-top: 1.2rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 3.2rem;
   font-size: 1.2rem;
   color: #757575; }
   @media only screen and (min-width: 26.9em) {
     .footer__copyright {
-      width: 85%;
       margin-top: 9.6rem;
-      margin-bottom: 1.2rem;
       font-size: 1.6rem; } }
-  @media only screen and (min-width: 48.1em) {
-    .footer__copyright {
-      margin-bottom: 3.2rem; } }
   @media only screen and (min-width: 75em) {
     .footer__copyright {
       margin-top: 4.8rem;
@@ -727,7 +728,7 @@ footer {
       margin: auto;
       animation: bottomToTop 0.7s ease 1, moveToDown 2s 1.5s ease infinite; }
       .header__arrow span {
-        color: #241c15;
+        color: #161616;
         font-size: 3rem; }
       .header__arrow:link {
         box-shadow: none; } }

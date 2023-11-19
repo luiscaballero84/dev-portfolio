@@ -25,29 +25,6 @@
 // use the mixin inside the class:
 // @include respond($breakpoint-name) { font-weight: 400; }
 
-// --------------------------------------------------
-// #COLORS
-// --------------------------------------------------
-
-//Gray scale
-$color-white: #ffffff;
-$gray-10: #f4f4f4;
-$gray-15: #ececee;
-$gray-20: #e0e0e0;
-$gray-30: #c6c6c6;
-$gray-60: #757575;
-$gray-80: #393939;
-$gray-100: #161616;
-
-$color-black: #241c15; // old
-/// Primary
-$color-primary: #ffdb58;
-$color-primary-contrast: $gray-100; //old
-
-/// OLD GRAYS !REMOVE
-$color-grey: #e5e5e5;
-$color-grey-dark: #403b3b; // large body text
-$color-grey-light: #f6f6f4;
 
 // --------------------------------------------------
 // #SPACING

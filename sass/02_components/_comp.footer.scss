@@ -23,20 +23,18 @@ footer ul a:hover {
 
 .footer__copyright {
   margin-top: $space-30;
-  margin-bottom: $space-10; 
+  margin-bottom: $space-60; 
   font-size: $type-xxx-small;
   color: $gray-60;
   
   @include respond(small-tablet) {
-    width: 85%;
     margin-top: $space-90;
-    margin-bottom: $space-30; 
     font-size: $type-xx-small;
   }
 
-  @include respond(tablet) {
-    margin-bottom: $space-60; 
-  }
+  // @include respond(tablet) {
+  //   margin-bottom: $space-60; 
+  // }
 
   @include respond(desktop) {
     margin-top: $space-70;
