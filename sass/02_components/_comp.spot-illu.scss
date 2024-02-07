@@ -11,7 +11,8 @@
   padding-left: $space-50;
   padding-right: $space-50;
   //background-color: $gray-10;
-  background-color: $color-primary;
+  color: $gray-80;
+  background-color: $gray-10;
   border-radius: $rounded-default;
   // border: 1px solid $gray-30;
   line-height: $lh-medium;
@@ -21,10 +22,18 @@
   }
 }
 
-:nth-child(1 of .spot-card) {
-  background-color: $color-banana;
+.spot-card strong {
+  font-size: $type-small;
+  @include respond(tablet) {
+    font-size: 2.6rem;
+  }
+  
 }
 
-:nth-last-child(1 of .spot-card) {
-  background-color: $color-choco;
-}
+// :nth-child(1 of .spot-card) {
+//   background-color: $color-vanilla;
+// }
+
+// :nth-last-child(1 of .spot-card) {
+//   background-color: $color-choco;
+// }

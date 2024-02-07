@@ -25,7 +25,7 @@ body {
       font-size: 2.2rem; } }
 
 ::selection {
-  background: #ffdae0; }
+  background: #fee317; }
 
 h1,
 h2,
@@ -81,7 +81,7 @@ p a:link {
 
 p a:visited {
   color: #161616;
-  border-bottom-color: #FFC0CB; }
+  border-bottom-color: #FBDE01; }
 
 @media (hover: hover) {
   p a:hover {
@@ -478,7 +478,7 @@ a .card__img {
   padding-bottom: 2.4rem;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
-  background-color: #FFC0CB; }
+  background-color: #FBDE01; }
   @media (hover: hover) {
     .navbar:hover:before {
       top: 0rem; }
@@ -487,7 +487,7 @@ a .card__img {
       fill-opacity: 1 !important;
       transition: fill 0.15s ease-in; }
     .navbar:hover .logo-icon path {
-      fill: #FFC0CB !important;
+      fill: #FBDE01 !important;
       transition: fill 0.15s ease-in; } }
 
 .navbar--case {
@@ -538,7 +538,7 @@ a .card__img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFC0CB;
+  background-color: #FBDE01;
   box-shadow: -5px 0px 15px 2px rgba(22, 22, 22, 0.1);
   transition: right 0.35s ease-out; }
   @media only screen and (min-width: 48.1em) {
@@ -587,9 +587,9 @@ a .card__img {
     align-items: center; } }
 
 .navbar-menu .link-active {
-  border-bottom: 2px solid #FFC0CB; }
+  border-bottom: 2px solid #FBDE01; }
   .navbar-menu .link-active:hover {
-    border-bottom: 2px solid #FFC0CB; }
+    border-bottom: 2px solid #FBDE01; }
 
 .navbar-menu li:last-of-type .link-active {
   color: #161616;
@@ -633,7 +633,7 @@ a .card__img {
     fill-opacity: 1 !important;
     transition: fill 0.15s ease-in; }
   .nav-scroll .logo-icon path {
-    fill: #FFC0CB !important;
+    fill: #FBDE01 !important;
     transition: fill 0.15s ease-in; }
 
 .spot-illu {
@@ -647,18 +647,19 @@ a .card__img {
   padding-bottom: 1.2rem;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  background-color: #FFC0CB;
+  color: #393939;
+  background-color: #f4f4f4;
   border-radius: 2rem;
   line-height: 1.35; }
   @media only screen and (min-width: 48.1em) {
     .spot-card {
       margin-top: 1.6rem; } }
 
-:nth-child(1 of .spot-card) {
-  background-color: #fff0a4; }
-
-:nth-last-child(1 of .spot-card) {
-  background-color: #d6c3b8; }
+.spot-card strong {
+  font-size: 2.2rem; }
+  @media only screen and (min-width: 48.1em) {
+    .spot-card strong {
+      font-size: 2.6rem; } }
 
 footer {
   margin-top: 1.2rem; }
@@ -695,7 +696,7 @@ footer {
   position: relative;
   padding-top: 16rem;
   padding-bottom: 16rem;
-  background-color: #FFC0CB; }
+  background-color: #FBDE01; }
   @media only screen and (min-width: 48.1em) {
     .header {
       height: 100vh;
@@ -934,7 +935,7 @@ footer {
   color: #393939; }
 
 .txt-primary {
-  color: #FFC0CB; }
+  color: #FBDE01; }
 
 .mt-none {
   margin-top: 0px; }
@@ -1012,7 +1013,7 @@ footer {
   margin-right: 1.2rem; }
 
 .bg-color--primary {
-  background-color: #FFC0CB; }
+  background-color: #FBDE01; }
 
 .bg-color--lightgray {
   background-color: #f4f4f4; }
