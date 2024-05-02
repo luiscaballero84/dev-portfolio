@@ -1,10 +1,11 @@
 .card {
   display: block;
   margin-bottom: $space-60;
-  padding: $space-50;
-  border-radius: $rounded-default;
-  background-color: $gray-10;
-  transition: transform 0.18s ease-in;
+  //padding: $space-50;
+  //border-radius: $rounded-default;
+  //background-color: $gray-10;
+  
+  transition: transform 0.16s ease-in;
     @include respond(tablet) {
       margin-bottom: $space-70;
     }
@@ -15,19 +16,28 @@
 
 a .card__img {
   width: 100%;
-  margin-bottom: $space-50;
-  transition: scale 0.2s ease-in; 
+  margin-bottom: $space-30;
+  transition: scale 0.16s ease-in, opacity 0.16s ease-in;
+}
+
+.card__name-wrapper{
+  display: flex;
+}
+
+.card__arrow {
+  transition: transform 0.16s ease-in;
 }
 
 .card__title {
-  margin-bottom: $space-30;
+  margin-right: 8px; 
+  margin-bottom: 0;
   color: $gray-80;
   font-weight: 400;;
 }
 
 .card__text {
-  margin-bottom: $space-40;
-  line-height: $lh-medium;
+  margin-bottom: $space-10;
+  line-height: $lh-tight;
 }
 
 .card .card__chip-container {
@@ -39,6 +49,7 @@ a .card__img {
   margin-top: $space-20;
   margin-bottom: 0;
   background-color: $color-white;
+  border: 1px solid $gray-30;
   font-size: $type-xxx-small;
   @include respond(tablet) {
     font-size: $type-xx-small;
@@ -46,35 +57,26 @@ a .card__img {
   
 }
 
-// .card a { 
+/// Hovers ///
+
+// .card:hover {
 //   @media (hover: hover) {
-   
-//     &:hover .card-btn {
-//       opacity: 1;
-//       //transform: scale(1.03);
-//     }
+//     transform: translateY(-0.6rem);
 //   }
 // }
-.card:hover {
+
+.card:hover .card__arrow {
+
   @media (hover: hover) {
-    transform: translateY(-1rem);
-  }
-}
-
-
-// .card:hover .card-btn {
-//   opacity: 1;
-// }
-
-.card:hover .card-btn {
-  @media (hover: hover) {
-      opacity: 1;
+    transform: translateX(0.4rem);
   }
 }
 
 .card:hover img {
   @media (hover: hover) {
-    scale: 1.03;
+    opacity: 0.85;
+    scale: 1.02;
+
   }
 }
 
