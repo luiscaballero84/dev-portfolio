@@ -1,5 +1,7 @@
 ///////////////////
-// Navbar
+// NAVBAR
+//////////////////
+/// 
 .navbar__container {
   display: flex;
   justify-content: center; /* Center items horizontally */
@@ -9,17 +11,18 @@
   z-index: 1000;
   position: fixed;
   top: $space-50;
-  //left: 50%;
-  max-width: 1300px;
+  max-width: 130rem;
   width: 100%;
-  padding-top: $space-20;
-  padding-bottom: $space-20;
+  padding-top: $space-30;
+  padding-bottom: 1.4rem;
+  padding-bottom: $space-30;
   padding-right: $space-50;
   padding-left: $space-50;
-  background-color: $color-primary;
-  //background-color: pink;
   border-radius: 50px;
 
+//// ACTION
+// When hover while the navbar is still yellow
+// white bar move down + logo change color
   @media (hover: hover) {
     &:hover {
       &:before {
@@ -38,15 +41,8 @@
   }
 }
 
-.navbar--case {
-  position: static;
-  padding-top: $space-50;
-  padding-bottom: $space-50;
-  padding-right: $space-50;
-  padding-left: $space-50;
-  //background-color: $color-white;
-}
 
+//// ACTION
 // White BG when hover and scrolling down
 .navbar:before {
   content: "";
@@ -58,11 +54,31 @@
   z-index: -100;
   backdrop-filter: saturate(0.5) blur(5px);
   background-color: rgba($color-white, 0.85);
-  box-shadow: 1px 1px 10px 1px rgba($gray-60, 0.1);
+  box-shadow: 1px 1px 10px 1px rgba($gray-60, 0.15);
   transition: top 0.15s ease-out;
   border-radius: 50px;
 }
+//// ACTION
+//// Scroll down change Navbar
+.nav-scroll {
+  background-color: transparent;
+  &:before {
+    top: 0rem;
+  }
+  //change color of logo-icon svg
+  & .logo-icon rect {
+    fill: $gray-100 !important;
+    fill-opacity: 1 !important;
+    transition: fill 0.15s ease-in;
+  }
 
+  & .logo-icon path {
+    fill: $color-primary !important;
+    transition: fill 0.15s ease-in;
+  }
+}
+
+// navbar container for do flexbox on logo + links
 .nav-flex {
   display: flex;
   align-items: center;
@@ -73,83 +89,31 @@
   animation: fadeIn 0.6s ease-in 1, topToBottom 0.7s ease 1;
 }
 
-.nav-flex--case {
-  height: 4.4rem;
-}
 
 ///////////////////
-// Logo
+// Logo icon
 .logo-icon {
   width: 30px;
   margin-right: $space-30;
 }
 
-///////////////////
-// Menu (When burger Icon is clicked)
-.navbar-menu {
-  z-index: 1000;
-  position: fixed;
-  top: 0rem;
-  right: -100rem; // goes with class nav-active right: -3rem;
 
-  height: 100vh;
-  width: 92vw;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background-color: $color-primary;
-  box-shadow: -5px 0px 15px 2px rgba($gray-100, 0.1);
-  transition: right 0.35s ease-out;
-
-  @include respond(tablet) {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 100%;
-    width: 70%;
-    background-color: transparent;
-    box-shadow: none;
-  }
-}
-
-.menu-active {
-  right: 0rem;
-}
-
-//  margins of Menu links
-.navbar-menu li {
-  margin-bottom: $space-30;
-  padding: $space-30;
-  user-select: none;
-
-  @include respond(tablet) {
-    margin-bottom: 0rem;
-    margin-right: $space-60;
-    padding: 0rem;
-    &:last-of-type {
-      margin-right: 0rem;
-    }
-  }
-}
-
-// REGULAR NAVBAR LINK
+// DESKTOP NAVBAR LINKS
 .navbar-menu .nav-link {
   color: $gray-100;
   font-size: $type-small;
 
   @include respond(tablet) {
     display: block;
-    padding-top: 1rem; // to igualize with cta-button
-    padding-bottom: 0.5rem;
     font-size: $type-x-small;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.1s ease;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .3s ease;
+    
+
     &:hover {
-      border-bottom: 2px solid $gray-100;
+      text-decoration-color: $gray-100;
+      text-decoration: underline dotted;
+      text-underline-offset: .6rem;
     }
   }
 }
@@ -160,57 +124,33 @@
   @include respond(tablet) {
     display: flex;
     align-items: center;
-    // padding-top: 1rem; // to igualize with cta-button
-    // padding-bottom: 0.5rem;
-    // font-size: $type-x-small;
-    // border-bottom: 2px solid transparent;
-    // transition: border-bottom 0.1s ease;
-    // &:hover {
-    //   border-bottom: 2px solid $gray-100;
-    // }
   }
 }
-
-// CTA Menu LINK Deprecated
-// .navbar-menu .nav-link--cta {
-//   font-size: $type-small;
-//   @include respond(tablet) {
-//     padding-top: 0.5rem;
-//     padding-right: 1.5rem;
-//     padding-bottom: 0.5rem;
-//     padding-left: 1.5rem;
-//     font-size: $type-x-small;
-//     color: $gray-100;
-//     border: 2px solid $gray-100;
-//     border-radius: $rounded-full;
-//     transition: background-color 0.2s ease;
-
-//     &:hover {
-//       background-color: $color-primary;
-//       border: 2px solid $color-primary;
-//     }
-//   }
-// }
 
 ///// Links is-active when scroll down
 .navbar-menu .link-active {
-  border-bottom: 2px solid $color-primary;
+  //border-bottom: 1.5px solid $color-primary;
+  text-decoration: underline;
+  text-underline-offset: .6rem;
+
   &:hover {
-    border-bottom: 2px solid $color-primary;
+    //border-bottom: 1.5px solid $color-primary;
+    text-decoration: underline dotted;
   }
 }
 
-//Last menu item styling
+//Last menu item styling 
 .navbar-menu li:last-of-type .link-active {
   color: $gray-100;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1.5px solid transparent;
   &:hover {
-    border-bottom: 2px solid $gray-100;
+    //border-bottom: 1.5px solid $gray-100;
+    text-decoration: underline dotted;
   }
 }
 
 ///////////////////
-// BURGER ICON
+// MOBILE + TABLET
 
 //burger icon container
 .navbar-burger {
@@ -247,22 +187,55 @@
   transform: rotate(45deg) translate(-0.6rem, -0.6rem);
 }
 
-//// Scroll down change Navbar
-.nav-scroll {
-  background-color: transparent;
-  &:before {
-    top: 0rem;
-  }
-  //change color of logo-icon svg
-  & .logo-icon rect {
-    fill: $gray-100 !important;
-    fill-opacity: 1 !important;
-    transition: fill 0.15s ease-in;
-  }
+///////////////////
+// Menu (When burger Icon is clicked) mobile / tablet
+.navbar-menu {
+  z-index: 1000;
+  position: fixed;
+  top: 0rem;
+  right: -100rem; // goes with class nav-active right: -3rem;
 
-  & .logo-icon path {
-    fill: $color-primary !important;
-    transition: fill 0.15s ease-in;
+  height: 100vh;
+  width: 92vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-primary;
+  box-shadow: -5px 0px 15px 2px rgba($gray-100, 0.1);
+  transition: right 0.35s ease-out;
+
+  @include respond(tablet) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    width: 70%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.menu-active {
+  right: 0rem;
+}
+
+//  margins of Menu links (Mobile/tablet)
+.navbar-menu li {
+  margin-bottom: $space-30;
+  padding: $space-30;
+  user-select: none;
+
+  @include respond(tablet) {
+    margin-bottom: 0rem;
+    margin-right: $space-60;
+    padding: 0rem;
+    &:last-of-type {
+      margin-right: 0rem;
+    }
   }
 }
 
