@@ -471,16 +471,23 @@ a .card__img {
 .lined-list li:first-of-type {
   border-top: 1px solid #c6c6c6; }
 
+.navbar__container {
+  display: flex;
+  justify-content: center;
+  /* Center items horizontally */ }
+
 .navbar {
   z-index: 1000;
   position: fixed;
-  top: 0;
+  top: 2.4rem;
+  max-width: 1300px;
   width: 100%;
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
-  background-color: #FBDE01; }
+  background-color: #FBDE01;
+  border-radius: 50px; }
   @media (hover: hover) {
     .navbar:hover:before {
       top: 0rem; }
@@ -497,8 +504,7 @@ a .card__img {
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
   padding-right: 2.4rem;
-  padding-left: 2.4rem;
-  background-color: #ffffff; }
+  padding-left: 2.4rem; }
 
 .navbar:before {
   content: "";
@@ -511,7 +517,8 @@ a .card__img {
   backdrop-filter: saturate(0.5) blur(5px);
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 1px 1px 10px 1px rgba(117, 117, 117, 0.1);
-  transition: top 0.15s ease-out; }
+  transition: top 0.15s ease-out;
+  border-radius: 50px; }
 
 .nav-flex {
   display: flex;

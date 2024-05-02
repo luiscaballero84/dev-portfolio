@@ -1,15 +1,24 @@
 ///////////////////
 // Navbar
+.navbar__container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
 .navbar {
   z-index: 1000;
   position: fixed;
-  top: 0;
+  top: $space-50;
+  //left: 50%;
+  max-width: 1300px;
   width: 100%;
-  padding-top: $space-50;
-  padding-bottom: $space-50;
+  padding-top: $space-20;
+  padding-bottom: $space-20;
   padding-right: $space-50;
   padding-left: $space-50;
   background-color: $color-primary;
+  //background-color: pink;
+  border-radius: 50px;
 
   @media (hover: hover) {
     &:hover {
@@ -35,7 +44,7 @@
   padding-bottom: $space-50;
   padding-right: $space-50;
   padding-left: $space-50;
-  background-color: $color-white;
+  //background-color: $color-white;
 }
 
 // White BG when hover and scrolling down
@@ -51,6 +60,7 @@
   background-color: rgba($color-white, 0.85);
   box-shadow: 1px 1px 10px 1px rgba($gray-60, 0.1);
   transition: top 0.15s ease-out;
+  border-radius: 50px;
 }
 
 .nav-flex {
