@@ -78,7 +78,7 @@ function renderProjects() {
               </svg>
             </div>
           </div>
-        <h3 class="card__text">
+        <h3 class="card__text txt-regular">
         ${project.text}
         </h3>
         <div class="card__chip-container flex flex-center--v">
