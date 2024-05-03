@@ -73,3 +73,10 @@
     margin-bottom: 0;
   }
 }
+
+// JS Utilities
+
+// Avoid scrolling when pop-up is open
+.u-noScroll {
+  overflow: hidden;
+}

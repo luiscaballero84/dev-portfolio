@@ -22,6 +22,7 @@ a .card__img {
 
 .card__name-wrapper{
   display: flex;
+  font-size: 0;
 }
 
 .card__arrow {
@@ -66,9 +67,11 @@ a .card__img {
 // }
 
 .card:hover .card__arrow {
+  
 
   @media (hover: hover) {
     transform: translateX(0.4rem);
+    
   }
 }
 
