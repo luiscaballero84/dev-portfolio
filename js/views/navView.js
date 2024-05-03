@@ -1,4 +1,4 @@
-import {elements} from '../views/selectors.js';
+import { elements } from "../views/selectors.js";
 
 export function displayMenuToggle() {
   elements.navMenu.classList.toggle("menu-active");
@@ -7,6 +7,5 @@ export function displayMenuToggle() {
 }
 
 export function isRotated() {
-  elements.burgerIcon.classList.toggle('burger-animate')
+  elements.burgerIcon.classList.toggle("burger-animate");
 }
-

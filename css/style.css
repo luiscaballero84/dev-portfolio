@@ -563,11 +563,14 @@ a .card__img {
   .navbar-menu .link-active:hover {
     text-decoration: underline dotted; }
 
-.navbar-menu li:last-of-type .link-active {
-  color: #161616;
-  border-bottom: 1.5px solid transparent; }
-  .navbar-menu li:last-of-type .link-active:hover {
-    text-decoration: underline dotted; }
+.navbar-menu li:last-of-type a.link-active {
+  display: flex;
+  margin-top: 1px;
+  line-height: 1.3;
+  text-decoration: none;
+  border-bottom: 2px dotted transparent; }
+  .navbar-menu li:last-of-type a.link-active:hover {
+    border-bottom: 2px dotted #161616; }
 
 .navbar-burger {
   z-index: 1030;
