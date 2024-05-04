@@ -5,13 +5,13 @@
   background-color: $color-primary;
 
   @include respond(tablet) {
-    height: 85vh;
+    height: 82vh;
     //text-align: center;
   }
 
-  @include respond(desktop) {
-    padding-top: $space-90;
-  }
+  // @include respond(desktop) {
+  //   padding-top: $space-90;
+  // }
 }
 
 .header-container {

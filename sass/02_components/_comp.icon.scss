@@ -17,3 +17,27 @@
   width: 5rem;
   margin: 0 auto;
 }
+
+.display-icon--rotate {
+  transition: transform .3s ease;
+  &:hover {
+    transform: rotate(360deg) scale(1.15);
+  }
+}
+
+.display-icon--color {
+  fill: $gray-100 ;
+  transition: fill, transform .3s ease;
+  &:hover {
+    fill:url(#gradient1);
+    transform: scale(1.15);
+  }
+}
+
+.display-icon--elevate {
+  transition: transform .3s ease;
+  &:hover {
+   
+    transform: translateY(8px) scale(1.15);
+  }
+}
