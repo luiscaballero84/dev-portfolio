@@ -68,13 +68,13 @@ function renderProjects() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect x="2" y="11" width="20" height="2" fill="#161616" />
-                <rect x="18" y="9" width="2" height="2" fill="#161616" />
-                <rect x="18" y="13" width="2" height="2" fill="#161616" />
-                <rect x="16" y="15" width="2" height="2" fill="#161616" />
-                <rect x="14" y="17" width="2" height="2" fill="#161616" />
-                <rect x="16" y="7" width="2" height="2" fill="#161616" />
-                <rect x="14" y="5" width="2" height="2" fill="#161616" />
+                <rect x="2" y="11" width="20" height="2" fill="#393939" />
+                <rect x="18" y="9" width="2" height="2" fill="#393939" />
+                <rect x="18" y="13" width="2" height="2" fill="#393939" />
+                <rect x="16" y="15" width="2" height="2" fill="#393939" />
+                <rect x="14" y="17" width="2" height="2" fill="#393939" />
+                <rect x="16" y="7" width="2" height="2" fill="#393939" />
+                <rect x="14" y="5" width="2" height="2" fill="#393939" />
               </svg>
             </div>
           </div>

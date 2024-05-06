@@ -27,7 +27,7 @@
 
 .display-icon--color {
   fill: $gray-100 ;
-  transition: fill, transform .3s ease;
+  transition: fill, transform .2s ease;
   &:hover {
     fill:url(#gradient1);
     transform: scale(1.15);
@@ -35,9 +35,17 @@
 }
 
 .display-icon--elevate {
-  transition: transform .3s ease;
+  transition: transform .18s ease;
   &:hover {
    
     transform: translateY(8px) scale(1.15);
+  }
+}
+
+.display-icon--scale {
+  transition: transform .18s ease;
+  &:hover {
+   
+    transform: scale(1.2);
   }
 }

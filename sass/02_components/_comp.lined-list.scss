@@ -6,7 +6,7 @@
   margin-bottom: 0px;
   padding-top: $space-50;
   padding-bottom: $space-50;
-  border-bottom: 1px solid $gray-30;
+  border-bottom: 2px dotted $gray-30;
   //font-size: $type-x-small;
   font-size: 2rem;
 
@@ -19,5 +19,5 @@
 }
 
 .lined-list li:first-of-type {
-  border-top: 1px solid $gray-30;
+  border-top: 2px dotted $gray-30;
 }
