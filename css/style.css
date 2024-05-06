@@ -25,7 +25,7 @@ body {
       font-size: 2.2rem; } }
 
 ::selection {
-  background: #fee317; }
+  background: #fafc7d; }
 
 h1,
 h2,
@@ -77,15 +77,18 @@ a:visited {
 
 p a:link {
   color: #161616;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-underline-offset: .3rem; }
 
 p a:visited {
-  color: #161616;
-  border-bottom-color: #FBDE01; }
+  color: #161616; }
 
 @media (hover: hover) {
   p a:hover {
-    cursor: pointer; } }
+    cursor: pointer; }
+  p a:link:hover {
+    text-decoration: underline dotted 2px;
+    text-underline-offset: .3rem; } }
 
 p a:active {
   color: #161616; }
@@ -114,7 +117,7 @@ strong {
 .anchor {
   display: block;
   position: relative;
-  top: -7.5rem;
+  top: -2.5rem;
   visibility: hidden; }
 
 #contact-section {
@@ -189,8 +192,9 @@ strong {
   width: 4.2rem;
   height: 4.2rem;
   padding: 1rem 1rem;
-  background-color: #ffffff;
-  background-color: #ececee;
+  backdrop-filter: saturate(0.5) blur(5px);
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid #c6c6c6;
   border-radius: 50rem;
   transition: transform 0.3s ease-out, bottom 0.5s ease-out; }
   .arrow-up:hover {
@@ -223,8 +227,9 @@ strong {
   width: 4.2rem;
   height: 4.2rem;
   padding: 1rem 1rem;
-  background-color: #ffffff;
-  background-color: #ececee;
+  backdrop-filter: saturate(0.5) blur(5px);
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #c6c6c6;
   border-radius: 50rem;
   transition: transform 0.3s ease-out, bottom 0.5s ease-out; }
   .close-btn:hover {
@@ -411,7 +416,7 @@ a .card__img {
   .col-2-container--plus {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 3.2rem; } }
+    column-gap: 6.4rem; } }
 
 @media only screen and (min-width: 75em) {
   .col-2-container--plus {
@@ -453,27 +458,25 @@ a .card__img {
   width: 5rem;
   margin: 0 auto; }
 
-.display-icon--rotate {
-  transition: transform .3s ease; }
-  .display-icon--rotate:hover {
-    transform: rotate(360deg) scale(1.15); }
-
-.display-icon--color {
-  fill: #161616;
-  transition: fill, transform .2s ease; }
-  .display-icon--color:hover {
-    fill: url(#gradient1);
-    transform: scale(1.15); }
-
-.display-icon--elevate {
-  transition: transform .18s ease; }
-  .display-icon--elevate:hover {
-    transform: translateY(8px) scale(1.15); }
-
-.display-icon--scale {
-  transition: transform .18s ease; }
-  .display-icon--scale:hover {
-    transform: scale(1.2); }
+@media (hover: hover) {
+  .display-icon--rotate {
+    transition: transform .3s ease; }
+    .display-icon--rotate:hover {
+      transform: rotate(360deg) scale(1.15); }
+  .display-icon--color {
+    fill: #161616;
+    transition: fill, transform .2s ease; }
+    .display-icon--color:hover {
+      fill: url(#gradient1);
+      transform: scale(1.15); }
+  .display-icon--elevate {
+    transition: transform .18s ease; }
+    .display-icon--elevate:hover {
+      transform: translateY(8px) scale(1.15); }
+  .display-icon--scale {
+    transition: transform .18s ease; }
+    .display-icon--scale:hover {
+      transform: scale(1.2); } }
 
 .lined-list {
   margin-bottom: 4.8rem; }
@@ -621,7 +624,7 @@ a .card__img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FBDE01;
+  background-color: #F9FC64;
   box-shadow: -5px 0px 15px 2px rgba(22, 22, 22, 0.1);
   transition: right 0.35s ease-out; }
   @media only screen and (min-width: 48.1em) {
@@ -690,7 +693,8 @@ footer {
 
 @media only screen and (min-width: 48.1em) {
   footer ul a:hover {
-    border-bottom: 2px solid #161616; } }
+    text-decoration: underline dotted 2px;
+    text-underline-offset: .6rem; } }
 
 .footer__copyright {
   margin-top: 1.2rem;
@@ -710,7 +714,7 @@ footer {
   position: relative;
   padding-top: 16rem;
   padding-bottom: 16rem;
-  background-color: #FBDE01; }
+  background-color: #F9FC64; }
   @media only screen and (min-width: 48.1em) {
     .header {
       height: 82vh; } }
@@ -953,7 +957,7 @@ footer {
   color: #393939; }
 
 .txt-primary {
-  color: #FBDE01; }
+  color: #F9FC64; }
 
 .mt-none {
   margin-top: 0px; }
@@ -1031,13 +1035,22 @@ footer {
   margin-right: 1.2rem; }
 
 .bg-color--primary {
-  background-color: #FBDE01; }
+  background-color: #F9FC64; }
 
 .bg-color--lightgray {
   background-color: #f4f4f4; }
 
 .bg-color--gray-30 {
   background-color: #c6c6c6; }
+
+.bg-color--secondary-01 {
+  background-color: #F0E3FF; }
+
+.bg-color--secondary-02 {
+  background-color: #FFF5C2; }
+
+.bg-color--secondary-03 {
+  background-color: #FFDFD9; }
 
 .sticky {
   position: sticky;

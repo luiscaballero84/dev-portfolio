@@ -32,8 +32,12 @@
   width: 4.2rem;
   height: 4.2rem;
   padding: 1rem 1rem;
-  background-color: $color-white;
-  background-color: $gray-15;
+  //background-color: $color-white;
+  //background-color: $gray-15;
+  backdrop-filter: saturate(0.5) blur(5px);
+  background-color: rgba($color-white, 0.65);
+  //box-shadow: 1px 1px 10px 1px rgba($gray-60, 0.15);
+  border: 1px solid $gray-30;
   border-radius: $rounded-full;
   transition: transform 0.3s ease-out, bottom 0.5s ease-out;
   &:hover {
@@ -72,9 +76,12 @@
   width: 4.2rem;
   height: 4.2rem;
   padding: 1rem 1rem;
-
-  background-color: $color-white;
-  background-color: $gray-15;
+  // background-color: $color-white;
+  // background-color: $gray-15;
+  backdrop-filter: saturate(0.5) blur(5px);
+  background-color: rgba($color-white, 0.85);
+  //box-shadow: 1px 1px 10px 1px rgba($gray-60, 0.15);
+  border: 1px solid $gray-30;
   border-radius: $rounded-full;
   transition: transform 0.3s ease-out, bottom 0.5s ease-out;
   

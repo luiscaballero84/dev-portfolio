@@ -60,7 +60,7 @@
   @include respond(tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: $space-60;
+    column-gap: $space-80;
   }
   @include respond(desktop) {
     grid-template-columns: 1fr 40%;
