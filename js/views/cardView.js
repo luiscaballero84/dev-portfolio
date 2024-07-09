@@ -1,7 +1,7 @@
 const projectList = [
   {
     name: "Raus Companion",
-    text: "Reducing Customer Service requests with the first in-house product",
+    text: "Reducing user requests with the first in-house product",
     img: "img/projects/project-companion/companion-thumb-2x.jpg",
     alt: "raus companion project image",
     link: "pages/case-companion.html",
