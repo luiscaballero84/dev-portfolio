@@ -1,5 +1,14 @@
 .font-tester-container {
   font-family: $beta-font;
-  color: $color-white;
+  color: $brutus-white;
   background-color: $brutus-primary;
+  border-radius: $rounded-default;
+  margin-bottom: $space-40;
+  padding-left: $space-60;
+  padding-right: $space-60;
+  padding-top: $space-50;
+  padding-bottom: $space-10;
+  line-height: 1;
+  
+  font-size: 8rem;
 }

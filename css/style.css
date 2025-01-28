@@ -779,8 +779,16 @@ footer {
 
 .font-tester-container {
   font-family: "bbeta";
-  color: #ffffff;
-  background-color: #284AFF; }
+  color: #FEF5EA;
+  background-color: #284AFF;
+  border-radius: 2rem;
+  margin-bottom: 1.6rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  padding-top: 2.4rem;
+  padding-bottom: 0.4rem;
+  line-height: 1;
+  font-size: 8rem; }
 
 .js-animate-img {
   margin-top: 7rem;
