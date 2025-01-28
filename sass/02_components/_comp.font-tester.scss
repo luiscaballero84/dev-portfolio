@@ -1,4 +1,5 @@
 .font-tester-container {
-  font-family: $beta-font !important;
-  color: red !important; 
+  font-family: $beta-font;
+  color: $color-white;
+  background-color: $brutus-primary;
 }
