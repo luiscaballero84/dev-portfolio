@@ -139,10 +139,11 @@ ol {
 
 // #images
 // --------------
-img {
+img,video {
   width: 100%;
   border-radius: $rounded-default;
 }
+
 
 strong {
   font-weight: $fw-bold;
