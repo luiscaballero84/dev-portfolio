@@ -11,8 +11,9 @@
   z-index: 10000;
   position: fixed;
   top: $space-50;
-  width: 100%;
+  width: calc(100% - 3.4rem); /* Subtracts the total margin */
   max-width: 140rem;
+  margin: 0 auto; /* keep it centered */
   padding-top: $space-30;
   padding-bottom: $space-30;
   padding-right: $space-40;

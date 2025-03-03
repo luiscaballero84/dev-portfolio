@@ -1,5 +1,16 @@
 const projectList = [
   {
+    name: "Roots Radicals Crowdfunding Campaign",
+    text: "Helping raise 22,000€ with a flexible, easy-to-use campaign identity",
+    img: "img/projects/project-crowdfunding/crowd-thumb.jpg",
+    alt: "roots radicals crowdfunding campaign project image",
+    link: "pages/case-crowdfunding.html",
+    firstImgClass: "js-first-img",
+    chip01: "Branding",
+    chip02: "Social media",
+    chip03: "Marketing design",
+  },
+  {
     name: "Raus Companion",
     text: "Reducing user requests with the first in-house product",
     img: "img/projects/project-companion/companion-thumb-2x.jpg",
@@ -89,7 +100,7 @@ function renderProjects() {
               </svg>
             </div>
           </div>
-        <h3 class="card__text txt-regular">
+        <h3 class="card__text">
         ${project.text}
         </h3>
         <div class="card__chip-container flex flex-center--v">
